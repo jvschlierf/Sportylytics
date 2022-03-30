@@ -17,7 +17,7 @@ for (j in listofpackages){
 diz = c("A","B","C","D","E","F","G","H","I","J","K","L","M",
         "N","O","P","Q","R","S","T","U","V","W","X","Y","Z")
 
-#Buold first dataframe
+#Build first dataframe
 data_slug = data.frame()
 
 #Remove basketball players that started before 2000
