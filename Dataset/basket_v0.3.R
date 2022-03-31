@@ -2,8 +2,8 @@
 rm(list=ls()) 
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
-listofpackages <- c("quantmod","PerformanceAnalytics","ellipse","reshape2","ggplot2", "rvest",
-                    "dygraphs", "dplyr","forecast", "aod","readr","rvest","lubridate", "xml2", "bbr")
+listofpackages <- c("quantmod","PerformanceAnalytics","ellipse","reshape2","ggplot2", "rvest", "stringr",
+                    "dygraphs", "dplyr","forecast", "aod","readr","rvest","lubridate", "xml2", "bbr", "caret")
 
 #Uploading libraries
 for (j in listofpackages){
@@ -17,7 +17,7 @@ for (j in listofpackages){
 diz = c("A","B","C","D","E","F","G","H","I","J","K","L","M",
         "N","O","P","Q","R","S","T","U","V","W","X","Y","Z")
 
-#Buold first dataframe
+#Build first dataframe
 data_slug = data.frame()
 
 #Remove basketball players that started before 2000
@@ -71,6 +71,15 @@ get_player_data_pvt <- function(Nome_Giocatore, slug, tabella) {
                 initial, "/", 
                 slug, '.html')
   html <- xml2::read_html(url)
+  
+  nodes_nat <- rvest::html_nodes(html, "span")
+  if (nchar(str_to_title(html_text(nodes_nat)[14])) == 2){
+    nationality = str_to_title(html_text(nodes_nat)[14])
+  }
+  else {
+    nationality = str_to_title(html_text(nodes_nat)[15])
+  }
+  
   node <- rvest::html_node(html, paste0("table#", tabella))
   table <- rvest::html_table(node, header = TRUE)
   table$slug <- slug
@@ -108,6 +117,9 @@ get_player_data_pvt <- function(Nome_Giocatore, slug, tabella) {
   final_tab = merge(clean_df, stats_sal[,c("Season", "Salary")], by.x = "season", by.y = "Season")
   final_tab[,c("slug", "player")] <- NULL
   final_tab$Player = Nome_Giocatore
+  final_tab$Nationality = nationality
+  final_tab$US_Player = 0
+  final_tab$US_Player[final_tab$Nationality %in% c('Us')] <- 1
   final_tab <- final_tab %>% relocate(Player, .before = season)
   final_tab
 }
@@ -159,9 +171,51 @@ for (i in 1:ran){
     }
     
     #Merge the two dataset of per_game and advanced statistics
-    total1 <- merge(aa_1, bb_1,by=c("Player","season","age","tm","lg","pos","g","Salary"))
+    total1 <- merge(aa_1, bb_1,by=c("Player","Nationality","US_Player","season","age","tm","lg","pos","g","Salary"))
     data_giocat_totale <- rbind(data_giocat_totale, total1)
-  
+    
   }, error = function(e){})
-
+  
 }
+
+#Let's import cap history
+cap_history = read.csv("Cap_History.csv", sep=";")
+
+#I insert the Cap value for that season in our main dataset
+new = merge(data_giocat_totale, cap_history, by.x = "season", by.y = "Season")
+
+#Rename rows
+rownames(new) = 1:nrow(new)
+
+#I transform in integer the Salary columns (e.g. from "$ 10,457,100" to 10457100)
+new[c("Salary_Cap","Salary")] <- lapply(new[c("Salary_Cap","Salary")], function(x) as.integer(gsub('[$,]', '', x)))
+
+#Calculate minimum for every year
+mindata = aggregate(data = new, Salary~season, FUN = min)
+
+#I substitute the "$ <Minimum" with the minimum for that specific season
+for (i in 1:dim(new)[1]){
+  if (is.na(new[i, "Salary"]) == TRUE) {
+    new[i, "Salary"] = subset(mindata, season == new[i, "season"])['Salary']
+  }
+}
+
+#I create the percentage column
+new['Salary_Cap_Perc'] = new["Salary"] / new["Salary_Cap"]
+
+#Rearrange the dataset
+new <- new %>% relocate(Salary_Cap_Perc,
+                        Salary_Cap,
+                        .before = Salary)
+
+#Split in TRAIN-TEST (using 80%-20% ratio)
+dt = sort(sample(nrow(new), nrow(new)*.8))
+Basket_Player_Train <- new[dt,]
+Basket_Player_Test <- new[-dt,]
+
+Basket_Player_Test$Nationality <- NULL
+Basket_Player_Train$Nationality <- NULL
+
+#Saving our final CSVs
+write.csv(Basket_Player_Train,'data_Bplayers_2000_TRAIN.csv')
+write.csv(Basket_Player_Test,'data_Bplayers_2000_TEST.csv')
