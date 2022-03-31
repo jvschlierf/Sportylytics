@@ -217,5 +217,5 @@ Basket_Player_Test$Nationality <- NULL
 Basket_Player_Train$Nationality <- NULL
 
 #Saving our final CSVs
-write.csv(Basket_Player_Train,'data_Bplayers_2000_TRAIN.csv')
-write.csv(Basket_Player_Test,'data_Bplayers_2000_TEST.csv')
+write.csv(Basket_Player_Train,'data_Bplayers_2000_TRAIN.csv', row.names=FALSE)
+write.csv(Basket_Player_Test,'data_Bplayers_2000_TEST.csv', row.names=FALSE)
