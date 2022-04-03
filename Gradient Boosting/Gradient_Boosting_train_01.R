@@ -64,7 +64,7 @@ pred_basket_y = predict.gbm(model_gbm, test_basket_x)
 RMSE = sqrt(min(model_gbm$cv.error))
 cat('The root mean square error of the test data is ', round(RMSE,3),'\n')
 
-rsq_RSq <- (cor(pred_basket_y, test_basket$Salary_Cap_Perc))^2
+rsq <- (cor(pred_basket_y, test_basket$Salary_Cap_Perc))^2
 cat('The R-square of the test data is ', round(rsq,3), '\n')
 
 # visualize the model, actual and predicted data
