@@ -216,6 +216,8 @@ Basket_Player_Test <- new[-dt,]
 Basket_Player_Test$Nationality <- NULL
 Basket_Player_Train$Nationality <- NULL
 
+Basket_Player_Train <- subset(Basket_Player_Train, season != "2021-22")
+
 #Saving our final CSVs
 write.csv(Basket_Player_Train,'data_Bplayers_2000_TRAIN.csv', row.names=FALSE)
 write.csv(Basket_Player_Test,'data_Bplayers_2000_TEST.csv', row.names=FALSE)
