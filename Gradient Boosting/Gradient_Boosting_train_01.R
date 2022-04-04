@@ -101,6 +101,18 @@ hyper_grid %>%
   dplyr::arrange(min_RMSE) %>%
   head(10)
 
+#shrinkage interaction.depth n.minobsinnode bag.fraction optimal_trees   min_RMSE
+#1       0.01                 5              5         0.65          1971 0.04176487
+#2       0.01                 5              5         0.80          3186 0.04182010
+#3       0.01                 5             10         0.65          4637 0.04195413
+#4       0.01                 5             15         0.65          3559 0.04199782
+#5       0.10                 5              5         0.80           449 0.04201419
+#6       0.01                 5              5         1.00          2232 0.04205214
+#7       0.01                 5             10         0.80          2197 0.04209576
+#8       0.01                 5             15         0.80          4443 0.04212771
+#9       0.10                 5             15         0.80           224 0.04214367
+#10      0.10                 5             10         0.80           228 0.04218651
+
 ### 3. TRAINING ON THE BEST MODEL ###
 
 set.seed(123)
@@ -109,10 +121,11 @@ set.seed(123)
 gbm_final <- gbm(
   formula = Salary_Cap_Perc ~ .,
   distribution = "gaussian",
-  data = basket_train,
-  n.trees = 10000,
+  data = train_basket,
+  n.trees = 1971,
+  cv.folds = 5,
   interaction.depth = 5,
-  shrinkage = 0.1,
+  shrinkage = 0.01,
   n.minobsinnode = 5,
   bag.fraction = .65, 
   train.fraction = 1,
@@ -122,23 +135,23 @@ gbm_final <- gbm(
 
 saveRDS(gbm_final, file = "gbm_final.Rds")
 
+### 4. PREDICTION ###
+
 # use following code to read models
 # test <- readRDS(file = "gbm_final.Rds")
-
-### 4. PREDICTION ###
 
 pred_basket_y = predict.gbm(gbm_final, test_basket_x)
 
 ### 5. ANALYSIS OF RESULTS ###
-RMSE = sqrt(min(model_gbm$cv.error))
+RMSE = sqrt(mean((test_basket_y - pred_basket_y)^2))
 cat('The root mean square error of the test data is ', round(RMSE,3),'\n')
-#RMSE is 
+#RMSE is 0.042
 
 rsq <- (cor(pred_basket_y, test_basket$Salary_Cap_Perc))^2
 cat('The R-square of the test data is ', round(rsq,3), '\n')
-#R-square is 
+#R-square is 0.66
 
-gbm.perf(model_gbm, method = "cv")
+gbm.perf(gbm_final, method = "cv")
 
 # visualize the model, actual and predicted data
 x_ax = 1:length(pred_basket_y)
@@ -146,9 +159,9 @@ plot(x_ax, test_basket_y, col="blue", pch=20, cex=.9)
 lines(x_ax, pred_basket_y, col="red", pch=20, cex=.9) 
 
 #Relative influence
-summary(model_gbm, cBars = 10, method = relative.influence, las = 2)
+summary(gbm_final, cBars = 10, method = relative.influence, las = 2)
 
 #Partial dependence
-model_gbm %>%
-     partial(pred.var = "ws", n.trees = model_gbm$n.trees, grid.resolution = 100) %>%
+gbm_final %>%
+     partial(pred.var = "pts", n.trees = gbm_final$n.trees, grid.resolution = 100) %>%
      autoplot(rug = TRUE, train = train_basket)
