@@ -119,8 +119,7 @@ saveRDS(svm_tuned, file = "svm_tuned.Rds")
 
 #Load model
 # svm_tuned <- readRDS(file = "svm_tuned.Rds")
-
-
+### RMSE_tuned = 0.04249109
 
 ### 4. FEATURES SELECTION ###
 
@@ -137,5 +136,8 @@ print(svmFeatures)
 #Save features
 saveRDS(svmFeatures, file = "svmFeatures.Rds")
 
-#Load model
+#Load features
 # svmFeatures <- readRDS(file = "svmFeatures.Rds")
+
+### We keep the full model
+### Best RMSE = 0.04249109

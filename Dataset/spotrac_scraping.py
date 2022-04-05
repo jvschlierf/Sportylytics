@@ -20,7 +20,7 @@ path = "webpages"
 
 get_page(base_url=base_url, page_name=page_name, path=path)
 
-page = open("webpages/all_players.txt", 'rb')
+page = open(os.path.join(path,page_name) + ".txt", 'rb')
 soup = BeautifulSoup(page, "html.parser")
 players = soup.find_all("a", class_="team-name") # Class 'team-name' contains player_name-player_page pairs
 
@@ -33,4 +33,22 @@ for link in players:
     page_index = page_index.append(d, ignore_index=True)
 
 # Let's save the csv
-page_index.to_csv('spotrac_index.csv', index=False)
+# page_index.to_csv('spotrac_index.csv', index=False)
+
+# Read the csv
+page_index = pd.read_csv('spotrac_index.csv')
+
+# Load our previously scraped dataset
+train = pd.read_csv('data_Bplayers_2000_TRAIN.csv', encoding = 'unicode_escape')
+test = pd.read_csv('data_Bplayers_2000_TEST.csv', encoding = 'unicode_escape')
+df = train.append(test)
+
+
+base_url = page_index['player_page'][0]
+page_name = page_index['player_name'][0].replace(' ', '_')
+path = "webpages"
+
+get_page(base_url=base_url, page_name=page_name, path=path)
+
+page = open(os.path.join(path,page_name) + ".txt", 'rb')
+soup = BeautifulSoup(page, "html.parser")

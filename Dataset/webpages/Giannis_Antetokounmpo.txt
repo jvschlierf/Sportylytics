@@ -1,0 +1,3508 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]--><!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]--><!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]--><!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]--><!--[if gt IE 8]><!--><html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+<!-- start:global -->
+<meta charset="utf-8"/>
+<!-- end:global -->
+<!-- start:page title -->
+<title>Giannis Antetokounmpo Contract, Salary Cap Details &amp; Breakdowns | Spotrac</title>
+<!-- end:page title -->
+<!-- start:meta info -->
+<meta content="Giannis Antetokounmpo, Milwaukee Bucks, Milwaukee, Bucks, MIL, NBA " name="keywords"/>
+<meta content="Giannis Antetokounmpo contract and salary cap details, contract breakdowns, dead money, and news." name="description"/>
+<meta content="Spotrac.com" name="author"/>
+<meta content="Giannis Antetokounmpo" property="og:title"/>
+<meta content="Spotrac.com" property="og:site_name"/>
+<meta content="" property="og:image"/>
+<!-- end:meta info -->
+<!-- start:responsive web design -->
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+<!-- end:responsive web design -->
+<!-- start:web fonts -->
+<link href="//fonts.googleapis.com/css?family=Roboto:400,500,500italic,400italic,700,700italic%7CRoboto+Condensed:400,700%7CRoboto+Slab" rel="stylesheet" type="text/css"/>
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"/>
+<!-- end:web fonts -->
+<link href="https://www.spotrac.com/resources/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://www.spotrac.com/resources/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="https://www.spotrac.com/resources/css/jquery.sidr.dark.css" rel="stylesheet"/>
+<link href="https://www.spotrac.com/resources/css/team.css" rel="stylesheet"/>
+<link href="https://www.spotrac.com/resources/css/colors.css" rel="stylesheet"/>
+<link href="https://www.spotrac.com/resources/css/option-colors.css" rel="stylesheet"/>
+<link href="https://www.spotrac.com/resources/CreativeButtons/css/component.css" rel="stylesheet"/>
+<link href="https://www.spotrac.com/resources/css/responsive-tables.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="https://www.spotrac.com/resources/css/style.css" rel="stylesheet"/>
+<link href="https://www.spotrac.com/resources/css/premium.css" rel="stylesheet"/>
+<link href="https://www.spotrac.com/resources/js/tabs/css/style.css" rel="stylesheet"/> <!-- Resource style -->
+<link href="https://www.spotrac.com/resources/js/tabs/css/reset.css" rel="stylesheet"/> <!-- CSS reset -->
+<link href="https://www.spotrac.com/resources/css/tables.css" rel="stylesheet"/>
+<link href="https://www.spotrac.com/resources/css/bootstrap-select2.css" rel="stylesheet"/>
+<script src="https://www.spotrac.com/resources/CreativeButtons/js/modernizr.custom.js"></script>
+<script src="https://www.spotrac.com/resources/js/jquery.min.js"></script>
+<!-- USATSM -->
+<script type="text/javascript">
+      var gptadslots=[], googletag = googletag || {}; googletag.cmd = googletag.cmd || [];
+      (function(){ var gads = document.createElement('script');
+          gads.async = true; gads.type = 'text/javascript';
+          var useSSL = 'https:' == document.location.protocol;
+          gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+          var node = document.getElementsByTagName('script')[0];
+          node.parentNode.insertBefore(gads, node);
+      })();
+</script>
+<script src="https://img.bnqt.com/lib/js/sdpdfphelper.js" type="text/javascript"></script>
+<script type="text/javascript">
+      googletag.cmd.push(function() {
+          googletag.pubads().enableAsyncRendering(); googletag.pubads().enableSingleRequest();
+          googletag.pubads().setTargeting('title', sdpTargeting.title)
+                            .setTargeting('targetPaths', sdpTargeting.targetPaths)
+                            .setTargeting('fullPath', sdpTargeting.fullPath)
+                            .setTargeting('queryStr', sdpTargeting.queryStr)
+                            .setTargeting('domainName', sdpTargeting.domainName);
+      });
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3ZZTGEXZ3B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3ZZTGEXZ3B');
+</script>
+<!-- BEGIN THM HEADER CODE -->
+<script src="https://gdpr-wrapper.privacymanager.io/gdpr/bfc571e9-9459-4ceb-b520-c1e1ee786b55/gdpr-liveramp.js"></script>
+<script type="text/javascript">
+var _avp = _avp || [];
+var _avploaded = false;
+var _avpload = function() { if (!_avploaded) {
+  var s = document.createElement('script');
+  s.type = 'text/javascript'; s.async = true; s.src = 'https://tradehouse.advertserve.com/js/libcode3.js';
+  s.onload = function() { AVP.load(); };
+  var x = document.getElementsByTagName('script')[0];
+  x.parentNode.insertBefore(s, x);
+} };
+__tcfapi('addEventListener', 2,(tcData, success) => {
+  __tcfapi("consentDataExist", 2, (tcData, success) => { if (tcData === true) { _avpload(); } } );
+}, "cmpReady");
+__tcfapi('addEventListener', 2,(tcData, success) => { _avpload(); }, "noGdprApplies");
+__tcfapi('addEventListener', 2,(tcData, success) => { _avpload(); }, "consentChanged");
+</script>
+<!-- END THM HEADER CODE -->
+<script type="text/javascript">
+      var gptadslots=[], googletag = googletag || {}; googletag.cmd = googletag.cmd || [];
+      (function(){ var gads = document.createElement('script');
+          gads.async = true; gads.type = 'text/javascript';
+          var useSSL = 'https:' == document.location.protocol;
+          gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+          var node = document.getElementsByTagName('script')[0];
+          node.parentNode.insertBefore(gads, node);
+      })();
+</script>
+<script src="https://img.bnqt.com/lib/js/sdpdfphelper.js" type="text/javascript"></script>
+<script type="text/javascript">
+      googletag.cmd.push(function() {
+          googletag.pubads().enableAsyncRendering(); googletag.pubads().enableSingleRequest();
+          googletag.pubads().setTargeting('title', sdpTargeting.title)
+                            .setTargeting('targetPaths', sdpTargeting.targetPaths)
+                            .setTargeting('fullPath', sdpTargeting.fullPath)
+                            .setTargeting('queryStr', sdpTargeting.queryStr)
+                            .setTargeting('domainName', sdpTargeting.domainName);
+      });
+</script>
+<!---- MAILCHIMP ----->
+<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/bdbf75e587e47e54ff02bfd31/4839f2e6b3acc25886912cb33.js");</script>
+<style>
+	.mc-banner{ z-index: 10000000000 !important; top: 42px !important; display: none !important; }
+	
+</style>
+<link href="https://www.spotrac.com/resources/css/player_mlb.css" rel="stylesheet"/>
+<link href="https://www.spotrac.com/resources/css/tables.css" rel="stylesheet"/>
+<link href="https://www.spotrac.com/resources/css/option-colors.css" rel="stylesheet"/>
+<link href="https://www.spotrac.com/resources/js/tabs/css/style.css" rel="stylesheet"/> <!-- Resource style -->
+<link href="https://www.spotrac.com/resources/js/tabs/css/reset.css" rel="stylesheet"/> <!-- CSS reset -->
+<script src="https://www.spotrac.com/resources/js/tabs/js/modernizr.js"></script> <!-- Modernizr -->
+<!-- end:stylesheets -->
+<style>
+ 
+.fa-share-square-o{ cursor:pointer;margin-left:5px; }
+
+.modal-content {
+    /* new custom width */
+    width: 650px;
+}
+	span.info span {width:75% !important;}
+</style>
+<style>
+@media(max-width:1024px){
+.rtable:not(.rtable-notsticky) th:first-child {box-shadow: none;}
+  table.rtable tr:nth-of-type(odd) td:first-child, .rtable.captracker:not(.rtable-notsticky) tr:nth-of-type(odd) td:nth-child(1) {background:white !important;box-shadow:-2px 0px 2px -2px #ccc inset;}
+}
+}
+</style>
+<script src="https://www.spotrac.com/resources/js/tabs/js/modernizr.js"></script> <!-- Modernizr -->
+<!-- end:stylesheets -->
+<!--[if lte IE 8]>
+<script src="https://www.spotrac.com/resources/js/respond.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="https://www.spotrac.com/resources/css/photobox.ie.css">
+<script src="https://www.spotrac.com/resources/js/html5shiv.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- start:page outer wrap -->
+<div id="page-outer-wrap">
+<!-- start:page inner wrap -->
+<div id="page-inner-wrap">
+<meta content="on" name="twitter:widgets:csp"/>
+<!-- PREMIUM NAV -->
+<!--MOBILE MENU-->
+<header class="visible-xs" id="page-header-mobile" style="height:68px">
+<!-- end:row -->
+<div class="row">
+<!-- start:col -->
+<div class="col-xs-12" style="background:gold; color:black !important; text-align:center; padding:4px;">
+<a data-target="#mailchimp" data-toggle="modal" href="#" style=" color:black !important; font-weight: bold; ">
+							Subscribe To Newsletter
+						</a>
+</div>
+<div class="modal fade" id="mailchimp" role="dialog" tabindex="-1">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+<h4 class="modal-title">Subscribe</h4>
+</div>
+<div class="modal-body">
+<!-- Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"/>
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://spotrac.us20.list-manage.com/subscribe/post?u=bdbf75e587e47e54ff02bfd31&amp;id=b4f59a427b" class="validate" id="mc-embedded-subscribe-form" method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank">
+<div id="mc_embed_signup_scroll">
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+<input class="required email" id="mce-EMAIL" name="EMAIL" type="email" value=""/>
+</div>
+<div class="mc-field-group">
+<label for="mce-FNAME">First Name  <span class="asterisk">*</span>
+</label>
+<input class="required" id="mce-FNAME" name="FNAME" type="text" value=""/>
+</div>
+<div class="mc-field-group">
+<label for="mce-LNAME">Last Name  <span class="asterisk">*</span>
+</label>
+<input class="required" id="mce-LNAME" name="LNAME" type="text" value=""/>
+</div>
+<div class="clear" id="mce-responses">
+<div class="response" id="mce-error-response" style="display:none"></div>
+<div class="response" id="mce-success-response" style="display:none"></div>
+</div> <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+<div aria-hidden="true" style="position: absolute; left: -5000px;"><input name="b_bdbf75e587e47e54ff02bfd31_b4f59a427b" tabindex="-1" type="text" value=""/></div>
+<div class="clear"><input class="button" id="mc-embedded-subscribe" name="subscribe" type="submit" value="Subscribe"/></div>
+</div>
+</form>
+</div>
+<script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js" type="text/javascript"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
+</div>
+</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- end:col -->
+</div>
+<!-- end:row -->
+<div class="row">
+<!-- start:col -->
+<div class="col-xs-8">
+<!-- start:logo -->
+<a href="https://www.spotrac.com/"><img alt="Spotrac" class="mobile-logo" src="https://www.spotrac.com/resources/images/logo-300.png"/></a>
+<!-- end:logo -->
+</div>
+<div class="col-xs-4 text-right">
+<a href="#" id="nav-expander" onclick="return false;"><img src="https://d1dglpr230r57l.cloudfront.net/images/original/hamburger.png"/></a>
+</div>
+<!-- end:col -->
+</div>
+<!-- start:sidr -->
+<div id="sidr">
+<form action="https://www.spotrac.com/redirect/search/" id="search-form-mobile" method="post">
+<input name="search" placeholder="Search a Player or Team" type="text"/>
+</form>
+<ul>
+<li class="cat-extra">
+<a class="more" href="#"><i class="fa fa-angle-down"></i></a>
+<a class="gold" href="#">PREMIUM</a>
+<ul class="subnav-menu">
+<li><a href="https://www.spotrac.com/signin/"><i class="fa fa-sign-in"></i> Sign In</a></li>
+<li><a href="https://www.spotrac.com/register/"><i class="fa fa-pencil-square-o"></i> Register</a></li>
+</ul>
+</li>
+<li class="cat-news">
+</li><li class="cat-nfl">
+<a class="more" href="#"><i class="fa fa-angle-down"></i></a>
+<a href="https://www.spotrac.com/nfl/">NFL</a>
+<ul class="subnav-menu">
+<li><a href="https://www.spotrac.com/nfl/cap/">Team Salary Caps</a></li>
+<li><a href="https://www.spotrac.com/nfl/positional/">Positional Spending</a></li>
+<li><a href="https://www.spotrac.com/nfl/contracts/">Contracts</a></li>
+<li><a href="https://www.spotrac.com/nfl/rankings/">Salary Rankings</a></li>
+<li><a href="https://www.spotrac.com/nfl/free-agents/">Free Agents</a></li>
+<li>
+<a class="moremore" href="#"><i class="fa fa-angle-down"></i></a>
+<a href="#">Trackers &amp; Tools</a>
+<ul class="subsubnav">
+<li><a href="https://www.spotrac.com/nfl/market-value/">» Market Values</a></li>
+<li><a href="https://www.spotrac.com/nfl/fines-suspensions/">» Fines/Suspensions</a></li>
+<li><a href="https://www.spotrac.com/nfl/injured-reserve/">» IR Tracker</a></li>
+<li><a href="https://www.spotrac.com/nfl/depth-charts/">» Depth Charts Tracker</a></li>
+<li><a href="https://www.spotrac.com/nfl/draft/">» Draft Tracker</a></li>
+<li><a href="https://www.spotrac.com/nfl/option/">» Options</a></li>
+<li><a href="https://www.spotrac.com/nfl/college/">» College Tracker</a></li>
+</ul>
+</li>
+<li><a href="https://www.spotrac.com/nfl/valuation/">Best Values</a></li>
+<li><a href="https://www.spotrac.com/nfl/transactions/">Transactions</a></li>
+</ul>
+</li>
+<li class="cat-nba">
+<a class="more" href="#"><i class="fa fa-angle-down"></i></a>
+<a href="https://www.spotrac.com/nba/">NBA</a>
+<ul class="subnav-menu">
+<li><a href="https://www.spotrac.com/nba/cap/">Team Cap Tracker</a></li>
+<li><a href="https://www.spotrac.com/nba/positional/">Positional Payrolls</a></li>
+<li><a href="https://www.spotrac.com/nba/contracts/">Contracts</a></li>
+<li><a href="https://www.spotrac.com/nba/rankings/">Salary Rankings</a></li>
+<li><a href="https://www.spotrac.com/nba/free-agents/">Free Agents</a></li>
+<li>
+<a class="moremore" href="#"><i class="fa fa-angle-down"></i></a>
+<a href="https://www.spotrac.com/nba/free-agents/">Trackers &amp; Tools</a>
+<ul class="subsubnav">
+<li><a href="https://www.spotrac.com/nba/depth-charts/">» Depth Charts</a></li>
+<li><a href="https://www.spotrac.com/nba/option/">» Options</a></li>
+<li><a href="https://www.spotrac.com/nba/fines-suspensions/">» Fines/Suspensions</a></li>
+<li><a href="https://www.spotrac.com/nba/draft/">» Draft Tracker</a></li>
+<li><a href="https://www.spotrac.com/nba/college/">» College Tracker</a></li>
+<li><a href="https://www.spotrac.com/nba/awards/">» Awards Tracker</a></li>
+</ul>
+</li>
+<li><a href="https://www.spotrac.com/nba/valuation/">Best Values</a></li>
+<li>
+<a class="moremore" href="#"><i class="fa fa-angle-down"></i></a>
+<a href="https://www.spotrac.com/nba/transactions/">Transactions</a>
+<ul class="subsubnav">
+<li><a href="https://www.spotrac.com/nba/transactions/">» Recent Transactions</a></li>
+<li><a href="https://www.spotrac.com/nba/transactions/all/signed-extension//">» Extensions</a></li>
+<li><a href="https://www.spotrac.com/nba/transactions/all/trade//">» Trades</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="cat-mlb">
+<a class="more" href="#"><i class="fa fa-angle-down"></i></a>
+<a href="https://www.spotrac.com/mlb/">MLB</a>
+<ul class="subnav-menu">
+<li><a href="https://www.spotrac.com/mlb/payroll/">Team Payrolls</a></li>
+<li><a href="https://www.spotrac.com/mlb/tax/">Luxury Tax Tracker</a></li>
+<li><a href="https://www.spotrac.com/mlb/positional/">Positional Payrolls</a></li>
+<li><a href="https://www.spotrac.com/mlb/contracts/">Contracts</a></li>
+<li><a href="https://www.spotrac.com/mlb/rankings/">Salary Rankings</a></li>
+<li><a href="https://www.spotrac.com/mlb/free-agents/">Free Agents</a></li>
+<li><a href="https://www.spotrac.com/mlb/prospects/">Prospects</a></li>
+<li>
+<a class="moremore" href="#"><i class="fa fa-angle-down"></i></a>
+<a href="https://www.spotrac.com/mlb/free-agents/">Trackers &amp; Tools</a>
+<ul class="subsubnav">
+<li><a href="https://www.spotrac.com/mlb/fines-suspensions/">» Fines/Suspensions</a></li>
+<li><a href="https://www.spotrac.com/mlb/disabled-list/">» Injured List Tracker</a></li>
+<li><a href="https://www.spotrac.com/mlb/option/">» Options Tracker</a></li>
+<li><a href="https://www.spotrac.com/mlb/transactions/trade/">» Trade Tracker</a></li>
+<li><a href="https://www.spotrac.com/mlb/arbitration/">» Arbitration Tracker</a></li>
+<li><a href="https://www.spotrac.com/mlb/valuation/">Best Values</a></li>
+</ul>
+</li>
+<li><a href="https://www.spotrac.com/mlb/transactions/">Transactions</a></li>
+</ul>
+</li>
+<li class="cat-nhl">
+<a class="more" href="#"><i class="fa fa-angle-down"></i></a>
+<a href="https://www.spotrac.com/nhl/">NHL</a>
+<ul class="subnav-menu">
+<li><a href="https://www.spotrac.com/nhl/cap/">Team Salary Caps</a></li>
+<li><a href="https://www.spotrac.com/nhl/positional/">Positional Payrolls</a></li>
+<li><a href="https://www.spotrac.com/nhl/contracts/">Contracts</a></li>
+<li><a href="https://www.spotrac.com/nhl/rankings/">Salary Rankings</a></li>
+<li><a href="https://www.spotrac.com/nhl/free-agents/">Free Agents</a></li>
+<li>
+<a class="moremore" href="#"><i class="fa fa-angle-down"></i></a>
+<a href="https://www.spotrac.com/nhl/free-agents/">Trackers &amp; Tools</a>
+<ul class="subsubnav">
+<li><a href="https://www.spotrac.com/nhl/injured-reserve/">» IR Tracker</a></li>
+<li><a href="https://www.spotrac.com/nhl/option/">» Options</a></li>
+<li><a href="https://www.spotrac.com/nhl/fines-suspensions/">» Fines/Suspensions</a></li>
+<li><a href="https://www.spotrac.com/nhl/draft//">» Draft Tracker</a></li>
+<li><a href="https://www.spotrac.com/nhl/transactions/trade//">» Trade Tracker</a></li>
+<li><a href="https://www.spotrac.com/nhl/college/">» College/Junior Team Tracker</a></li>
+<li><a href="https://www.spotrac.com/nhl/country/">» Country Tracker</a></li>
+</ul>
+</li>
+<li><a href="https://www.spotrac.com/nhl/valuation/">Best Values</a></li>
+<li><a href="https://www.spotrac.com/nhl/transactions/">Transactions</a></li>
+</ul>
+</li>
+<li class="cat-epl">
+<a class="more" href="#"><i class="fa fa-angle-down"></i></a>
+<a href="https://www.spotrac.com/epl/">EPL</a>
+<ul class="subnav-menu">
+<li><a href="https://www.spotrac.com/epl/">Team Payrolls</a></li>
+<li><a href="https://www.spotrac.com/epl/positional/">Positional Payrolls</a></li>
+<li>
+<a class="moremore" href="#"><i class="fa fa-angle-down"></i></a>
+<a href="#">Salary Rankings</a>
+<ul class="subsubnav">
+<li><a href="https://www.spotrac.com/epl/rankings/">» Average Salary</a></li>
+<li><a href="https://www.spotrac.com/epl/rankings/weekly/">» Weekly Wage</a></li>
+<li><a href="https://www.spotrac.com/epl/rankings/contract-value/">» Contract Value</a></li>
+<li><a href="https://www.spotrac.com/epl/rankings/transfer-feee//">» Transfer Feer</a></li>
+</ul>
+</li>
+<li><a href="https://www.spotrac.com/epl/transfers/">Transfers</a></li>
+<li><a href="https://www.spotrac.com/epl/free-agents/">Free Agents</a></li>
+<li><a href="https://www.spotrac.com/epl/transactions/">Transactions</a></li>
+</ul>
+</li>
+<li class="cat-mls">
+<a class="more" href="#"><i class="fa fa-angle-down"></i></a>
+<a href="https://www.spotrac.com/mls/">MLS</a>
+<ul class="subnav-menu">
+<li><a href="https://www.spotrac.com/mls/">Team Payrolls</a></li>
+<li><a href="https://www.spotrac.com/mls/positional/">Positional Payrolls</a></li>
+<li><a href="https://www.spotrac.com/mls/rankings/">Salary Rankings</a></li>
+<li>
+<a class="moremore" href="#"><i class="fa fa-angle-down"></i></a>
+<a href="#">Trackers &amp; Tools</a>
+<ul class="subsubnav">
+<li><a href="https://www.spotrac.com/mls/cap/">» Team Caps</a></li>
+<li><a href="https://www.spotrac.com/mls/draft/">» Draft Tracker</a></li>
+<li><a href="https://www.spotrac.com/mls/college/">» College Tracker</a></li>
+<li><a href="https://www.spotrac.com/mls/transactions/trade//">» Trade Tracker</a></li>
+</ul>
+</li>
+<li><a href="https://www.spotrac.com/mls/transactions/">Transactions</a></li>
+</ul>
+</li>
+<li class="cat-nwsl">
+<a class="more" href="#"><i class="fa fa-angle-down"></i></a>
+<a href="https://www.spotrac.com/nwsl/">NWSL</a>
+<ul class="subnav-menu">
+<li><a href="https://www.spotrac.com/nwsl/">Teams</a></li>
+<li><a href="https://www.spotrac.com/nwsl/draft/">Draft</a></li>
+<li><a href="https://www.spotrac.com/nwsl/federation-players/">Federation Players</a></li>
+<li><a href="https://www.spotrac.com/nwsl/free-agents/">Free Agents</a></li>
+<li><a href="https://www.spotrac.com/nwsl/transactions/">Transactions</a></li>
+</ul>
+</li>
+<li class="cat-wnba">
+<a class="more" href="#"><i class="fa fa-angle-down"></i></a>
+<a href="https://www.spotrac.com/wnba/">WNBA</a>
+<ul class="subnav-menu">
+<li><a href="https://www.spotrac.com/wnba/cap/">Team Cap Tracker</a></li>
+<li><a href="https://www.spotrac.com/wnba/positional/">Positional Payrolls</a></li>
+<li><a href="https://www.spotrac.com/wnba/contracts/">Contracts</a></li>
+<li><a href="https://www.spotrac.com/wnba/rankings/">Salary Rankings</a></li>
+<li><a href="https://www.spotrac.com/wnba/free-agents/">Free Agents</a></li>
+<li><a href="https://www.spotrac.com/wnba/transactions/">Transactions</a></li>
+</ul>
+</li>
+<li class="cat-pga">
+<a class="more" href="#"><i class="fa fa-angle-down"></i></a>
+<a href="https://www.spotrac.com/pga/">PGA</a>
+<ul class="subnav-menu">
+<li><a href="https://www.spotrac.com/pga/">Schedules</a></li>
+<li><a href="https://www.spotrac.com/pga/rankings/">Rankings</a></li>
+<li><a href="https://www.spotrac.com/pga/earnings/">Earnings</a></li>
+</ul>
+</li>
+<li class="cat-lpga">
+<a href="https://www.spotrac.com/lpga/">LPGA</a>
+</li>
+<li class="cat-formula1">
+<a class="more" href="#"><i class="fa fa-angle-down"></i></a>
+<a href="https://www.spotrac.com/formula1/">Formula 1</a>
+<ul class="subnav-menu">
+<li><a href="https://www.spotrac.com/formula1/">Team/Drivers</a></li>
+<li><a href="https://www.spotrac.com/formula1/rankings/">Rankings</a></li>
+<li><a href="https://www.spotrac.com/formula1/transactions/">Transactions</a></li>
+</ul>
+</li>
+<!--- NASCAR --->
+<li class="cat-nascar">
+<a class="more" href="#"><i class="fa fa-angle-down"></i></a>
+<a href="https://www.spotrac.com/nascar/">NASCAR</a>
+<ul class="subnav-menu">
+<li><a href="https://www.spotrac.com/nascar/">Drivers</a></li>
+<li><a href="https://www.spotrac.com/nascar/teams/">Teams</a></li>
+<li><a href="https://www.spotrac.com/nascar/manufacturers/">Manufacturers</a></li>
+<li><a href="https://www.spotrac.com/nascar/sponsors/">Sponsors</a></li>
+<li><a href="https://www.spotrac.com/nascar/champions/">Champions</a></li>
+<li><a href="https://www.spotrac.com/nascar/rookies/">Rookies</a></li>
+<li><a href="https://www.spotrac.com/nascar/transactions/">Transactions</a></li>
+</ul>
+</li>
+<li class="cat-nascar">
+<a class="more" href="#"><i class="fa fa-angle-down"></i></a>
+<a href="https://www.spotrac.com/usfl/">USFL</a>
+<ul class="subnav-menu">
+<li><a href="https://www.spotrac.com/usfl/">Teams</a></li>
+<li><a href="https://www.spotrac.com/usfl/draft/">Draft</a></li>
+<li><a href="https://www.spotrac.com/usfl/transactions/">Transactions</a></li>
+</ul>
+</li>
+<!--- ATP --->
+<li class="cat-atp">
+<a href="https://www.spotrac.com/atp/">ATP</a>
+</li>
+<!--- WTA --->
+<li class="cat-wta">
+<a href="https://www.spotrac.com/wta/">WTA</a>
+</li>
+<li class="cat-nwhl">
+<a href="https://www.spotrac.com/phf/">PHF</a>
+</li>
+<li class="cat-nba">
+<a href="https://www.spotrac.com/ote/">OTE</a>
+</li>
+<li class="cat-nba">
+<a href="https://www.spotrac.com/nbag/">IGNITE</a>
+</li>
+<li class="cat-news">
+<a class="more" href="#"><i class="fa fa-angle-down"></i></a>
+<a href="#">More</a>
+<ul class="subnav-menu">
+<li><a href="https://www.spotrac.com/radio/">Radio Podcast</a></li>
+<li><a href="https://www.spotrac.com/research/">Research &amp; News</a></li>
+<li><a href="https://www.spotrac.com/spots/">Quick Spots</a></li>
+</ul>
+</li>
+<a href="https://www.spotrac.com/contact/"><i class="fa fa-envelope-o"></i> Contact Us</a>
+<li class="cat-news">
+<a href="https://www.twitter.com/spotrac"><i class="fa fa-twitter"></i> Twitter</a>
+</li>
+<li class="cat-news">
+<a href="https://www.facebook.com/spotrac"><i class="fa fa-facebook"></i> Facebook</a>
+</li>
+</ul>
+</div>
+<!-- end:sidr -->
+<!-- start:row -->
+</header>
+<!-- end:MOBILE MENU -->
+<!---DESKTOP HEADER--->
+<header class="hidden-xs" id="page-header">
+<!-- start:header-branding -->
+<div id="header-branding">
+<!-- start:container -->
+<div class="container xlarge">
+<!-- start:row -->
+<div class="row">
+<!-- start:col -->
+<div class="logo col-sm-3 col-md-3">
+<!-- start:logo -->
+<a href="https://www.spotrac.com/"><img alt="Sports Contracts, Salaries, &amp; Cap Hits" src="https://www.spotrac.com/resources/images/logo-300.png"/></a>
+<!-- end:logo -->
+</div>
+<!-- end:col -->
+<!-- start:col -->
+<div class="searchform col-sm-5 col-md-5 text-center col-sm-offset-1">
+<form action="https://www.spotrac.com/redirect/search/" id="search-form" method="post">
+<input name="search" placeholder="Search a Player or Team" type="text"/>
+<button><span class="glyphicon glyphicon-search"></span></button>
+</form>
+</div>
+<!-- end:col -->
+<!-- start:col -->
+<div class="social col-sm-3 col-lg-2 text-right">
+<div class="weather">
+<h4 style="display:block;">Follow Spotrac</h4>
+<a href="https://www.spotrac.com/radio/"><i class="fa fa-podcast fa-lg"></i></a>
+<a href="https://www.twitter.com/spotrac" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+<a href="https://www.facebook.com/spotrac" target="_blank"><i class="fa fa-facebook-square fa-lg"></i></a>
+</div>
+</div>
+<!-- end:col -->
+</div>
+<!-- end:row -->
+</div>
+<!-- end:container -->
+</div>
+<!-- end:header-branding -->
+<!-- start:header-navigation -->
+<div id="header-navigation">
+<!-- start:container -->
+<div class="container xlarge">
+<!-- start:menu -->
+<nav id="menu">
+<ul class="nav clearfix">
+<li class="home" style="height:40px;"><a href="https://www.spotrac.com/"><span class="glyphicon glyphicon-home"></span></a></li>
+<!---NFL--->
+<li class="cat-nfl">
+<a class="clickable" href="#">NFL <i class="fa fa-caret-down"></i></a>
+<!-- start:submenu-NFL -->
+<div class="subnav-container">
+<ul class="subnav-menu">
+<li class="current">
+<a href="https://www.spotrac.com/nfl/cap/">Team Salary Caps</a>
+<div class="subnav-posts">
+<!-- start:NFL Teams -->
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/nfl/arizona-cardinals/cap/">Arizona Cardinals</a></li>
+<li><a href="https://www.spotrac.com/nfl/atlanta-falcons/cap/">Atlanta Falcons</a></li>
+<li><a href="https://www.spotrac.com/nfl/baltimore-ravens/cap/">Baltimore Ravens</a></li>
+<li><a href="https://www.spotrac.com/nfl/buffalo-bills/cap/">Buffalo Bills</a></li>
+<li><a href="https://www.spotrac.com/nfl/carolina-panthers/cap/">Carolina Panthers</a></li>
+<li><a href="https://www.spotrac.com/nfl/chicago-bears/cap/">Chicago Bears</a></li>
+<li><a href="https://www.spotrac.com/nfl/cincinnati-bengals/cap/">Cincinnati Bengals</a></li>
+<li><a href="https://www.spotrac.com/nfl/cleveland-browns/cap/">Cleveland Browns</a></li>
+</ul>
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/nfl/dallas-cowboys/cap/">Dallas Cowboys</a></li>
+<li><a href="https://www.spotrac.com/nfl/denver-broncos/cap/">Denver Broncos</a></li>
+<li><a href="https://www.spotrac.com/nfl/detroit-lions/cap/">Detroit Lions</a></li>
+<li><a href="https://www.spotrac.com/nfl/green-bay-packers/cap/">Green Bay Packers</a></li>
+<li><a href="https://www.spotrac.com/nfl/houston-texans/cap/">Houston Texans</a></li>
+<li><a href="https://www.spotrac.com/nfl/indianapolis-colts/cap/">Indianapolis Colts</a></li>
+<li><a href="https://www.spotrac.com/nfl/jacksonville-jaguars/cap/">Jacksonville Jaguars</a></li>
+<li><a href="https://www.spotrac.com/nfl/kansas-city-chiefs/cap/">Kansas City Chiefs</a></li>
+</ul>
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/nfl/las-vegas-raiders/cap/">Las Vegas Raiders</a></li>
+<li><a href="https://www.spotrac.com/nfl/los-angeles-chargers/cap/">Los Angeles Chargers</a></li>
+<li><a href="https://www.spotrac.com/nfl/los-angeles-rams/cap/">Los Angeles Rams</a></li>
+<li><a href="https://www.spotrac.com/nfl/miami-dolphins/cap/">Miami Dolphins</a></li>
+<li><a href="https://www.spotrac.com/nfl/minnesota-vikings/cap/">Minnesota Vikings</a></li>
+<li><a href="https://www.spotrac.com/nfl/new-england-patriots/cap/">New England Patriots</a></li>
+<li><a href="https://www.spotrac.com/nfl/new-orleans-saints/cap/">New Orleans Saints</a></li>
+<li><a href="https://www.spotrac.com/nfl/new-york-giants/cap/">New York Giants</a></li>
+</ul>
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/nfl/new-york-jets/cap/">New York Jets</a></li>
+<li><a href="https://www.spotrac.com/nfl/philadelphia-eagles/cap/">Philadelphia Eagles</a></li>
+<li><a href="https://www.spotrac.com/nfl/pittsburgh-steelers/cap/">Pittsburgh Steelers</a></li>
+<li><a href="https://www.spotrac.com/nfl/san-francisco-49ers/cap/">San Francisco 49ers</a></li>
+<li><a href="https://www.spotrac.com/nfl/seattle-seahawks/cap/">Seattle Seahawks</a></li>
+<li><a href="https://www.spotrac.com/nfl/tampa-bay-buccaneers/cap/">Tampa Bay Buccaneers</a></li>
+<li><a href="https://www.spotrac.com/nfl/tennessee-titans/cap/">Tennessee Titans</a></li>
+<li><a href="https://www.spotrac.com/nfl/washington-commanders/cap/">Washington Commanders</a></li>
+</ul>
+<ul class="menu-list">
+</ul>
+</div>
+</li>
+<li>
+<a href="https://www.spotrac.com/nfl/positional/">Positional Payrolls</a>
+<div class="subnav-posts">
+<!-- start:NFL positions -->
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/nfl/positional/offense/">Offense</a></li>
+<li><a href="https://www.spotrac.com/nfl/positional/quarterback/">Quarterback</a></li>
+<li><a href="https://www.spotrac.com/nfl/positional/running-back/">Running Back</a></li>
+<li><a href="https://www.spotrac.com/nfl/positional/fullback/">Fullback</a></li>
+<li><a href="https://www.spotrac.com/nfl/positional/wide-receiver/">Wide Receiver</a></li>
+<li><a href="https://www.spotrac.com/nfl/positional/tight-end/">Tight End</a></li>
+<li><a href="https://www.spotrac.com/nfl/positional/offensive-line/">Offensive Line</a></li>
+<li><a href="https://www.spotrac.com/nfl/positional/tackle/">Tackle</a></li>
+<li><a href="https://www.spotrac.com/nfl/positional/left-tackle/">Left Tackle</a></li>
+<li><a href="https://www.spotrac.com/nfl/positional/right-tackle/">Right Tackle</a></li>
+</ul>
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/nfl/positional/guard/">Guard</a></li>
+<li><a href="https://www.spotrac.com/nfl/positional/center/">Center</a></li>
+<li><a href="https://www.spotrac.com/nfl/positional/defense/">Defense</a></li>
+<li><a href="https://www.spotrac.com/nfl/positional/edge/">Edge</a></li>
+<li><a href="https://www.spotrac.com/nfl/positional/defensive-line/">Defensive Line</a></li>
+<li><a href="https://www.spotrac.com/nfl/positional/defensive-end/">Defensive End</a></li>
+<li><a href="https://www.spotrac.com/nfl/positional/defensive-tackle/">Defensive Tackle</a></li>
+<li><a href="https://www.spotrac.com/nfl/positional/linebacker/">Linebacker</a></li>
+<li><a href="https://www.spotrac.com/nfl/positional/outside-linebacker/">Outside Linebacker</a></li>
+<li><a href="https://www.spotrac.com/nfl/positional/inside-linebacker/">Inside Linebacker</a></li>
+</ul>
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/nfl/positional/secondary/">Secondary</a></li>
+<li><a href="https://www.spotrac.com/nfl/positional/cornerback/">Cornerback</a></li>
+<li><a href="https://www.spotrac.com/nfl/positional/safety/">Safety</a></li>
+<li><a href="https://www.spotrac.com/nfl/positional/free-safety/">Free Safety</a></li>
+<li><a href="https://www.spotrac.com/nfl/positional/strong-safety/">Strong Safety</a></li>
+<li><a href="https://www.spotrac.com/nfl/positional/special/">Special Teams</a></li>
+<li><a href="https://www.spotrac.com/nfl/positional/kicker/">Kicker</a></li>
+<li><a href="https://www.spotrac.com/nfl/positional/punter/">Punter</a></li>
+<li><a href="https://www.spotrac.com/nfl/positional/long-snapper/">Long Snapper</a></li>
+</ul>
+<!-- end:NFL positions -->
+</div>
+</li>
+<li>
+<a href="https://www.spotrac.com/nfl/contracts/">Contracts</a>
+<div class="subnav-posts">
+<!-- start:NFL Contracts -->
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/nfl/contracts/">Contracts By Team</a></li>
+<li><a href="https://www.spotrac.com/nfl/contracts/quarterback/">Contracts By Position</a></li>
+<li><a href="https://www.spotrac.com/nfl/contracts/sort-value/">Largest Contracts</a></li>
+<li><a href="https://www.spotrac.com/nfl/contracts/sort-length/">Longest Contracts</a></li>
+<li><a href="https://www.spotrac.com/nfl/injured-reserve/">Contracts on IR</a>
+</li><li><a href="https://www.spotrac.com/nfl/free-agents/">Expiring Contracts</a></li>
+</ul>
+<ul class="menu-list" style="width:40%;">
+<li><a href="https://www.spotrac.com/nfl/contracts/cumulative-cash/">Cumulative Cash per Contract</a></li>
+<li><a href="https://www.spotrac.com/nfl/contracts/quarterback/">Contract Breakdowns by Years</a></li>
+<li><a href="https://www.spotrac.com/nfl/contracts/type-rookie/">Rookie Contracts</a></li>
+<li><a href="https://www.spotrac.com/nfl/contracts/type-veteran/">Veteran Contracts</a></li>
+<li><a href="https://www.spotrac.com/nfl/college/">Contracts by College</a></li>
+<li><a href="https://www.spotrac.com/nfl/contracts/sort-age/">Contracts by Age</a></li>
+</ul>
+<!-- end:nfl contracts -->
+</div>
+</li>
+<li>
+<a href="https://www.spotrac.com/nfl/rankings/">Salary Rankings</a>
+<div class="subnav-posts">
+<!-- start:NFL Rankings -->
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/nfl/rankings/">Top Cap Hits</a></li>
+<li><a href="https://www.spotrac.com/nfl/rankings/base/">Top Base Salaries</a></li>
+<li><a href="https://www.spotrac.com/nfl/rankings/average/">Average Salaries</a></li>
+<li><a href="https://www.spotrac.com/nfl/rankings/cash//">Top Annual Cash</a></li>
+<li><a href="https://www.spotrac.com/nfl/rankings/guaranteed/">Top Guaranteed Money</a></li>
+<li><a href="https://www.spotrac.com/nfl/rankings/signing-bonus/">Top Signing Bonuses</a></li>
+<li><a href="https://www.spotrac.com/nfl/rankings/dead-money/">Top Dead Cap</a></li>
+<li><a href="https://www.spotrac.com/nfl/rankings/earnings/">Career Earnings</a></li>
+</ul>
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/nfl/rankings/base/arizona-cardinals/">Salaries by Team</a></li>
+<li><a href="https://www.spotrac.com/nfl/rankings/base/quarterback/">Salaries by Position</a></li>
+<li><a href="https://www.spotrac.com/nfl/rankings/arizona-cardinals/">Cap Hits by Team</a></li>
+<li><a href="https://www.spotrac.com/nfl/rankings/quarterback/">Cap Hits by Position</a></li>
+<li><a href="https://www.spotrac.com/nfl/rankings/franchise-tag/">Franchise Tags</a></li>
+</ul>
+<!-- end:NFL rankings -->
+</div>
+</li>
+<li>
+<a href="https://www.spotrac.com/nfl/trackers/">Trackers &amp; Tools</a>
+<div class="subnav-posts">
+<ul class="menu-list" style="width:21%;">
+<li><a href="https://www.spotrac.com/nfl/cap/">Team Salary Cap Tracker</a></li>
+<li><a href="https://www.spotrac.com/nfl/free-agents/">Free Agent Tracker</a></li>
+<li><a href="https://www.spotrac.com/nfl/extensions/">Extension Tracker</a></li>
+<li><a href="https://www.spotrac.com/nfl/fines-suspensions/">Fines &amp; Suspensions</a></li>
+<li><a href="https://www.spotrac.com/nfl/injured-reserve/">Injured Reserve</a></li>
+<li><a href="https://www.spotrac.com/nfl/transactions/trade/">Trade Tracker</a></li>
+<li><a href="https://www.spotrac.com/nfl/option/">Option Tracker</a></li>
+</ul>
+<ul class="menu-list" style="width:25%;">
+<li><a href="https://www.spotrac.com/nfl/draft/">Draft Tracker</a></li>
+<li><a href="https://www.spotrac.com/nfl/college/">College Tracker</a></li>
+<li><a href="https://www.spotrac.com/nfl/agents/">Agents Tracker</a></li>
+<li><a href="https://www.spotrac.com/nfl/market-value/">Current Market Values</a></li>
+<li><a href="https://www.spotrac.com/nfl/depth-charts/">Depth Charts Tracker</a></li>
+<li><a href="https://www.spotrac.com/nfl/tools/visual-roster-spending/">Visual Roster Spending</a></li>
+<li><a href="https://www.spotrac.com/nfl/tools/offseason/">Offseason Spending</a></li>
+</ul>
+</div>
+</li>
+<li><a href="https://www.spotrac.com/nfl/valuation/">Best Values</a>
+<div class="subnav-posts">
+<ul class="menu-list" style="width:50%;">
+<li><a href="https://www.spotrac.com/nfl/valuation//">Best Value Players</a></li>
+<li><a href="https://www.spotrac.com/nfl/valuation/offense/">Best Value Offensive Players</a></li>
+<li><a href="https://www.spotrac.com/nfl/valuation/defense/">Best Value Defensive Players</a></li>
+<li><a href="#"> </a></li>
+<li><a href="https://www.spotrac.com/nfl/valuation/team/">Best Value Teams</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="https://www.spotrac.com/nfl/transactions/">Transactions</a>
+<div class="subnav-posts">
+<ul class="menu-list" style="width:50%;">
+<li><a href="https://www.spotrac.com/nfl/transactions/">NFL Transactions</a></li>
+<li><a href="https://www.spotrac.com/nfl/transactions/trade/">Trade Tracker</a></li>
+<li><a href="https://www.spotrac.com/nfl/transactions/signed-free-agent/">Free Agent Signings</a></li>
+<li><a href="https://www.spotrac.com/nfl/transactions/upcoming/">Future Bonuses &amp; Guarantees</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="#">Premium Tools</a>
+<div class="subnav-posts">
+<ul class="menu-list" style="width:50%">
+<li><a href="https://www.spotrac.com/premium/nfl/statistics/players/passing//">Financial Statistics Portal</a></li>
+<li><a href="https://www.spotrac.com/premium/nfl/financial/breakdown//">Yearly Financials</a></li>
+<li><a href="https://www.spotrac.com/premium/nfl/financial/contracts//">Contract Portal</a></li>
+<li><a href="https://www.spotrac.com/premium/nfl/draft/players/">Advanced Draft Tool</a></li>
+<li><a href="https://www.spotrac.com/premium/nfl/free-agents/players//">Advanced Free Agent Tool</a></li>
+<li><a href="https://www.spotrac.com/nfl/contracts/breakdown/">Contract Breakdowns by Year</a></li>
+<li><a href="https://www.spotrac.com/nfl/yearly/">Multi-Year Salary Tool</a></li>
+<li><a href="https://www.spotrac.com/nfl/tools/compare-teams/">Financial Team Comparison</a></li>
+<li><a href="https://www.spotrac.com/nfl/tools/compare-players/">Financial Player Comparison</a></li>
+<li><a href="https://www.spotrac.com/nfl/tools/yearly-pct/">Yearly % Change</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<!-- end:submenu-NFL -->
+</li>
+<!---NBA--->
+<li class="cat-nba active">
+<a class="clickable" href="#">NBA <i class="fa fa-caret-down"></i></a>
+<!-- start:submenu-NBA -->
+<div class="subnav-container" style="display:none">
+<ul class="subnav-menu">
+<li class="current">
+<a href="https://www.spotrac.com/nba/cap/">Team Salary Caps</a>
+<div class="subnav-posts">
+<!-- start:NBA teams -->
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/nba/atlanta-hawks//cap">Atlanta Hawks</a></li>
+<li><a href="https://www.spotrac.com/nba/boston-celtics//cap">Boston Celtics</a></li>
+<li><a href="https://www.spotrac.com/nba/brooklyn-nets//cap">Brooklyn Nets</a></li>
+<li><a href="https://www.spotrac.com/nba/charlotte-hornets//cap">Charlotte Hornets</a></li>
+<li><a href="https://www.spotrac.com/nba/chicago-bulls//cap">Chicago Bulls</a></li>
+<li><a href="https://www.spotrac.com/nba/cleveland-cavaliers//cap">Cleveland Cavaliers</a></li>
+<li><a href="https://www.spotrac.com/nba/dallas-mavericks//cap">Dallas Mavericks</a></li>
+<li><a href="https://www.spotrac.com/nba/denver-nuggets//cap">Denver Nuggets</a></li>
+<li><a href="https://www.spotrac.com/nba/detroit-pistons//cap">Detroit Pistons</a></li>
+</ul>
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/nba/golden-state-warriors//cap">Golden State Warriors</a></li>
+<li><a href="https://www.spotrac.com/nba/houston-rockets//cap">Houston Rockets</a></li>
+<li><a href="https://www.spotrac.com/nba/indiana-pacers//cap">Indiana Pacers</a></li>
+<li><a href="https://www.spotrac.com/nba/los-angeles-clippers//cap">Los Angeles Clippers</a></li>
+<li><a href="https://www.spotrac.com/nba/los-angeles-lakers//cap">Los Angeles Lakers</a></li>
+<li><a href="https://www.spotrac.com/nba/memphis-grizzlies//cap">Memphis Grizzlies</a></li>
+<li><a href="https://www.spotrac.com/nba/miami-heat//cap">Miami Heat</a></li>
+<li><a href="https://www.spotrac.com/nba/milwaukee-bucks//cap">Milwaukee Bucks</a></li>
+<li><a href="https://www.spotrac.com/nba/minnesota-timberwolves//cap">Minnesota Timberwolves</a></li>
+</ul>
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/nba/new-orleans-pelicans//cap">New Orleans Pelicans</a></li>
+<li><a href="https://www.spotrac.com/nba/new-york-knicks//cap">New York Knicks</a></li>
+<li><a href="https://www.spotrac.com/nba/oklahoma-city-thunder//cap">Oklahoma City Thunder</a></li>
+<li><a href="https://www.spotrac.com/nba/orlando-magic//cap">Orlando Magic</a></li>
+<li><a href="https://www.spotrac.com/nba/philadelphia-76ers//cap">Philadelphia 76ers</a></li>
+<li><a href="https://www.spotrac.com/nba/phoenix-suns//cap">Phoenix Suns</a></li>
+<li><a href="https://www.spotrac.com/nba/portland-trail-blazers//cap">Portland Trail Blazers</a></li>
+<li><a href="https://www.spotrac.com/nba/sacramento-kings//cap">Sacramento Kings</a></li>
+<li><a href="https://www.spotrac.com/nba/san-antonio-spurs//cap">San Antonio Spurs</a></li>
+</ul>
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/nba/toronto-raptors//cap">Toronto Raptors</a></li>
+<li><a href="https://www.spotrac.com/nba/utah-jazz//cap">Utah Jazz</a></li>
+<li><a href="https://www.spotrac.com/nba/washington-wizards//cap">Washington Wizards</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="https://www.spotrac.com/nba/positional/">Positional Payrolls</a>
+<div class="subnav-posts">
+<!-- start:NBA positions -->
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/nba/positional/guard/">Guard</a></li>
+<li><a href="https://www.spotrac.com/nba/positional/point-guard/">Point Guard</a></li>
+<li><a href="https://www.spotrac.com/nba/positional/shooting-guard/">Shooting Guard</a></li>
+<li><a href="https://www.spotrac.com/nba/positional/forward/">Forward</a></li>
+<li><a href="https://www.spotrac.com/nba/positional/small-forward/">Small Forward</a></li>
+</ul>
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/nba/positional/power-forward/">Power Forward</a></li>
+<li><a href="https://www.spotrac.com/nba/positional/center/">Center</a></li>
+</ul>
+<!-- end:NBA positions -->
+</div>
+</li>
+<li>
+<a href="https://www.spotrac.com/nba/contracts/">Contracts</a>
+<div class="subnav-posts">
+<!-- start:nba Contracts -->
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/nba/contracts/">Contracts By Team</a></li>
+<li><a href="https://www.spotrac.com/nba/contracts/point-guard//">Contracts By Position</a></li>
+<li><a href="https://www.spotrac.com/nba/draft/">Contracts by Draft</a></li>
+<li><a href="https://www.spotrac.com/nba/contracts/sort-age//">Contracts by Age</a></li>
+<li><a href="https://www.spotrac.com/nba/free-agents/">Expiring Contracts</a></li>
+</ul>
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/nba/contracts/sort-value/">Largest Active</a></li>
+<li><a href="https://www.spotrac.com/nba/contracts/sort-length/">Longest Active</a></li>
+<li><a href="https://www.spotrac.com/nba/contracts/type-rookie/">Rookie Contracts</a></li>
+<li><a href="https://www.spotrac.com/nba/contracts/type-veteran/">Veteran Contracts</a></li>
+</ul>
+<!-- end:nba contracts -->
+</div>
+</li>
+<li>
+<a href="https://www.spotrac.com/nba/rankings/">Salary Rankings</a>
+<div class="subnav-posts">
+<!-- start:NFL Rankings -->
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/nba/rankings/">Top Cap Hits</a></li>
+<li><a href="https://www.spotrac.com/nba/rankings/base/">Top Base Salaries</a></li>
+<li><a href="https://www.spotrac.com/nba/rankings/average/">Average Salaries</a></li>
+<li><a href="https://www.spotrac.com/nba/rankings/dead-money/">Dead Cap</a></li>
+<li><a href="https://www.spotrac.com/nba/rankings/earnings/">Career Earnings</a></li>
+</ul>
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/nba/rankings/base/atlanta-hawks/">Salaries by Team</a></li>
+<li><a href="https://www.spotrac.com/nba/rankings/base/point-guard/">Salaries by Position</a></li>
+<li><a href="https://www.spotrac.com/nba/rankings/atlanta-hawks/">Cap Hits by Team</a></li>
+<li><a href="https://www.spotrac.com/nba/rankings/point-guard/">Cap Hits by Position</a></li>
+</ul>
+<!-- end:NFL rankings -->
+</div>
+</li>
+<li>
+<a href="#">Trackers &amp; Tools</a>
+<div class="subnav-posts">
+<ul class="menu-list" style="width:35%;">
+<li><a href="https://www.spotrac.com/nba/cap/">Team Salary Cap Tracker</a></li>
+<li><a href="https://www.spotrac.com/nba/free-agents/">Free Agent Tracker</a></li>
+<li><a href="https://www.spotrac.com/nba/fines-suspensions/">Fines &amp; Suspensions</a></li>
+<li><a href="https://www.spotrac.com/nba/depth-charts/">Team Depth Charts</a></li>
+<li><a href="https://www.spotrac.com/nba/transactions/trade/">Trade Tracker</a></li>
+<li><a href="https://www.spotrac.com/nba/injured-reserve/"> Injured Tracker</a></li>
+</ul>
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/nba/rookie-scale/">Rookie Scale</a></li>
+<li><a href="https://www.spotrac.com/nba/draft/">Draft Tracker</a></li>
+<li><a href="https://www.spotrac.com/nba/option/">Option Tracker</a></li>
+<li><a href="https://www.spotrac.com/nba/college/">College Tracker</a></li>
+<li><a href="https://www.spotrac.com/nba/country/">Country Tracker</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="https://www.spotrac.com/nba/valuation/">Best Values</a>
+<div class="subnav-posts">
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/nba/valuation/">Best Value Players</a></li>
+<li><a href="https://www.spotrac.com/nba/valuation/teams/">Best Value Teams</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="https://www.spotrac.com/nba/transactions/">Transactions</a>
+<div class="subnav-posts">
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/nba/transactions/">NBA Transactions</a></li>
+<li><a href="https://www.spotrac.com/nba/transactions/trade/">Trade Tracker</a></li>
+<li><a href="https://www.spotrac.com/nba/transactions/signed-free-agent/">Free Agent Signings</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="#">Premium Tools</a>
+<div class="subnav-posts">
+<ul class="menu-list" style="width:50%">
+<li><a href="https://www.spotrac.com/nba/contracts/breakdown/">Contract Breakdowns by Year</a></li>
+<li><a href="https://www.spotrac.com/nba/yearly/">Multi-Year Salary Tool</a></li>
+<li><a href="https://www.spotrac.com/nba/tools/compare-teams/">Financial Team Comparison</a></li>
+<li><a href="https://www.spotrac.com/nba/tools/compare-players/">Financial Player Comparison</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<!-- end:submenu-lifestyle -->
+</li>
+<!---MLB--->
+<li class="cat-mlb">
+<a class="clickable" href="#">MLB <i class="fa fa-caret-down"></i></a>
+<!-- start:submenu-sports -->
+<div class="subnav-container" style="display:none">
+<ul class="subnav-menu">
+<li class="current">
+<a href="https://www.spotrac.com/mlb/payroll/">Team Payrolls</a>
+<div class="subnav-posts">
+<!-- start:mlb teams -->
+<ul class="menu-list" style="width:20%;">
+<li><a href="https://www.spotrac.com/mlb/arizona-diamondbacks//payroll">Arizona Diamondbacks</a></li>
+<li><a href="https://www.spotrac.com/mlb/atlanta-braves//payroll">Atlanta Braves</a></li>
+<li><a href="https://www.spotrac.com/mlb/baltimore-orioles//payroll">Baltimore Orioles</a></li>
+<li><a href="https://www.spotrac.com/mlb/boston-red-sox//payroll">Boston Red Sox</a></li>
+<li><a href="https://www.spotrac.com/mlb/chicago-cubs//payroll">Chicago Cubs</a></li>
+<li><a href="https://www.spotrac.com/mlb/chicago-white-sox//payroll">Chicago White Sox</a></li>
+<li><a href="https://www.spotrac.com/mlb/cincinnati-reds//payroll">Cincinnati Reds</a></li>
+<li><a href="https://www.spotrac.com/mlb/cleveland-guardians//payroll">Cleveland Guardians</a></li>
+<li><a href="https://www.spotrac.com/mlb/colorado-rockies//payroll">Colorado Rockies</a></li>
+<li><a href="https://www.spotrac.com/mlb/detroit-tigers//payroll">Detroit Tigers</a></li>
+</ul>
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/mlb/houston-astros//payroll">Houston Astros</a></li>
+<li><a href="https://www.spotrac.com/mlb/kansas-city-royals//payroll">Kansas City Royals</a></li>
+<li><a href="https://www.spotrac.com/mlb/los-angeles-angels//payroll">Los Angeles Angels</a></li>
+<li><a href="https://www.spotrac.com/mlb/los-angeles-dodgers//payroll">Los Angeles Dodgers</a></li>
+<li><a href="https://www.spotrac.com/mlb/miami-marlins//payroll">Miami Marlins</a></li>
+<li><a href="https://www.spotrac.com/mlb/milwaukee-brewers//payroll">Milwaukee Brewers</a></li>
+<li><a href="https://www.spotrac.com/mlb/minnesota-twins//payroll">Minnesota Twins</a></li>
+<li><a href="https://www.spotrac.com/mlb/new-york-mets//payroll">New York Mets</a></li>
+<li><a href="https://www.spotrac.com/mlb/new-york-yankees//payroll">New York Yankees</a></li>
+<li><a href="https://www.spotrac.com/mlb/oakland-athletics//payroll">Oakland Athletics</a></li>
+</ul>
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/mlb/philadelphia-phillies//payroll">Philadelphia Phillies</a></li>
+<li><a href="https://www.spotrac.com/mlb/pittsburgh-pirates//payroll">Pittsburgh Pirates</a></li>
+<li><a href="https://www.spotrac.com/mlb/san-diego-padres//payroll">San Diego Padres</a></li>
+<li><a href="https://www.spotrac.com/mlb/san-francisco-giants//payroll">San Francisco Giants</a></li>
+<li><a href="https://www.spotrac.com/mlb/seattle-mariners//payroll">Seattle Mariners</a></li>
+<li><a href="https://www.spotrac.com/mlb/st-louis-cardinals//payroll">St. Louis Cardinals</a></li>
+<li><a href="https://www.spotrac.com/mlb/tampa-bay-rays//payroll">Tampa Bay Rays</a></li>
+<li><a href="https://www.spotrac.com/mlb/texas-rangers//payroll">Texas Rangers</a></li>
+<li><a href="https://www.spotrac.com/mlb/toronto-blue-jays//payroll">Toronto Blue Jays</a></li>
+<li><a href="https://www.spotrac.com/mlb/washington-nationals//payroll">Washington Nationals</a></li>
+</ul>
+<ul class="menu-list">
+</ul>
+<!-- end:MLB teams -->
+</div>
+</li>
+<li>
+<a href="https://www.spotrac.com/mlb/positional/">Positional Payrolls</a>
+<div class="subnav-posts">
+<!-- start:mlb positions -->
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/mlb/positional/catcher/">Catcher</a></li>
+<li><a href="https://www.spotrac.com/mlb/positional/infield/">Infielders</a></li>
+<li><a href="https://www.spotrac.com/mlb/positional/1st-base/">1st Base</a></li>
+<li><a href="https://www.spotrac.com/mlb/positional/2nd-base/">2nd Base</a></li>
+<li><a href="https://www.spotrac.com/mlb/positional/3rd-base/">3rd Base</a></li>
+<li><a href="https://www.spotrac.com/mlb/positional/shortstop/">Shortstop</a></li>
+<li><a href="https://www.spotrac.com/mlb/positional/outfield/">Outfielders</a></li>
+<li><a href="https://www.spotrac.com/mlb/positional/right-field/">Right Field</a></li>
+<li><a href="https://www.spotrac.com/mlb/positional/center-field/">Center Field</a></li>
+<li><a href="https://www.spotrac.com/mlb/positional/left-field/">Left Field</a></li>
+</ul>
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/mlb/positional/designated-hitter/">Designated Hitter</a></li>
+<li><a href="https://www.spotrac.com/mlb/positional/pitching/">Pitchers</a></li>
+<li><a href="https://www.spotrac.com/mlb/positional/starting-pitcher/">Starting Pitcher</a></li>
+<li><a href="https://www.spotrac.com/mlb/positional/relief-pitcher/">Relief Pitcher</a></li>
+<li><a href="https://www.spotrac.com/mlb/positional/closer/">Closer</a></li>
+</ul>
+<!-- end:mlb positions -->
+</div>
+</li>
+<li>
+<a href="https://www.spotrac.com/mlb/contracts/">Contracts</a>
+<div class="subnav-posts">
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/mlb/contracts/">Contracts By Team</a></li>
+<li><a href="https://www.spotrac.com/mlb/contracts/1st-base//">Contracts By Position</a></li>
+<li><a href="https://www.spotrac.com/mlb/college/">Contracts by College</a></li>
+<li><a href="https://www.spotrac.com/mlb/contracts/sort-age//">Contracts by Age</a></li>
+<li><a href="https://www.spotrac.com/mlb/free-agents/">Expiring Contracts</a></li>
+</ul>
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/mlb/contracts/sort-value/">Largest Active</a></li>
+<li><a href="https://www.spotrac.com/mlb/contracts/sort-length/">Longest Active</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="https://www.spotrac.com/mlb/rankings/">Salary Rankings</a>
+<div class="subnav-posts">
+<!-- start:NFL Rankings -->
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/mlb/rankings/">Top Payroll Salaries</a></li>
+<li><a href="https://www.spotrac.com/mlb/rankings/base/">Top Base Salaries</a></li>
+<li><a href="https://www.spotrac.com/mlb/rankings/average/">Average Salaries</a></li>
+<li><a href="https://www.spotrac.com/mlb/rankings/cash//">Annual Cash Earnings</a></li>
+<li><a href="https://www.spotrac.com/mlb/rankings/signing-bonus/">Top Signing Bonuses</a></li>
+<li><a href="https://www.spotrac.com/mlb/rankings/earnings/">Career Earnings</a></li>
+</ul>
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/mlb/rankings/cap-hit/atlanta-braves/">Salaries by Team</a></li>
+<li><a href="https://www.spotrac.com/mlb/rankings/cap-hit/1st-base//">Salaries by Position</a></li>
+<li><a href="https://www.spotrac.com/mlb/rankings/cap-hit//">Salaries by Season</a></li>
+</ul>
+<!-- end:NFL rankings -->
+</div>
+</li>
+<li>
+<a href="#">Trackers &amp; Tools</a>
+<div class="subnav-posts">
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/mlb/payroll/">Team Payroll Tracker</a></li>
+<li><a href="https://www.spotrac.com/mlb/tax/">Luxury Tax Tracker</a></li>
+<li><a href="https://www.spotrac.com/mlb/free-agents/">Free Agent Tracker</a></li>
+<li><a href="https://www.spotrac.com/mlb/fines-suspensions/">Fines &amp; Suspensions</a></li>
+<li><a href="https://www.spotrac.com/mlb/disabled-list/">Injured Reserve</a></li>
+<li><a href="https://www.spotrac.com/mlb/transactions/trade/">Trade Tracker</a></li>
+<li><a href="https://www.spotrac.com/mlb/arbitration/">Arbitration Tracker</a></li>
+<li><a href="https://www.spotrac.com/mlb/option/">Option Tracker</a></li>
+<li><a href="https://www.spotrac.com/mlb/draft/">Draft Tracker</a></li>
+<li><a href="https://www.spotrac.com/mlb/schedule/">Schedule Tracker</a></li>
+</ul>
+<ul class="menu-list" style="width:50%;">
+<li><a href="https://www.spotrac.com/mlb/international/">International Signings</a></li>
+<li><a href="https://www.spotrac.com/mlb/tools/roster/">Roster/Payroll Manager</a></li>
+<li><a href="https://www.spotrac.com/mlb/tools/offseason/">Offseason Spending</a></li>
+<li><a href="https://www.spotrac.com/mlb/college/">College Tracker</a></li>
+<li><a href="https://www.spotrac.com/mlb/country/">Country Tracker</a></li>
+<li><a href="https://www.spotrac.com/mlb/depth-charts/">Depth Charts Tool</a></li>
+</ul>
+</div>
+</li>
+<li><a href="https://www.spotrac.com/mlb/valuation/">Value Rankings</a>
+<div class="subnav-posts">
+<ul class="menu-list" style="width:50%;">
+<li><a href="https://www.spotrac.com/mlb/valuation/batters/">Best Value Batters</a></li>
+<li><a href="https://www.spotrac.com/mlb/valuation/starting-pitchers//">Best Value Starting Pitchers</a></li>
+<li><a href="https://www.spotrac.com/mlb/valuation/relief-pitchers//">Best Value Relief Pitchers</a></li>
+<li><a href="#"> </a></li>
+<li><a href="https://www.spotrac.com/mlb/valuation/team/">Best Value Team</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="https://www.spotrac.com/mlb/transactions/">Transactions</a>
+<div class="subnav-posts">
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/mlb/transactions/">MLB Transactions</a></li>
+<li><a href="https://www.spotrac.com/mlb/transactions/trade/">Trade Tracker</a></li>
+<li><a href="https://www.spotrac.com/mlb/transactions/signed-free-agent/">Free Agent Signings</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="#">Premium Tools</a>
+<div class="subnav-posts">
+<ul class="menu-list" style="width:50%">
+<li><a href="https://www.spotrac.com/mlb/contracts/breakdown/">Contract Breakdowns by Year</a></li>
+<li><a href="https://www.spotrac.com/mlb/yearly/">Multi-Year Salary Tool</a></li>
+<li><a href="https://www.spotrac.com/mlb/tools/compare-teams/">Financial Team Comparison</a></li>
+<li><a href="https://www.spotrac.com/mlb/tools/compare-players/">Financial Player Comparison</a></li>
+<li><a href="https://www.spotrac.com/mlb/valuation/">Player Valuation</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<!-- end:submenu-sports -->
+</li>
+<!---NHL--->
+<li class="cat-nhl">
+<a class="clickable" href="#">NHL <i class="fa fa-caret-down"></i></a>
+<!-- start:submenu-tech -->
+<div class="subnav-container" style="display:none">
+<ul class="subnav-menu">
+<li class="current">
+<a href="https://www.spotrac.com/nhl/cap/">Team Salary Caps</a>
+<div class="subnav-posts">
+<!-- start:nhl teams -->
+<ul class="menu-list">
+<li style="width:325px"><a href="https://www.spotrac.com/nhl/anaheim-ducks/cap/">Anaheim Ducks</a></li>
+<li style="width:325px"><a href="https://www.spotrac.com/nhl/arizona-coyotes/cap/">Arizona Coyotes</a></li>
+<li style="width:325px"><a href="https://www.spotrac.com/nhl/boston-bruins/cap/">Boston Bruins</a></li>
+<li style="width:325px"><a href="https://www.spotrac.com/nhl/buffalo-sabres/cap/">Buffalo Sabres</a></li>
+<li style="width:325px"><a href="https://www.spotrac.com/nhl/calgary-flames/cap/">Calgary Flames</a></li>
+<li style="width:325px"><a href="https://www.spotrac.com/nhl/carolina-hurricanes/cap/">Carolina Hurricanes</a></li>
+<li style="width:325px"><a href="https://www.spotrac.com/nhl/chicago-blackhawks/cap/">Chicago Blackhawks</a></li>
+<li style="width:325px"><a href="https://www.spotrac.com/nhl/colorado-avalanche/cap/">Colorado Avalanche</a></li>
+<li style="width:325px"><a href="https://www.spotrac.com/nhl/columbus-blue-jackets/cap/">Columbus Blue Jackets</a></li>
+<li style="width:325px"><a href="https://www.spotrac.com/nhl/dallas-stars/cap/">Dallas Stars</a></li>
+</ul>
+<ul class="menu-list">
+<li style="width:325px"><a href="https://www.spotrac.com/nhl/detroit-red-wings/cap/">Detroit Red Wings</a></li>
+<li style="width:325px"><a href="https://www.spotrac.com/nhl/edmonton-oilers/cap/">Edmonton Oilers</a></li>
+<li style="width:325px"><a href="https://www.spotrac.com/nhl/florida-panthers/cap/">Florida Panthers</a></li>
+<li style="width:325px"><a href="https://www.spotrac.com/nhl/los-angeles-kings/cap/">Los Angeles Kings</a></li>
+<li style="width:325px"><a href="https://www.spotrac.com/nhl/minnesota-wild/cap/">Minnesota Wild</a></li>
+<li style="width:325px"><a href="https://www.spotrac.com/nhl/montreal-canadiens/cap/">Montreal Canadiens</a></li>
+<li style="width:325px"><a href="https://www.spotrac.com/nhl/nashville-predators/cap/">Nashville Predators</a></li>
+<li style="width:325px"><a href="https://www.spotrac.com/nhl/new-jersey-devils/cap/">New Jersey Devils</a></li>
+<li style="width:325px"><a href="https://www.spotrac.com/nhl/new-york-islanders/cap/">New York Islanders</a></li>
+<li style="width:325px"><a href="https://www.spotrac.com/nhl/new-york-rangers/cap/">New York Rangers</a></li>
+</ul>
+<ul class="menu-list">
+<li style="width:325px"><a href="https://www.spotrac.com/nhl/ottawa-senators/cap/">Ottawa Senators</a></li>
+<li style="width:325px"><a href="https://www.spotrac.com/nhl/philadelphia-flyers/cap/">Philadelphia Flyers</a></li>
+<li style="width:325px"><a href="https://www.spotrac.com/nhl/pittsburgh-penguins/cap/">Pittsburgh Penguins</a></li>
+<li style="width:325px"><a href="https://www.spotrac.com/nhl/san-jose-sharks/cap/">San Jose Sharks</a></li>
+<li style="width:325px"><a href="https://www.spotrac.com/nhl/seattle-kraken/cap/">Seattle Kraken</a></li>
+<li style="width:325px"><a href="https://www.spotrac.com/nhl/st-louis-blues/cap/">St Louis Blues</a></li>
+<li style="width:325px"><a href="https://www.spotrac.com/nhl/tampa-bay-lightning/cap/">Tampa Bay Lightning</a></li>
+<li style="width:325px"><a href="https://www.spotrac.com/nhl/toronto-maple-leafs/cap/">Toronto Maple Leafs</a></li>
+<li style="width:325px"><a href="https://www.spotrac.com/nhl/vancouver-canucks/cap/">Vancouver Canucks</a></li>
+<li style="width:325px"><a href="https://www.spotrac.com/nhl/vegas-golden-knights/cap/">Vegas Golden Knights</a></li>
+</ul>
+<ul class="menu-list">
+<li style="width:325px"><a href="https://www.spotrac.com/nhl/washington-capitals/cap/">Washington Capitals</a></li>
+<li style="width:325px"><a href="https://www.spotrac.com/nhl/winnipeg-jets/cap/">Winnipeg Jets</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="https://www.spotrac.com/nhl/positional//">Positional Payrolls</a>
+<div class="subnav-posts">
+<!-- start:nhl positions -->
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/nhl/positional/forward/">Forward</a></li>
+<li><a href="https://www.spotrac.com/nhl/positional/center/">Center</a></li>
+<li><a href="https://www.spotrac.com/nhl/positional/left-wing/">Left Wing</a></li>
+<li><a href="https://www.spotrac.com/nhl/positional/right-wing/">Right Wing</a></li>
+<li><a href="https://www.spotrac.com/nhl/positional/defenseman/">Defenseman</a></li>
+<li><a href="https://www.spotrac.com/nhl/positional/goaltender/">Goaltender</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="https://www.spotrac.com/nhl/contracts/">Contracts</a>
+<div class="subnav-posts">
+<!-- start:nba Contracts -->
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/nhl/contracts/anaheim-ducks/">Contracts By Team</a></li>
+<li><a href="https://www.spotrac.com/nhl/contracts/center/">Contracts By Position</a></li>
+<li><a href="https://www.spotrac.com/nhl/country/">Contracts by Country</a></li>
+<li><a href="https://www.spotrac.com/nhl/contracts/sort-free-agent-year/">Free Agent Contracts</a></li>
+<li><a href="https://www.spotrac.com/nhl/free-agents/">Expiring Contracts</a></li>
+</ul>
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/nhl/contracts/sort-value/">Largest Active</a></li>
+<li><a href="https://www.spotrac.com/nhl/contracts/sort-length/">Longest Active</a></li>
+<li><a href="https://www.spotrac.com/nhl/contracts/type-rookie/">Rookie Contracts</a></li>
+<li><a href="https://www.spotrac.com/nhl/contracts/type-veteran/">Veteran Contracts</a></li>
+</ul>
+<!-- end:nba contracts -->
+</div>
+</li>
+<li>
+<a href="https://www.spotrac.com/nhl/rankings/">Salary Rankings</a>
+<div class="subnav-posts">
+<!-- start:NFL Rankings -->
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/nhl/rankings/">Top Cap Hits</a></li>
+<li><a href="https://www.spotrac.com/nhl/rankings/base/">Top Base Salaries</a></li>
+<li><a href="https://www.spotrac.com/nhl/rankings/cash//">Top Annual Cash</a></li>
+<li><a href="https://www.spotrac.com/nhl/rankings/signing-cash/">Signing Bonuses</a></li>
+</ul>
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/nhl/rankings/base/anaheim-ducks/">Salaries by Team</a></li>
+<li><a href="https://www.spotrac.com/nhl/rankings/base/center/">Salaries by Position</a></li>
+<li><a href="https://www.spotrac.com/nhl/rankings/anaheim-ducks/">Cap Hits by Team</a></li>
+<li><a href="https://www.spotrac.com/nhl/rankings/center/">Cap Hits by Position</a></li>
+<li><a href="https://www.spotrac.com/nhl/country/">Earnings by Country</a></li>
+</ul>
+<!-- end:NFL rankings -->
+</div>
+</li>
+<li>
+<a href="https://www.spotrac.com/nhl/cap/">Trackers &amp; Tools</a>
+<div class="subnav-posts">
+<ul class="menu-list" style="width:50%;">
+<li><a href="https://www.spotrac.com/nhl/cap/">Team Cap Tracker</a></li>
+<li><a href="https://www.spotrac.com/nhl/free-agents/">Free Agent Tracker</a></li>
+<li><a href="https://www.spotrac.com/nhl/fines-suspensions/">Fines &amp; Suspensions</a></li>
+<li><a href="https://www.spotrac.com/nhl/injured-reserve/">Injured Reserve</a></li>
+<li><a href="https://www.spotrac.com/nhl/draft//">Draft Tracker</a></li>
+<li><a href="https://www.spotrac.com/nhl/transactions/trade/">Trade Tracker</a></li>
+<li><a href="https://www.spotrac.com/nhl/college/">College/Junior Team Tracker</a></li>
+<li><a href="https://www.spotrac.com/nhl/country/">Country Tracker</a></li>
+<li><a href="https://www.spotrac.com/nhl/tools/buyout-calculator/">Buyout Calculator</a></li>
+</ul>
+<ul class="menu-list">
+</ul>
+</div>
+</li>
+<li><a href="https://www.spotrac.com/nhl/valuation/">Best Values</a>
+<div class="subnav-posts">
+<ul class="menu-list" style="width:50%;">
+<li><a href="https://www.spotrac.com/nhl/valuation//">Best Value Players</a></li>
+<li><a href="#"> </a></li>
+<li><a href="https://www.spotrac.com/nhl/valuation/team/">Best Value Teams</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="https://www.spotrac.com/nhl/transactions/">Transactions</a>
+<div class="subnav-posts">
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/nhl/transactions/">NHL Transactions</a></li>
+<li><a href="https://www.spotrac.com/nhl/transactions/trade/">Trade Tracker</a></li>
+<li><a href="https://www.spotrac.com/nhl/transactions/signed-free-agent/">Free Agent Signings</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="#">Premium Tools</a>
+<div class="subnav-posts">
+<ul class="menu-list" style="width:50%">
+<li><a href="https://www.spotrac.com/nhl/contracts/breakdown/">Contract Breakdowns by Year</a></li>
+<li><a href="https://www.spotrac.com/nhl/yearly/">Multi-Year Salary Tool</a></li>
+<li><a href="https://www.spotrac.com/nhl/tools/compare-teams/">Financial Team Comparison</a></li>
+<li><a href="https://www.spotrac.com/nhl/tools/compare-players/">Financial Player Comparison</a></li>
+<li><a href="https://www.spotrac.com/nhl/tools/buyout-calculator/">Buyout Calculator</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<!-- end:submenu-tech -->
+</li>
+<!--- MLS--->
+<!---WNBA--->
+<li class="cat-wnba">
+<a class="clickable" href="#">WNBA <i class="fa fa-caret-down"></i></a>
+<!-- start:submenu-NBA -->
+<div class="subnav-container" style="display:none">
+<ul class="subnav-menu">
+<li class="current">
+<a href="https://www.spotrac.com/wnba/cap/">Team Salary Caps</a>
+<div class="subnav-posts">
+<!-- start:NBA teams -->
+<ul class="menu-list">
+<li style="width:225px;"><a href="https://www.spotrac.com/wnba/atlanta-dream/cap/">Atlanta Dream</a></li>
+<li style="width:225px;"><a href="https://www.spotrac.com/wnba/chicago-sky/cap/">Chicago Sky</a></li>
+<li style="width:225px;"><a href="https://www.spotrac.com/wnba/connecticut-sun/cap/">Connecticut Sun</a></li>
+<li style="width:225px;"><a href="https://www.spotrac.com/wnba/dallas-wings/cap/">Dallas Wings</a></li>
+<li style="width:225px;"><a href="https://www.spotrac.com/wnba/indiana-fever/cap/">Indiana Fever</a></li>
+<li style="width:225px;"><a href="https://www.spotrac.com/wnba/las-vegas-aces/cap/">Las Vegas Aces</a></li>
+<li style="width:225px;"><a href="https://www.spotrac.com/wnba/los-angeles-sparks/cap/">Los Angeles Sparks</a></li>
+<li style="width:225px;"><a href="https://www.spotrac.com/wnba/minnesota-lynx/cap/">Minnesota Lynx</a></li>
+<li style="width:225px;"><a href="https://www.spotrac.com/wnba/new-york-liberty/cap/">New York Liberty</a></li>
+</ul>
+<ul class="menu-list">
+<li style="width:225px;"><a href="https://www.spotrac.com/wnba/phoenix-mercury/cap/">Phoenix Mercury</a></li>
+<li style="width:225px;"><a href="https://www.spotrac.com/wnba/seattle-storm/cap/">Seattle Storm</a></li>
+<li style="width:225px;"><a href="https://www.spotrac.com/wnba/washington-mystics/cap/">Washington Mystics</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="https://www.spotrac.com/wnba/positional/">Positional Payrolls</a>
+<div class="subnav-posts">
+<!-- start:NBA positions -->
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/wnba/positional/guard/">Guard</a></li>
+<li><a href="https://www.spotrac.com/wnba/positional/forward/">Forward</a></li>
+<li><a href="https://www.spotrac.com/wnba/positional/center/">Center</a></li>
+</ul>
+<!-- end:NBA positions -->
+</div>
+</li>
+<li>
+<a href="https://www.spotrac.com/wnba/contracts/">Contracts</a>
+<div class="subnav-posts">
+<!-- start:nba Contracts -->
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/wnba/contracts/">Contracts By Team</a></li>
+<li><a href="https://www.spotrac.com/wnba/contracts/point-guard//">Contracts By Position</a></li>
+<li><a href="https://www.spotrac.com/wnba/draft/">Contracts by Draft</a></li>
+<li><a href="https://www.spotrac.com/wnba/free-agents/">Expiring Contracts</a></li>
+</ul>
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/wnba/contracts/sort-value/">Largest Active</a></li>
+<li><a href="https://www.spotrac.com/wnba/contracts/sort-length/">Longest Active</a></li>
+</ul>
+<!-- end:nba contracts -->
+</div>
+</li>
+<li>
+<a href="https://www.spotrac.com/wnba/rankings/">Salary Rankings</a>
+<div class="subnav-posts">
+<!-- start:NFL Rankings -->
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/wnba/rankings/">Top Cap Hits</a></li>
+<li><a href="https://www.spotrac.com/wnba/rankings/base/">Top Base Salaries</a></li>
+<li><a href="https://www.spotrac.com/wnba/rankings/average/">Average Salaries</a></li>
+<li><a href="https://www.spotrac.com/wnba/rankings/dead-money/">Dead Cap</a></li>
+<li><a href="https://www.spotrac.com/wnba/rankings/earnings/">Career Earnings</a></li>
+</ul>
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/wnba/rankings/base/atlanta-dream/">Salaries by Team</a></li>
+<li><a href="https://www.spotrac.com/wnba/rankings/base/point-guard/">Salaries by Position</a></li>
+<li><a href="https://www.spotrac.com/wnba/rankings/atlanta-hawks/">Cap Hits by Team</a></li>
+<li><a href="https://www.spotrac.com/wnba/rankings/point-guard/">Cap Hits by Position</a></li>
+</ul>
+<!-- end:NFL rankings -->
+</div>
+</li>
+<li>
+<a href="#">Trackers &amp; Tools</a>
+<div class="subnav-posts">
+<ul class="menu-list" style="width:35%;">
+<li><a href="https://www.spotrac.com/wnba/cap/">Team Salary Cap Tracker</a></li>
+<li><a href="https://www.spotrac.com/wnba/free-agents/">Free Agent Tracker</a></li>
+<li><a href="https://www.spotrac.com/nba/transactions/trade/">Trade Tracker</a></li>
+</ul>
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/wnba/draft/">Draft Tracker</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="https://www.spotrac.com/wnba/transactions/">Transactions</a>
+<div class="subnav-posts">
+<ul class="menu-list">
+<li><a href="https://www.spotrac.com/wnba/transactions/">NBA Transactions</a></li>
+<li><a href="https://www.spotrac.com/wnba/transactions/trade/">Trade Tracker</a></li>
+<li><a href="https://www.spotrac.com/wnba/transactions/signed-free-agent/">Free Agent Signings</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<!-- end:submenu-lifestyle -->
+</li>
+<!--- PGA--->
+<li class="cat-pga">
+<a class="clickable" href="#">Golf <i class="fa fa-caret-down"></i></a>
+<div class="dropnav-container">
+<ul class="dropnav-menu">
+<li><a href="https://www.spotrac.com/pga/">PGA</a></li>
+<li><a href="https://www.spotrac.com/lpga/">LPGA</a></li>
+</ul>
+</div>
+</li>
+<!--- SOCCER--->
+<li class="cat-epl">
+<a class="clickable" href="#">Soccer <i class="fa fa-caret-down"></i></a>
+<div class="dropnav-container">
+<ul class="dropnav-menu">
+<li><a href="https://www.spotrac.com/epl/">EPL</a></li>
+<li><a href="https://www.spotrac.com/mls/">MLS</a></li>
+<li><a href="https://www.spotrac.com/nwsl/">NWSL</a></li>
+</ul>
+</div>
+<!-- start:submenu-tech -->
+<!-- end:submenu-tech -->
+</li>
+<!--- RACING--->
+<li class="cat-formula1">
+<a class="clickable" href="#">Racing <i class="fa fa-caret-down"></i></a>
+<div class="dropnav-container">
+<ul class="dropnav-menu">
+<li><a href="https://www.spotrac.com/nascar/">NASCAR</a></li>
+<li><a href="https://www.spotrac.com/formula1/">Formula 1</a></li>
+</ul>
+</div>
+</li>
+<!--- TENNIS--->
+<li class="cat-atp">
+<a href="https://www.spotrac.com/atp/">Tennis <i class="fa fa-caret-down"></i></a>
+<div class="dropnav-container" style="top:100%;width:auto;">
+<ul class="dropnav-menu">
+<li><a href="https://www.spotrac.com/atp/">ATP</a></li>
+<li><a href="https://www.spotrac.com/wta/">WTA</a></li>
+</ul>
+</div>
+</li>
+<!--- USFL--->
+<li class="cat-aaf">
+<a class="" href="https://www.spotrac.com/usfl/">USFL</a>
+</li>
+<!--- ESPORTS --->
+<li class="cat-extra">
+<a class="clickable" href="https://www.spotrac.com/esports/">OTHER <i class="fa fa-caret-down"></i></a>
+<div class="dropnav-container">
+<ul class="dropnav-menu">
+<li><a href="https://www.spotrac.com/phf/">PHF</a></li>
+<li><a href="https://www.spotrac.com/ote/">Overtime Elite</a></li>
+<li><a href="https://www.spotrac.com/nbag/">NBAG Ignite</a></li>
+</ul>
+</div>
+</li>
+<li class="cat-extra">
+<a href="#">More <i class="fa fa-caret-down"></i></a>
+<div class="dropnav-container">
+<ul class="dropnav-menu">
+<li><a href="https://www.spotrac.com/radio/">Spotrac Radio Podcast</a></li>
+<li><a href="https://www.spotrac.com/research/">Research &amp; News</a></li>
+<li><a href="https://www.spotrac.com/spots/">Quick Spots</a></li>
+</ul>
+</div>
+</li>
+<li class="cat-extra">
+<a class="gold" href="https://www.spotrac.com/premium/">PREMIUM <i class="fa fa-caret-down"></i></a>
+<div class="dropnav-container">
+<ul class="dropnav-menu">
+<li><a href="https://www.spotrac.com/signin/?redirect=nba/milwaukee-bucks/giannis-antetokounmpo-13328">Sign In</a></li>
+<li><a href="https://www.spotrac.com/register/">Register</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</nav>
+<!-- end:menu -->
+</div>
+<!-- end:container -->
+</div>
+<!-- end:header-navigation -->
+</header>
+<!-- end:page header -->
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal privacy fade" id="cookies" role="dialog" tabindex="-1">
+<div class="modal-dialog" role="document" style="width: 95%">
+<div class="modal-content">
+<div class="modal-header">
+<button class="pull-right btn btn-secondary" data-dismiss="modal" type="button">Close</button>
+<h5 class="modal-title" id="exampleModalLabel">Cookie Settings</h5>
+</div>
+<div class="modal-body privacycontainer">
+<div class="privacytab">
+<button class="tablinks" id="defaultOpen" onclick="openCity(event, 'privacy')">Your Privacy <span class="pull-right">»</span></button>
+<button class="tablinks" onclick="openCity(event, 'necessary')">Necessary Cookies <span class="pull-right">»</span></button>
+<button class="tablinks" onclick="openCity(event, 'traffic')">Traffic &amp; Performance <span class="pull-right">»</span></button>
+<button class="tablinks" onclick="openCity(event, 'marketing')">Marketing &amp; Advertising <span class="pull-right">»</span></button>
+<button class="tablinks" onclick="openCity(event, 'policy')">Privacy Policy <span class="pull-right">»</span></button>
+</div>
+<div class="tabcontent" id="privacy">
+<h3>Your Privacy</h3>
+<p>When you visit any web site, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences or your device and is mostly used to make the site work as you expect it to. The information does not usually directly identify you, but it can give you a more personalised web experience. Because we respect your right to privacy, you can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. However, blocking some types of cookies may impact your experience of the site and the services we are able to offer.</p>
+</div>
+<div class="tabcontent" id="necessary">
+<h3>Necessary Cookies</h3>
+<p>These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work.</p>
+</div>
+<div class="tabcontent" id="traffic">
+<h3>Traffic &amp; Performance</h3>
+<p>These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance.</p>
+</div>
+<div class="tabcontent" id="marketing">
+<h3>Marketing &amp; Advertising</h3>
+<p>These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising. Also, by disabling these cookies you will also disable banner ads served by Google Adsense on this website..</p>
+</div>
+<div class="tabcontent" id="policy">
+<h3>Privacy Policy</h3>
+<p>For more information about these items, view our complete privacy policy.<br/><br/><a href="https://www.spotrac.com/privacy/" target="_blank">Read More</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="privacypop">
+<script>
+
+$(document).ready(function(){
+    $(".cat-epl .dropnav-menu").css({'width':($(".cat-epl .clickable").width()+'px')});
+    $(".cat-formula1 .dropnav-menu").css({'width':($(".cat-formula1 .clickable").width()+'px')});
+    $(".cat-extra .dropnav-menu").css({'width':($(".cat-extra .clickable").width()+'px')});
+});
+</script>
+<header>
+<!-- start:header-navigation-sub -->
+<div id="header-navigation-sub">
+<!-- start:container -->
+<div class="container xlarge">
+<!-- start:menu -->
+<nav class="cat-nba">
+<ul class="menu">
+<li><a href="https://www.spotrac.com/nba/">NBA Teams</a></li>
+<li><a href="https://www.spotrac.com/nba/cap/">Cap Tracker</a></li>
+<li><a href="https://www.spotrac.com/nba/positional/">Positional Spending</a></li>
+<li><a href="https://www.spotrac.com/nba/contracts/">Contracts</a></li>
+<li class="dropit-trigger"><a href="#">Top Salaries<i class="fa fa-caret-down"></i></a>
+<ul>
+<li><a href="https://www.spotrac.com/nba/rankings/cap-hit//">Cap Hits</a></li>
+<li><a href="https://www.spotrac.com/nba/rankings/average//">Average Salaries</a></li>
+<li><a href="https://www.spotrac.com/nba/rankings/base//">Base Salaries</a></li>
+<li><a href="https://www.spotrac.com/nba/rankings/contract-value//">Contracts</a></li>
+<li><a href="https://www.spotrac.com/nba/rankings/earnings//">Career Earnings</a></li>
+</ul>
+</li>
+<li><a href="https://www.spotrac.com/nba/free-agents/">Free Agents</a></li>
+<li><a href="https://www.spotrac.com/nba/extensions/">Extensions</a></li>
+<li class="dropit-trigger"><a href="#">Tools <i class="fa fa-caret-down"></i></a>
+<ul class="dropit-submenu">
+<li><a href="https://www.spotrac.com/nba/fines-suspensions/">Fines/Suspensions</a></li>
+<li><a href="https://www.spotrac.com/nba/injured-reserve/">Injured List</a></li>
+<li><a href="https://www.spotrac.com/nba/depth-charts//">Depth Charts</a></li>
+<li><a href="https://www.spotrac.com/nba/draft/">Draft Tracker</a></li>
+<li><a href="https://www.spotrac.com/nba/option/">Options Tracker</a></li>
+<li><a href="https://www.spotrac.com/nba/rookie-scale/">Rookie Scales</a></li>
+<li><a href="https://www.spotrac.com/nba/college/">College Tracker</a></li>
+<li><a href="https://www.spotrac.com/nba/country/">Country Tracker</a></li>
+<li><a href="https://www.spotrac.com/nba/manage/">Manage Roster</a></li>
+</ul>
+</li>
+<li><a href="https://www.spotrac.com/nba/valuation/">Best Values</a></li>
+<li><a href="https://www.spotrac.com/nba/transactions/">Transactions</a></li>
+</ul>
+</nav>
+<!-- end:menu -->
+</div>
+<!-- end:container -->
+</div>
+<!-- end:header-navigation-sub -->
+</header>
+<!-- end:page header -->
+<!-- start:container -->
+<div class="container xlarge">
+<!-- start:page content -->
+<div class="xlarge clearfix" id="page-content">
+<div class="main-container">
+<!-- start:main -->
+<div class="xlarge" id="main">
+<header class="player" style="background-color:#00471B;">
+<div class="player-logo">
+<a href="https://www.spotrac.com/nba/milwaukee-bucks/cap//">
+<img alt="Giannis Antetokounmpo Contract Breakdowns" src="https://d1dglpr230r57l.cloudfront.net/headshots/nba/13328.png"/>
+<span>Bucks</span>
+</a>
+</div>
+<div class="player-details">
+<div class="player-name">
+<a href="https://www.spotrac.com/nba/milwaukee-bucks/cap//"><img src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></a> <h1>Giannis Antetokounmpo </h1> <span class="embed">Embed This<i class="fa fa-share-square-o"></i></span>
+</div>
+<div class="player-info">
+<div class="player-option medium">
+<span class="player-item position">Power Forward</span>
+<span class="player-item"><strong>Age:</strong><span class="player-infoitem"> 27-127d </span></span> <span class="player-item"><strong>Exp: </strong>8 Years</span> </div>
+<div class="player-option large">
+<span class="player-item"><strong>Drafted:</strong> <a href="https://www.spotrac.com/nba/draft/2013/">Round 1 (#15 overall), 2013</a></span> <span class="player-item"><strong>College:</strong> </span>
+<span class="player-item"><strong>Country:</strong> Greece</span>
+<span class="player-item"><strong>Agent(s):</strong> Alex Saratsis, Jeff Austin (Octagon)</span> </div>
+<div class="player-option medium select">
+<form action="https://www.spotrac.com/nba/playerViewSwitch//" method="post">
+<select id="player_select2">
+<option>- More Bucks -</option>
+<option value="26987">Allen, Grayson</option>
+<option value="13328">Antetokounmpo, Giannis</option>
+<option value="15403">Antetokounmpo, Thanasis</option>
+<option value="20226">Bembry, DeAndre'</option>
+<option value="26998">Carter, Jevon</option>
+<option value="17869">Connaughton, Pat</option>
+<option value="6154">Hill, George</option>
+<option value="6316">Holiday, Jrue</option>
+<option value="6313">Ibaka, Serge</option>
+<option value="6136">Lopez, Brook</option>
+<option value="74161">Mamukelashvili, Sandro</option>
+<option value="6489">Matthews, Wesley</option>
+<option value="10864">Middleton, Khris</option>
+<option value="70687">Nwora, Jordan</option>
+<option value="17850">Portis, Bobby</option>
+<option value="6272">Teague, Jeff</option>
+<option value="32819">Wiggington, Lindell</option>
+</select>
+</form>
+</div>
+</div>
+</div>
+</header>
+<div>
+<style>
+							.player-status { padding-left:0 !important; margin-left:0;display:table;width:100%;background:none;border:1px solid #EEE1C6;padding:0px;vertical-align: middle;margin-bottom:15px;}
+							.player-status h3 { text-shadow: 2px 1px 5px rgba(0, 0, 0, 0.25);background-color:#EEE1C6;color:#fff;font-weight:bold;text-transform:uppercase;font-size:14px;display: table-cell;width:20%;text-align: center;vertical-align: middle;padding:5px 15px}
+							.player-status .notes {color:#444;display: table-cell;vertical-align: middle;font-weight:100;line-height: 16px;padding:5px 15px;font-size:13px;}
+					
+							
+							div.injury_notes { padding-left:0 !important; margin-left:0; float: left; margin-top:25px }
+						</style>
+<div class="player-status">
+<h3 class="">Active (Knee)</h3>
+<p class="notes">Antetokounmpo is dealing with a knee injury but is likely to take the court for the Bucks</p>
+</div>
+</div>
+<nav class="navBar" id="player-subheader">
+<div class="nav-wrapper">
+<ul class="nav">
+<li class="selected"><a data-content="" href="https://www.spotrac.com/nba/milwaukee-bucks/giannis-antetokounmpo-13328/" id="contracts"> <span class="xs-hide"> Contract Details</span><span class="visible-xs">Contracts</span></a></li>
+<li><a data-content="" href="https://www.spotrac.com/nba/milwaukee-bucks/giannis-antetokounmpo-13328/cash-earnings/" id="cash-earnings">Career Earnings</a></li>
+<li><a data-content="" href="https://www.spotrac.com/nba/milwaukee-bucks/giannis-antetokounmpo-13328/transactions/" id="transactions">Transactions</a></li>
+<li><a data-content="" href="https://www.spotrac.com/nba/milwaukee-bucks/giannis-antetokounmpo-13328/fines/" id="fines">Fines<span class="xs-hide"> &amp; Suspensions</span></a></li>
+<li class="xs-hide"><a data-content="" href="https://www.spotrac.com/nba/milwaukee-bucks/giannis-antetokounmpo-13328/statistics/" id="statistics">Statistics</a></li>
+</ul>
+</div>
+</nav>
+					 
+					
+
+
+	
+	<div class="ad ad-wrapper text-center">
+<!-- BEGIN THM STANDARD CODE -->
+<div id="hjB7hA6yDMX9bMr2AyfA" style="float: left; clear: both">
+<script type="text/javascript">
+		var _avp = _avp || [];
+		_avp.push({ tagid: 'hjB7hA6yDMX9bMr2AyfA', alias: '/', type: 'banner', zid: 327, pid: 0, iframe: true, width: 728, height: 90, refresh: 400, refresh_limit: 1, secure: true });
+		</script>
+</div>
+<!-- END THM STANDARD CODE -->
+</div>
+<!-- ATHLETIC POSTS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<style>
+    
+    .slick-prev:before,
+    .slick-next:before {
+      color: #ccc;
+    }
+</style>
+<!-- start:section-module-news -->
+<section class="visible-xs module-news top-margin" style="overflow: visible; text-align: left; padding:25px 30px 0 30px;clear:both;">
+<!-- start:header -->
+<header>
+<h2 style="padding: 0;"><a href="https://theathletic.com/team/bucks/?source=spotrac&amp;pc=spotrac40off2" onclick="captureOutboundLink('https://theathletic.com/team/bucks/?source=spotrac&amp;pc=spotrac40off2'); return false;" style="color:#006699"><img alt="" src="https://cdn.theathletic.com/app/uploads/2016/01/24020756/cropped-cropped-favicon1-32x32.png" style="width: 18px; padding: 5px 0;" width="18"/> Bucks – The Athletic</a></h2>
+<span class="borderline"></span>
+</header>
+<!-- end:header -->
+<!-- start:article-container -->
+<div class="slick article-container">
+<!-- start:article -->
+<div>
+<a href="https://theathletic.com/3213459/2022/04/05/nba-power-rankings-four-squads-lead-contenders-tier-plus-gauging-success-and-final-week-focus-for-all-30-teams/?source=spotrac&amp;pc=spotrac40off2" onclick="captureOutboundLink('https://theathletic.com/3213459/2022/04/05/nba-power-rankings-four-squads-lead-contenders-tier-plus-gauging-success-and-final-week-focus-for-all-30-teams/?source=spotrac&amp;pc=spotrac40off2'); return false;" style="font-weight: bold;">
+<article class="clearfix" style="min-height: 0px; text-align: left;">
+<span class="published">
+                    Apr 05, 2022 | <span class="category">Zach Harper</span>
+</span>
+<h5>
+<img alt="NBA Power Rankings: Four teams lead contenders; Suns No. 1; plus gauging success and final-week focus for all 30 teams" src="https://cdn.theathletic.com/app/uploads/2022/04/04092541/BUCKS_4_1-1024x512.jpg" style="padding:0; padding-right:10px; float:left;" width="100"/>
+<a href="https://theathletic.com/3213459/2022/04/05/nba-power-rankings-four-squads-lead-contenders-tier-plus-gauging-success-and-final-week-focus-for-all-30-teams/?source=spotrac&amp;pc=spotrac40off2" onclick="captureOutboundLink('https://theathletic.com/3213459/2022/04/05/nba-power-rankings-four-squads-lead-contenders-tier-plus-gauging-success-and-final-week-focus-for-all-30-teams/?source=spotrac&amp;pc=spotrac40off2'); return false;" style="font-weight: bold;">NBA Power Rankings: Four teams lead contenders; Suns No. 1; plus gauging success and final-week focus for all 30 teams</a>
+</h5>
+</article>
+</a>
+</div>
+<!-- end:article -->
+<!-- start:article -->
+<div>
+<a href="https://theathletic.com/3227942/2022/04/04/lakers-face-long-road-back-per-record-tiebreakers-scouting-dukes-mark-williams-hollingers-week-that-was/?source=spotrac&amp;pc=spotrac40off2" onclick="captureOutboundLink('https://theathletic.com/3227942/2022/04/04/lakers-face-long-road-back-per-record-tiebreakers-scouting-dukes-mark-williams-hollingers-week-that-was/?source=spotrac&amp;pc=spotrac40off2'); return false;" style="font-weight: bold;">
+<article class="clearfix" style="min-height: 0px; text-align: left;">
+<span class="published">
+                    Apr 05, 2022 | <span class="category">John Hollinger</span>
+</span>
+<h5>
+<img alt="Lakers face long road back; PER record; tiebreakers; scouting Duke’s Mark Williams: Hollinger’s Week That Was" src="https://cdn.theathletic.com/app/uploads/2022/04/04122227/Lakers-2-e1649089422408-1024x512.jpg" style="padding:0; padding-right:10px; float:left;" width="100"/>
+<a href="https://theathletic.com/3227942/2022/04/04/lakers-face-long-road-back-per-record-tiebreakers-scouting-dukes-mark-williams-hollingers-week-that-was/?source=spotrac&amp;pc=spotrac40off2" onclick="captureOutboundLink('https://theathletic.com/3227942/2022/04/04/lakers-face-long-road-back-per-record-tiebreakers-scouting-dukes-mark-williams-hollingers-week-that-was/?source=spotrac&amp;pc=spotrac40off2'); return false;" style="font-weight: bold;">Lakers face long road back; PER record; tiebreakers; scouting Duke’s Mark Williams: Hollinger’s Week That Was</a>
+</h5>
+</article>
+</a>
+</div>
+<!-- end:article -->
+<!-- start:article -->
+<div>
+<a href="https://theathletic.com/3227810/2022/04/03/giannis-antetokounmpo-khris-middleton-flustered-by-mavs-defense-in-bucks-loss-they-caused-some-chaos/?source=spotrac&amp;pc=spotrac40off2" onclick="captureOutboundLink('https://theathletic.com/3227810/2022/04/03/giannis-antetokounmpo-khris-middleton-flustered-by-mavs-defense-in-bucks-loss-they-caused-some-chaos/?source=spotrac&amp;pc=spotrac40off2'); return false;" style="font-weight: bold;">
+<article class="clearfix" style="min-height: 0px; text-align: left;">
+<span class="published">
+                    Apr 05, 2022 | <span class="category">Eric Nehm</span>
+</span>
+<h5>
+<img alt="Giannis Antetokounmpo, Khris Middleton flustered by Mavs’ defense in Bucks’ loss: ‘They caused some chaos’" src="https://cdn.theathletic.com/app/uploads/2022/04/03214253/Giannis-220403-scaled-e1649036615295-1024x684.jpg" style="padding:0; padding-right:10px; float:left;" width="100"/>
+<a href="https://theathletic.com/3227810/2022/04/03/giannis-antetokounmpo-khris-middleton-flustered-by-mavs-defense-in-bucks-loss-they-caused-some-chaos/?source=spotrac&amp;pc=spotrac40off2" onclick="captureOutboundLink('https://theathletic.com/3227810/2022/04/03/giannis-antetokounmpo-khris-middleton-flustered-by-mavs-defense-in-bucks-loss-they-caused-some-chaos/?source=spotrac&amp;pc=spotrac40off2'); return false;" style="font-weight: bold;">Giannis Antetokounmpo, Khris Middleton flustered by Mavs’ defense in Bucks’ loss: ‘They caused some chaos’</a>
+</h5>
+</article>
+</a>
+</div>
+<!-- end:article -->
+<!-- start:article -->
+<div>
+<a href="https://theathletic.com/3214447/2022/04/01/what-all-nba-teams-should-look-like-right-now-plus-giannis-gets-edge-for-mvp-right-now-nba-awards-rankings/?source=spotrac&amp;pc=spotrac40off2" onclick="captureOutboundLink('https://theathletic.com/3214447/2022/04/01/what-all-nba-teams-should-look-like-right-now-plus-giannis-gets-edge-for-mvp-right-now-nba-awards-rankings/?source=spotrac&amp;pc=spotrac40off2'); return false;" style="font-weight: bold;">
+<article class="clearfix" style="min-height: 0px; text-align: left;">
+<span class="published">
+                    Apr 05, 2022 | <span class="category">Zach Harper</span>
+</span>
+<h5>
+<img alt="What All-NBA teams should look like (right now), plus Giannis gets edge for MVP (right now): NBA Awards Rankings" src="https://cdn.theathletic.com/app/uploads/2022/04/01095407/USATSI_17987881-1024x683.jpg" style="padding:0; padding-right:10px; float:left;" width="100"/>
+<a href="https://theathletic.com/3214447/2022/04/01/what-all-nba-teams-should-look-like-right-now-plus-giannis-gets-edge-for-mvp-right-now-nba-awards-rankings/?source=spotrac&amp;pc=spotrac40off2" onclick="captureOutboundLink('https://theathletic.com/3214447/2022/04/01/what-all-nba-teams-should-look-like-right-now-plus-giannis-gets-edge-for-mvp-right-now-nba-awards-rankings/?source=spotrac&amp;pc=spotrac40off2'); return false;" style="font-weight: bold;">What All-NBA teams should look like (right now), plus Giannis gets edge for MVP (right now): NBA Awards Rankings</a>
+</h5>
+</article>
+</a>
+</div>
+<!-- end:article -->
+<!-- start:article -->
+<div>
+<a href="https://theathletic.com/3223021/2022/04/01/giannis-antetokounmpo-delivers-on-both-ends-of-the-court-in-bucks-win-over-the-nets-this-man-is-doing-everything/?source=spotrac&amp;pc=spotrac40off2" onclick="captureOutboundLink('https://theathletic.com/3223021/2022/04/01/giannis-antetokounmpo-delivers-on-both-ends-of-the-court-in-bucks-win-over-the-nets-this-man-is-doing-everything/?source=spotrac&amp;pc=spotrac40off2'); return false;" style="font-weight: bold;">
+<article class="clearfix" style="min-height: 0px; text-align: left;">
+<span class="published">
+                    Apr 05, 2022 | <span class="category">Eric Nehm</span>
+</span>
+<h5>
+<img alt="Giannis Antetokounmpo delivers on both ends of the court in Bucks’ win over the Nets: ‘This man is doing everything’" src="https://cdn.theathletic.com/app/uploads/2022/04/01074920/GIannis-220401-scaled-e1648813813751-1024x671.jpg" style="padding:0; padding-right:10px; float:left;" width="100"/>
+<a href="https://theathletic.com/3223021/2022/04/01/giannis-antetokounmpo-delivers-on-both-ends-of-the-court-in-bucks-win-over-the-nets-this-man-is-doing-everything/?source=spotrac&amp;pc=spotrac40off2" onclick="captureOutboundLink('https://theathletic.com/3223021/2022/04/01/giannis-antetokounmpo-delivers-on-both-ends-of-the-court-in-bucks-win-over-the-nets-this-man-is-doing-everything/?source=spotrac&amp;pc=spotrac40off2'); return false;" style="font-weight: bold;">Giannis Antetokounmpo delivers on both ends of the court in Bucks’ win over the Nets: ‘This man is doing everything’</a>
+</h5>
+</article>
+</a>
+</div>
+<!-- end:article -->
+<!-- start:article -->
+<div>
+<a href="https://theathletic.com/3223202/2022/04/01/ben-simmons-extended-absence-giannis-record-breaking-night-and-more-thoughts-from-bucks-vs-nets/?source=spotrac&amp;pc=spotrac40off2" onclick="captureOutboundLink('https://theathletic.com/3223202/2022/04/01/ben-simmons-extended-absence-giannis-record-breaking-night-and-more-thoughts-from-bucks-vs-nets/?source=spotrac&amp;pc=spotrac40off2'); return false;" style="font-weight: bold;">
+<article class="clearfix" style="min-height: 0px; text-align: left;">
+<span class="published">
+                    Apr 05, 2022 | <span class="category">Joe Vardon</span>
+</span>
+<h5>
+<img alt="Ben Simmons’ extended absence, Giannis’ record-breaking night and more: Thoughts from Bucks vs. Nets" src="https://cdn.theathletic.com/app/uploads/2022/04/01082142/GettyImages-1239652773-scaled-e1648815795170-1024x512.jpg" style="padding:0; padding-right:10px; float:left;" width="100"/>
+<a href="https://theathletic.com/3223202/2022/04/01/ben-simmons-extended-absence-giannis-record-breaking-night-and-more-thoughts-from-bucks-vs-nets/?source=spotrac&amp;pc=spotrac40off2" onclick="captureOutboundLink('https://theathletic.com/3223202/2022/04/01/ben-simmons-extended-absence-giannis-record-breaking-night-and-more-thoughts-from-bucks-vs-nets/?source=spotrac&amp;pc=spotrac40off2'); return false;" style="font-weight: bold;">Ben Simmons’ extended absence, Giannis’ record-breaking night and more: Thoughts from Bucks vs. Nets</a>
+</h5>
+</article>
+</a>
+</div>
+<!-- end:article -->
+</div>
+<!-- end:article-container -->
+</section>
+<!-- end:section-module-news -->
+<script>
+/**
+* Function that captures a click on an outbound link in Analytics.
+* This function takes a valid URL string as an argument, and uses that URL string
+* as the event label. Setting the transport method to 'beacon' lets the hit be sent
+* using 'navigator.sendBeacon' in browser that support it.
+*/
+var captureOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {
+     'transport': 'beacon',
+     'hitCallback': function(){document.location = url;}
+   });
+}
+
+$('.slick').slick();
+
+</script>
+<!-- -->
+<div class="teams">
+<div class="cd-tabs">
+<nav class="hidden">
+<ul class="cd-tabs-navigation">
+<li><a class="selected" data-content="" href="https://www.spotrac.com/nba/milwaukee-bucks/giannis-antetokounmpo-13328/" id="contracts"><i class="fa fa-file-text-o"></i> Contracts</a></li>
+<li><a data-content="" href="https://www.spotrac.com/nba/milwaukee-bucks/giannis-antetokounmpo-13328/cash-earnings/" id="cash-earnings"><i class="fa fa-sort-amount-asc"></i> Cash Earnings</a></li>
+<li class="xs-hide"><a data-content="" href="https://www.spotrac.com/nba/milwaukee-bucks/giannis-antetokounmpo-13328/fines/" id="fines"><i class="fa fa-university"></i> Fines &amp; Suspensions</a></li>
+<li class="visible-xs"><a data-content="" href="https://www.spotrac.com/nba/milwaukee-bucks/giannis-antetokounmpo-13328/fines/" id="fines"><i class="fa fa-university"></i> Fines &amp;<br/> Suspensions</a></li>
+</ul> <!-- cd-tabs-navigation -->
+</nav>
+<ul class="cd-tabs-content">
+<!--- CONTRACTS --->
+<li class="parent selected" data-content="currentcontract" id="contracts">
+<!--- CURRENT --->
+<a href="https://www.spotrac.com/nba/manage/?year=2021&amp;team=milwaukee-bucks&amp;trade_player=13328"><button class="pull-right btn-manage btn-3 btn-3e icon-arrow-right" style="background-color:#00471B; margin-left:25px; z-index:99999"><img class="manage-logo" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/> Trade This Player </button></a>	
+ 
+
+<header class="team-header">
+<h2>Current Contract</h2>
+<span class="borderline"></span>
+</header>
+<!--CURRENT CONTRACT -->
+<p class="currentinfo">Giannis Antetokounmpo signed a 5 year / $228,200,420 contract with the Milwaukee Bucks, including  $228,200,420 guaranteed, and an annual average salary of $45,640,084. In 2021-22, Antetokounmpo will earn a base salary of $39,344,900, while carrying a cap hit of $39,344,900 and a dead cap value of $39,344,900.</p>
+<div class="legend" style="margin:5px 0px;">
+<div class="legend-item option-player"><span class="option-player square"></span>Player Option</div>
+</div>
+<table class="salaryTable salaryInfo hidden-xs">
+<tbody>
+<tr class="notop">
+<td class="contract-item" style="width: 20% !important;"><span class="playerLabel">Contract:</span><span class="playerValue">5 yr(s) / $228,200,420</span></td>
+<td class="contract-item" style="width: 20% !important;"><span class="playerLabel">Avg. Salary:</span><span class="playerValue">$45,640,084</span></td>
+<td class="contract-item" style="width: 20% !important;"><span class="playerLabel">GTD at Sign:</span><span class="playerValue">$228,200,420</span></td>
+<td class="contract-item" style="width: 20% !important;"> <span class="playerLabel">Signed Using:</span><span class="playerValue">Designated Player Veteran Extension/Bird</span></td>
+<td class="contract-item noright" style="width: 20% !important;"><span class="playerLabel">Free Agent:</span><span class="playerValue">2026 / UFA</span></td>
+</tr>
+</tbody>
+</table>
+<table class="salaryTable salaryInfo current visible-xs">
+<tbody>
+<tr class="">
+<td class="contract-item">Contract:</td>
+<td class="contract-value">5 yr(s) / $228,200,420</td>
+</tr>
+<tr class="">
+<td class="contract-item">Average Salary:</td>
+<td class="contract-value">$45,640,084</td>
+</tr>
+<tr class="">
+<td class="contract-item">Guaranteed at Signing</td>
+<td class="contract-value">$228,200,420</td>
+</tr>
+<tr class="">
+<td class="contract-item">Signed Using:</td>
+<td class="contract-value">Designated Player Veteran Extension/Bird</td>
+</tr>
+<tr class="">
+<td class="contract-item">Free Agent:</td>
+<td class="contract-value">2026 / UFA</td>
+</tr>
+</tbody>
+</table>
+<table class="salaryTable current">
+<thead>
+<tr class="salaryRow">
+<th class="header salaryYear center">Year</th>
+<th class="header salaryYear center"> </th>
+<th class="header center">Age</th>
+<th class="header salaryAmt center"><span>Base Salary</span></th>
+<th class="header salaryAmt center"><span title="">Likely Incent.</span></th>
+<th class="header salaryAmt center"><span title="">Unlikely Incent.</span></th>
+<th class="header salaryAmt center"><span title="">Trade Bonus</span></th> <th class="header salaryAmt center"><span>Cap Hit</span></th>
+<th class="xs-hide hidden-md header salaryAmt center"><span title="">Yearly Cash</span></th>
+<th class="xs-hide hidden-md header salaryAmt center"><span title="">Guaranteed</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="salaryRow">
+<td class="salaryYear center current-year"><a href="https://www.spotrac.com/redirect/team/108/cap-2021/">2021</a>-22</td>
+<td class="salaryYear center"><img alt="Contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="salaryYear center current-year"><span class="info" title="12/06/2021">27</span></td>
+<td class="center salaryAmt current-year"><span class="info">$39,344,900</span></td>
+<td class="salaryAmt current-year"><span class="info">-</span></td>
+<td class="salaryAmt current-year"><span class="info">-</span></td>
+<td class="salaryAmt current-year"><span class="info">-</span></td>
+<td class="center salaryAmt result current-year"><span class="info">$39,344,900 </span></td>
+<td class="xs-hide salaryAmt hidden-md cash current-year"><span class="info">$39,344,900</span><span>($39,344,900)</span></td>
+<td class="xs-hide salaryAmt hidden-md cash current-year"><span class="info">$39,344,900</span></td>
+</tr>
+<tr class="salaryRow">
+<td class="salaryYear center"><a href="https://www.spotrac.com/redirect/team/108/cap-2022/">2022</a>-23</td>
+<td class="salaryYear center"><img alt="Contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="salaryYear center"><span class="info" title="12/06/2022">28</span></td>
+<td class="center salaryAmt"><span class="info">$42,492,492</span></td>
+<td class="salaryAmt"><span class="info">-</span></td>
+<td class="salaryAmt"><span class="info">-</span></td>
+<td class="salaryAmt"><span class="info">-</span></td>
+<td class="center salaryAmt result"><span class="info">$42,492,492 </span></td>
+<td class="xs-hide salaryAmt hidden-md cash"><span class="info">$42,492,492</span><span>($81,837,392)</span></td>
+<td class="xs-hide salaryAmt hidden-md cash"><span class="info">$42,492,492</span></td>
+</tr>
+<tr class="salaryRow">
+<td class="salaryYear center"><a href="https://www.spotrac.com/redirect/team/108/cap-2023/">2023</a>-24</td>
+<td class="salaryYear center"><img alt="Contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="salaryYear center"><span class="info" title="12/06/2023">29</span></td>
+<td class="center salaryAmt"><span class="info">$45,640,084</span></td>
+<td class="salaryAmt"><span class="info">-</span></td>
+<td class="salaryAmt"><span class="info">-</span></td>
+<td class="salaryAmt"><span class="info">-</span></td>
+<td class="center salaryAmt result"><span class="info">$45,640,084 </span></td>
+<td class="xs-hide salaryAmt hidden-md cash"><span class="info">$45,640,084</span><span>($127,477,476)</span></td>
+<td class="xs-hide salaryAmt hidden-md cash"><span class="info">$45,640,084</span></td>
+</tr>
+<tr class="salaryRow">
+<td class="salaryYear center"><a href="https://www.spotrac.com/redirect/team/108/cap-2024/">2024</a>-25</td>
+<td class="salaryYear center"><img alt="Contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="salaryYear center"><span class="info" title="12/06/2024">30</span></td>
+<td class="center salaryAmt"><span class="info">$48,787,676</span></td>
+<td class="salaryAmt"><span class="info">-</span></td>
+<td class="salaryAmt"><span class="info">-</span></td>
+<td class="salaryAmt"><span class="info">-</span></td>
+<td class="center salaryAmt result"><span class="info">$48,787,676 </span></td>
+<td class="xs-hide salaryAmt hidden-md cash"><span class="info">$48,787,676</span><span>($176,265,152)</span></td>
+<td class="xs-hide salaryAmt hidden-md cash"><span class="info">$48,787,676</span></td>
+</tr>
+<tr class="salaryRow">
+<td class="salaryYear center"><a href="https://www.spotrac.com/redirect/team/108/cap-2025/">2025</a>-26</td>
+<td class="salaryYear center"><img alt="Contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="salaryYear center"><span class="info" title="12/06/2025">31</span></td>
+<td class="center salaryAmt option-player"><span class="info" title="Player">$51,935,268</span></td>
+<td class="salaryAmt option-player"><span class="info" title="Player">-</span></td>
+<td class="salaryAmt option-player"><span class="info" title="Player">-</span></td>
+<td class="salaryAmt option-player"><span class="info" title="Player">-</span></td>
+<td class="center salaryAmt result option-player"><span class="info" title="Player">$51,935,268 </span></td>
+<td class="xs-hide salaryAmt hidden-md cash option-player"><span class="info" title="Player">$51,935,268</span><span>($228,200,420)</span></td>
+<td class="xs-hide salaryAmt hidden-md cash option-player"><span class="info" title="Player">$51,935,268</span></td>
+</tr>
+<tr class="salaryRow">
+<td class="salaryYear center">2026</td>
+<td class="salaryYear center"><img alt="Free Agent Year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="salaryYear center">32</td>
+<td class="salaryAmt fayear noborder"><span class="info"><span class="ufa">UFA</span></span></td>
+<td class="noborder xs-hide" colspan="2" style="border-bottom:0px !important;"> </td>
+</tr>
+<tr>
+<td class="details noborder" colspan="11">
+<div class="contract-details"><span class="xs-hide"><strong>Contract Notes:</strong></span><br/><ul><li>2025 Player Option</li><li>15% Trade Kicker</li></ul></div>
+</td>
+</tr>
+<tr>
+<td class="noborder source" colspan="11">
+<div class="site-source"><strong>Sources: </strong>Spotrac  </div>
+</td>
+</tr>
+</tbody></table>
+<!-- END CURRENT CONTRACT -->
+<!--- UPCOMING --->
+<!--- CURRENT DEAD --->
+<!--- CURRENT DEAD --->
+<!--START PREVIOUS CONTRACTS-->
+<br/>
+<header class="team-header">
+<h2>Previous Contracts</h2>
+<span class="borderline"></span>
+</header>
+<div class="col-md-12" style="text-align: center; border:1px solid #999; background:#eee;margin:15px auto;padding:15px;display: table;vertical-align: middle;">
+<div class="col-xs-12 col-sm-2" style="display: table-cell;padding-right:15px;vertical-align: middle;">
+<a href="http://www.spotrac.com/premium/login/"><img alt="Spotrac Premium Tools" class="img-responsive" src="http://www.spotrac.com/images/premium-logo.png"/></a>
+</div>
+<div class="col-sm-10">
+<p style="text-align:left;display:table-cell;">To see the rest of the <em>Giannis Antetokounmpo's</em> contract breakdowns, &amp; gain access to all of Spotrac's Premium tools, <a href="https://www.spotrac.com/register/" style="color:#008EE8;font-weight:bold;">sign up today</a>. Already Subscribed?<a href="https://www.spotrac.com/signin/?redirect=nba/milwaukee-bucks/giannis-antetokounmpo-13328" style="color:#008EE8;font-weight:bold;"> Login Here</a></p>
+</div>
+</div>
+<table class="playerTable">
+<tbody>
+<tr>
+<td class="contract-type">
+<div>
+<h2>
+<span class="contract-type-logo"><img alt="Team signed with" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></span>
+<span class="contract-type-years">2017-2020</span>
+</h2>
+</div>
+</td>
+</tr>
+</tbody></table>
+<table class="salaryTable salaryInfo hidden-xs">
+<tbody>
+<tr class="notop">
+<td class="contract-item" style="width: 20% !important;"><span class="playerLabel">Contract:</span><span class="playerValue">4 yr(s) / $100,000,000</span></td>
+<td class="contract-item" style="width: 20% !important;"><span class="playerLabel">Avg. Salary:</span><span class="playerValue">$25,000,000</span></td>
+<td class="contract-item" style="width: 20% !important;"><span class="playerLabel">GTD at Sign:</span><span class="playerValue">$100,000,000</span></td> <td class="contract-item" style="width: 20% !important;"> <span class="playerLabel">Signed Using:</span><span class="playerValue">Rookie Extension/Bird</span></td>
+<td class="contract-item noright" style="width: 20% !important;"><span class="playerLabel">Free Agent:</span><span class="playerValue">2021 / UFA</span></td>
+</tr>
+</tbody>
+</table>
+<table class="salaryTable salaryInfo current visible-xs">
+<tbody>
+<tr class="">
+<td class="contract-item">Contract:</td>
+<td class="contract-value">4 yr(s) / $100,000,000</td>
+</tr>
+<tr class="">
+<td class="contract-item">Average Salary:</td>
+<td class="contract-value">$25,000,000</td>
+</tr>
+<tr class="">
+<td class="contract-item">Guaranteed at Signing</td>
+<td class="contract-value">$100,000,000</td>
+</tr>
+<tr class="">
+<td class="contract-item">Signed Using:</td>
+<td class="contract-value">Rookie Extension/Bird</td>
+</tr>
+<tr class="">
+<td class="contract-item">Free Agent:</td>
+<td class="contract-value">2021 / UFA</td>
+</tr>
+</tbody>
+</table>
+<table class="playerTable">
+<tbody>
+<tr>
+<td class="contract-type">
+<div>
+<h2>
+<span class="contract-type-logo"><img alt="Team signed with" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></span>
+<span class="contract-type-years">2013-2016<span>Entry Level</span></span>
+</h2>
+</div>
+</td>
+</tr>
+</tbody></table>
+<table class="salaryTable salaryInfo hidden-xs">
+<tbody>
+<tr class="notop">
+<td class="contract-item" style="width: 20% !important;"><span class="playerLabel">Contract:</span><span class="playerValue">4 yr(s) / $8,615,141</span></td>
+<td class="contract-item" style="width: 20% !important;"><span class="playerLabel">Avg. Salary:</span><span class="playerValue">$2,153,785</span></td>
+<td class="contract-item" style="width: 20% !important;"><span class="playerLabel">GTD at Sign:</span><span class="playerValue">$3,665,760</span></td> <td class="contract-item" style="width: 20% !important;"> <span class="playerLabel">Signed Using:</span><span class="playerValue">Entry Level/Rookie</span></td>
+<td class="contract-item noright" style="width: 20% !important;"><span class="playerLabel">Free Agent:</span><span class="playerValue">2017 / RFA</span></td>
+</tr>
+</tbody>
+</table>
+<table class="salaryTable salaryInfo current visible-xs">
+<tbody>
+<tr class="">
+<td class="contract-item">Contract:</td>
+<td class="contract-value">4 yr(s) / $8,615,141</td>
+</tr>
+<tr class="">
+<td class="contract-item">Average Salary:</td>
+<td class="contract-value">$2,153,785</td>
+</tr>
+<tr class="">
+<td class="contract-item">Guaranteed at Signing</td>
+<td class="contract-value">$3,665,760</td>
+</tr>
+<tr class="">
+<td class="contract-item">Signed Using:</td>
+<td class="contract-value">Entry Level/Rookie</td>
+</tr>
+<tr class="">
+<td class="contract-item">Free Agent:</td>
+<td class="contract-value">2017 / RFA</td>
+</tr>
+</tbody>
+</table>
+</li>
+<!--- EARNINGS --->
+<li class="parent" data-content="cashearnings" id="cash-earnings">
+<!-- Sidebar Career Earnings-->
+<section class="playerearnings">
+<!-- start:header -->
+<header class="team-header">
+<h2>Estimated Career Earnings</h2>
+<span class="borderline"></span>
+<p>A look at the calculated cash earnings for Giannis Antetokounmpo, including any upcoming years.</p>
+</header>
+<!-- end:header -->
+<table class="earningstable" style="width:100%">
+<thead>
+<tr>
+<th class="center">Year</th>
+<th class="center small">Team</th>
+<th class="center small xs-hide">Awards</th>
+<th class="right xs-hide">Salary</th>
+<th class="right xs-hide">Signing Bonus</th>
+<th class="right xs-hide">Incentive</th>
+<th class="right xs-hide">Trade Kicker</th>
+<th class="right">Total Cash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="center">2013-14</td>
+<td class="center small"><img alt="Player Cash Earnings" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/>
+</td><td class="center small xs-hide"><span style="font-size: 8px;"></span></td>
+<td class="right xs-hide">$1,792,560</td>
+<td class="right xs-hide">-</td>
+<td class="right xs-hide">-</td>
+<td class="right xs-hide">-</td>
+<td class="right result">$1,792,560</td>
+</tr>
+<tr>
+<td class="center">2014-15</td>
+<td class="center small"><img alt="Player Cash Earnings" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/>
+</td><td class="center small xs-hide"><span style="font-size: 8px;"></span></td>
+<td class="right xs-hide">$1,873,200</td>
+<td class="right xs-hide">-</td>
+<td class="right xs-hide">-</td>
+<td class="right xs-hide">-</td>
+<td class="right result">$1,873,200</td>
+</tr>
+<tr>
+<td class="center">2015-16</td>
+<td class="center small"><img alt="Player Cash Earnings" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/>
+</td><td class="center small xs-hide"><span style="font-size: 8px;"></span></td>
+<td class="right xs-hide">$1,953,960</td>
+<td class="right xs-hide">-</td>
+<td class="right xs-hide">-</td>
+<td class="right xs-hide">-</td>
+<td class="right result">$1,953,960</td>
+</tr>
+<tr>
+<td class="center">2016-17</td>
+<td class="center small"><img alt="Player Cash Earnings" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/>
+</td><td class="center small xs-hide"><span style="font-size: 8px;">ALL NBA (2ND)</span></td>
+<td class="right xs-hide">$2,995,421</td>
+<td class="right xs-hide">-</td>
+<td class="right xs-hide">-</td>
+<td class="right xs-hide">-</td>
+<td class="right result">$2,995,421</td>
+</tr>
+<tr>
+<td class="center">2017-18</td>
+<td class="center small"><img alt="Player Cash Earnings" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/>
+</td><td class="center small xs-hide"><span style="font-size: 8px;">ALL NBA (2ND)</span></td>
+<td class="right xs-hide">$22,471,910</td>
+<td class="right xs-hide">-</td>
+<td class="right xs-hide">-</td>
+<td class="right xs-hide">-</td>
+<td class="right result">$22,471,910</td>
+</tr>
+<tr>
+<td class="center">2018-19</td>
+<td class="center small"><img alt="Player Cash Earnings" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/>
+</td><td class="center small xs-hide"><span style="font-size: 8px;">ALL NBA (1ST),<br/>MVP</span></td>
+<td class="right xs-hide">$24,157,303</td>
+<td class="right xs-hide">-</td>
+<td class="right xs-hide">-</td>
+<td class="right xs-hide">-</td>
+<td class="right result">$24,157,303</td>
+</tr>
+<tr>
+<td class="center">2019-20*</td>
+<td class="center small"><img alt="Player Cash Earnings" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/>
+</td><td class="center small xs-hide"><span style="font-size: 8px;">DPOY,<br/>ALL NBA (1ST),<br/>MVP</span></td>
+<td class="right xs-hide">$24,227,528</td>
+<td class="right xs-hide">-</td>
+<td class="right xs-hide">-</td>
+<td class="right xs-hide">-</td>
+<td class="right result">$24,227,528</td>
+</tr>
+<tr>
+<td class="center">2020-21</td>
+<td class="center small"><img alt="Player Cash Earnings" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/>
+</td><td class="center small xs-hide"><span style="font-size: 8px;">ALL NBA (1ST),<br/>ALL NBA (1ST)</span></td>
+<td class="right xs-hide">$27,528,088</td>
+<td class="right xs-hide">-</td>
+<td class="right xs-hide">-</td>
+<td class="right xs-hide">-</td>
+<td class="right result">$27,528,088</td>
+</tr>
+<tr>
+<td class="center">2021-22</td>
+<td class="center small"><img alt="Player Cash Earnings" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/>
+</td><td class="center small xs-hide"><span style="font-size: 8px;"></span></td>
+<td class="right xs-hide">$39,344,900</td>
+<td class="right xs-hide">-</td>
+<td class="right xs-hide">-</td>
+<td class="right xs-hide">-</td>
+<td class="right result">$39,344,900</td>
+</tr>
+<tr>
+<td class="total" colspan="2" style="line-height:15px;">Est. Earnings<br/>(9 seasons)</td>
+<td class="total right xs-hide"></td>
+<td class="total right xs-hide">$146,344,870</td>
+<td class="total right xs-hide">-</td>
+<td class="total right xs-hide">-</td>
+<td class="total right xs-hide">-</td>
+<td class="total result right"><span class="earningsvalue"><a href="#"><strong>$146,344,870</strong></a></span></td>
+</tr>
+<tr>
+<td class="center small" style="font-style:italic;opacity:.5;">2022-23</td>
+<td class="center small" style="font-style:italic;opacity:.5;"><img alt="Player Cash Earnings" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center small xs-hide" style="font-style:italic;opacity:.5;"></td>
+<td class="right xs-hide" style="font-style:italic;opacity:.5;">$42,492,492</td>
+<td class="right xs-hide" style="font-style:italic;opacity:.5;">-</td>
+<td class="right xs-hide" style="font-style:italic;opacity:.5;">-</td>
+<td class="right xs-hide" style="font-style:italic;opacity:.5;">-</td>
+<td class="right" style="font-style:italic;opacity:.5;">$42,492,492</td>
+</tr>
+<tr>
+<td class="center small" style="font-style:italic;opacity:.5;">2023-24</td>
+<td class="center small" style="font-style:italic;opacity:.5;"><img alt="Player Cash Earnings" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center small xs-hide" style="font-style:italic;opacity:.5;"></td>
+<td class="right xs-hide" style="font-style:italic;opacity:.5;">$45,640,084</td>
+<td class="right xs-hide" style="font-style:italic;opacity:.5;">-</td>
+<td class="right xs-hide" style="font-style:italic;opacity:.5;">-</td>
+<td class="right xs-hide" style="font-style:italic;opacity:.5;">-</td>
+<td class="right" style="font-style:italic;opacity:.5;">$45,640,084</td>
+</tr>
+<tr>
+<td class="center small" style="font-style:italic;opacity:.5;">2024-25</td>
+<td class="center small" style="font-style:italic;opacity:.5;"><img alt="Player Cash Earnings" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center small xs-hide" style="font-style:italic;opacity:.5;"></td>
+<td class="right xs-hide" style="font-style:italic;opacity:.5;">$48,787,676</td>
+<td class="right xs-hide" style="font-style:italic;opacity:.5;">-</td>
+<td class="right xs-hide" style="font-style:italic;opacity:.5;">-</td>
+<td class="right xs-hide" style="font-style:italic;opacity:.5;">-</td>
+<td class="right" style="font-style:italic;opacity:.5;">$48,787,676</td>
+</tr>
+<tr>
+<td class="center small" style="font-style:italic;opacity:.5;">2025-26</td>
+<td class="center small" style="font-style:italic;opacity:.5;"><img alt="Player Cash Earnings" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center small xs-hide" style="font-style:italic;opacity:.5;"></td>
+<td class="right xs-hide" style="font-style:italic;opacity:.5;">$51,935,268</td>
+<td class="right xs-hide" style="font-style:italic;opacity:.5;">-</td>
+<td class="right xs-hide" style="font-style:italic;opacity:.5;">-</td>
+<td class="right xs-hide" style="font-style:italic;opacity:.5;">-</td>
+<td class="right" style="font-style:italic;opacity:.5;">$51,935,268</td>
+</tr>
+<tr>
+<td class="total center" colspan="2" style="font-style:italic;background:#fafafa;opacity:.5;"></td>
+<td class="total right xs-hide" style="font-style:italic;background:#fafafa;opacity:.5;"></td>
+<td class="total right xs-hide" style="font-style:italic;background:#fafafa;opacity:.5;">$335,200,390</td>
+<td class="total right xs-hide" style="font-style:italic;background:#fafafa;opacity:.5;">-</td>
+<td class="total right xs-hide" style="font-style:italic;background:#fafafa;opacity:.5;">-</td>
+<td class="total right xs-hide" style="font-style:italic;background:#fafafa;opacity:.5;">-</td>
+<td class="total right" style="font-style:italic;background:#fafafa;opacity:.5;"><span class="earningsvalue"><strong>$335,200,390</strong></span></td>
+</tr>
+<tr style="height: 50px;">
+<td class="center" colspan="3" style="background: white;"></td>
+<td class="right xs-hide" style="background: white;"></td>
+<td class="right xs-hide" style="background: white;"></td>
+<td class="right xs-hide" style="background: white;"></td>
+<td class="right xs-hide" style="background: white;"></td>
+<td class="right xs-hide" style="background: white !important;"></td>
+</tr>
+</tbody>
+<thead>
+<tr>
+<th class="center small">Seasons</th>
+<th class="center small">Team</th>
+<th class="center small xs-hide"></th>
+<th class="right xs-hide">Salary</th>
+<th class="right xs-hide">Signing Bonus</th>
+<th class="right xs-hide">Incentive</th>
+<th class="right xs-hide">Trade Kicker</th>
+<th class="right">Total Cash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="center">9 seasons</td>
+<td class="center small"><img alt="Player Cash Earnings" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center small xs-hide"><span style="font-size: 8px;"></span></td>
+<td class="right xs-hide">$146,344,870</td>
+<td class="right xs-hide">-</td>
+<td class="right xs-hide">-</td>
+<td class="right xs-hide">-</td>
+<td class="right">$146,344,870</td>
+</tr>
+</tbody>
+</table>
+<p style="font-style: italic; padding:10px 0; font-size:11px;">* earnings may include deduction of original cashed earned due to shortened season</p>
+</section>
+</li>
+<!-- TRANSACTIONS --->
+<li class="parent" data-content="playerfines" id="transactions">
+<header class="team-header">
+<h2>Transactions</h2>
+<span class="borderline"></span>
+</header>
+<div class="transitem">
+<span class="transdate">Feb 10 2022</span><span class="transdesc">Fined $2,000 for technical foul during MIL-PHX game</span>
+</div>
+<div class="transitem">
+<span class="transdate">Feb 8 2022</span><span class="transdesc">Fined $2,000 for technical foul during MIL-LAL game</span>
+</div>
+<div class="transitem">
+<span class="transdate">May 11 2021</span><span class="transdesc">Fined $2,000 for technical foul during ORL-MIL game</span>
+</div>
+<div class="transitem">
+<span class="transdate">May 5 2021</span><span class="transdesc">Fined $2,000 for technical foul during WAS-MIL game</span>
+</div>
+<div class="transitem">
+<span class="transdate">Mar 27 2021</span><span class="transdesc">Fined $2,000 for technical foul during NYK-MIL game</span>
+</div>
+<div class="transitem">
+<span class="transdate">Mar 17 2021</span><span class="transdesc">Fined $2,000 for technical foul during MIL-PHI game</span>
+</div>
+<div class="transitem">
+<span class="transdate">Mar 4 2021</span><span class="transdesc">Fined $2,000 for technical foul during MIL-MEM game</span>
+</div>
+<div class="transitem">
+<span class="transdate">Feb 23 2021</span><span class="transdesc">Fined $2,000 for technical foul during MIN-MIL game </span>
+</div>
+<div class="transitem">
+<span class="transdate">Dec 15 2020</span><span class="transdesc">Signed a 5 year $228.2 million designated maximum contract extension with Milwaukee (MIL) - includes 2025 Player Option</span>
+</div>
+<div class="transitem">
+<span class="transdate">Aug 12 2020</span><span class="transdesc">Suspended 1 game (forfeit $178,226) for headbutting Mo Wagner (WAS)</span>
+</div>
+<div class="transitem">
+<span class="transdate">Aug 11 2020</span><span class="transdesc">Fined $2,000 for ejection from MIL-WAS game</span>
+</div>
+<div class="transitem">
+<span class="transdate">Feb 20 2020</span><span class="transdesc">Fined $2,000 for technical foul during MIL-DET game</span>
+</div>
+<div class="transitem">
+<span class="transdate">Dec 25 2019</span><span class="transdesc">Fined $2,000 for technical foul during MIL-PHI game</span>
+</div>
+<div class="transitem">
+<span class="transdate">Dec 13 2019</span><span class="transdesc">Fined $2,000 for technical foul during MIL-MEM game</span>
+</div>
+<div class="transitem">
+<span class="transdate">Oct 30 2019</span><span class="transdesc">Fined $2,000 for technical foul during MIL-BOS game</span>
+</div>
+<div class="transitem">
+<span class="transdate">Mar 22 2019</span><span class="transdesc">Fined $2,000 for technical foul during MIA-MIL game</span>
+</div>
+<div class="transitem">
+<span class="transdate">Mar 7 2019</span><span class="transdesc">Fined $2,000 for technical foul during IND-MIL game</span>
+</div>
+<div class="transitem">
+<span class="transdate">Jan 13 2019</span><span class="transdesc">Fined $2,000 for technical foul during MIL-ATL game</span>
+</div>
+<div class="transitem">
+<span class="transdate">Dec 27 2018</span><span class="transdesc">Fined $2,000 for technical foul during NYK-MIL game</span>
+</div>
+<div class="transitem">
+<span class="transdate">Apr 1 2018</span><span class="transdesc">Fined $2,000 for ejection from MIL-DEN game</span>
+</div>
+<div class="transitem">
+<span class="transdate">Apr 1 2018</span><span class="transdesc">Fined $2,000 for technical foul during MIL-DEN game</span>
+</div>
+<div class="transitem">
+<span class="transdate">Mar 2 2018</span><span class="transdesc">Fined $2,000 for technical foul during IND-MIL game</span>
+</div>
+<div class="transitem">
+<span class="transdate">Nov 20 2017</span><span class="transdesc">Fined $2,000 for technical foul during WAS-MIL game</span>
+</div>
+<div class="transitem">
+<span class="transdate">Apr 15 2017</span><span class="transdesc">Fined $2,000 for technical foul during MIL-TOR game (playoff)</span>
+</div>
+<div class="transitem">
+<span class="transdate">Feb 26 2017</span><span class="transdesc">Fined $2,000 for technical foul during PHX-MIL game</span>
+</div>
+<div class="transitem">
+<span class="transdate">Feb 1 2017</span><span class="transdesc">Fined $2,000 for technical foul during MIL-UTH game</span>
+</div>
+<div class="transitem">
+<span class="transdate">Dec 16 2016</span><span class="transdesc">Fined $2,000 for technical foul during MIL-CHI game</span>
+</div>
+<div class="transitem">
+<span class="transdate">Sep 19 2016</span><span class="transdesc">Signed a 4 year $100 million rookie extension with Milwaukee (MIL)</span>
+</div>
+<div class="transitem">
+<span class="transdate">Mar 21 2016</span><span class="transdesc">Fined $2,000 for technical foul during MIL-DET game</span>
+</div>
+<div class="transitem">
+<span class="transdate">Feb 25 2016</span><span class="transdesc">Fined $2,000 for technical foul during MIL-BOS game</span>
+</div>
+<div class="transitem">
+<span class="transdate">Oct 26 2015</span><span class="transdesc">Milwaukee (MIL) exercised $3 million option for 2016-2017</span>
+</div>
+<div class="transitem">
+<span class="transdate">May 2 2015</span><span class="transdesc">Suspended 1 game (forfeit $17,763) for shoving Mike Dunleavy during CHI-MIL game (playoff); server at beginning of 2015-16 season</span>
+</div>
+<div class="transitem">
+<span class="transdate">Apr 30 2015</span><span class="transdesc">Fined $2,000 for ejection (Flagrant 2) from CHI-MIL game (playoff)</span>
+</div>
+<div class="transitem">
+<span class="transdate">Dec 13 2014</span><span class="transdesc">Fined $2,000 for technical foul during LAC-MIL game</span>
+</div>
+<div class="transitem">
+<span class="transdate">Nov 29 2014</span><span class="transdesc">Fined $2,000 for technical foul during HOU-MIL game</span>
+</div>
+<div class="transitem">
+<span class="transdate">Nov 7 2014</span><span class="transdesc">Fined $2,000 for technical foul during MIL-DET game</span>
+</div>
+<div class="transitem">
+<span class="transdate">Oct 16 2014</span><span class="transdesc">Milwaukee (MIL) exercised $1.95 million option for 2015-2016</span>
+</div>
+<div class="transitem">
+<span class="transdate">Jan 13 2014</span><span class="transdesc">Fined $2,000 for technical foul during MIL-TOR game</span>
+</div>
+<div class="transitem">
+<span class="transdate">Jan 4 2014</span><span class="transdesc">Fined $2,000 for technical foul during MIL-PHX game</span>
+</div>
+<div class="transitem">
+<span class="transdate">Jul 30 2013</span><span class="transdesc">Signed a 4 year $8.62 million contract with Milwaukee (MIL)</span>
+</div>
+<div class="transitem">
+<span class="transdate">Jun 27 2013</span><span class="transdesc">Drafted by Milwaukee (MIL): Round 1 (#15 overall)</span>
+</div>
+</li>
+<!--- FINES --->
+<li class="parent" data-content="playerfines" id="fines">
+<header class="team-header">
+<h2>Fines &amp; Suspensions</h2>
+<span class="borderline"></span>
+<p>A look at the reported fines &amp; suspensions for Giannis Antetokounmpo, and the financial implications.</p>
+</header>
+<table class="salaryTable">
+<thead>
+<tr class="salaryRow">
+<th class="header center">Date</th>
+<th class="header center">Team</th>
+<th class="header center">Category</th>
+<th class="header center">Games Susp.</th>
+<th class="header center">Forfeited</th>
+<th class="header center">Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr class="salaryRow">
+<td class="center">02/10/2022</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Technical Foul</td>
+<td class="center"></td>
+<td class="center">$2,000</td>
+<td class="center">for technical foul during MIL-PHX game</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">02/08/2022</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Technical Foul</td>
+<td class="center"></td>
+<td class="center">$2,000</td>
+<td class="center">for technical foul during MIL-LAL game</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">05/11/2021</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Technical Foul</td>
+<td class="center"></td>
+<td class="center">$2,000</td>
+<td class="center">for technical foul during ORL-MIL game</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">05/05/2021</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Technical Foul</td>
+<td class="center"></td>
+<td class="center">$2,000</td>
+<td class="center">for technical foul during WAS-MIL game</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">03/27/2021</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Technical Foul</td>
+<td class="center"></td>
+<td class="center">$2,000</td>
+<td class="center">for technical foul during NYK-MIL game</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">03/17/2021</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Technical Foul</td>
+<td class="center"></td>
+<td class="center">$2,000</td>
+<td class="center">for technical foul during MIL-PHI game</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">03/04/2021</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Technical Foul</td>
+<td class="center"></td>
+<td class="center">$2,000</td>
+<td class="center">for technical foul during MIL-MEM game</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">02/23/2021</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Technical Foul</td>
+<td class="center"></td>
+<td class="center">$2,000</td>
+<td class="center">for technical foul during MIN-MIL game </td>
+</tr>
+<tr class="salaryRow">
+<td class="center">08/12/2020</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Striking/Kicking/Kneeing</td>
+<td class="center">1 game</td>
+<td class="center">$178,226</td>
+<td class="center">for headbutting Mo Wagner (WAS)</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">08/11/2020</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Ejection</td>
+<td class="center"></td>
+<td class="center">$2,000</td>
+<td class="center">for ejection from MIL-WAS game</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">02/20/2020</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Technical Foul</td>
+<td class="center"></td>
+<td class="center">$2,000</td>
+<td class="center">for technical foul during MIL-DET game</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">12/25/2019</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Technical Foul</td>
+<td class="center"></td>
+<td class="center">$2,000</td>
+<td class="center">for technical foul during MIL-PHI game</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">12/13/2019</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Technical Foul</td>
+<td class="center"></td>
+<td class="center">$2,000</td>
+<td class="center">for technical foul during MIL-MEM game</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">10/30/2019</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Technical Foul</td>
+<td class="center"></td>
+<td class="center">$2,000</td>
+<td class="center">for technical foul during MIL-BOS game</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">03/22/2019</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Technical Foul</td>
+<td class="center"></td>
+<td class="center">$2,000</td>
+<td class="center">for technical foul during MIA-MIL game</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">03/07/2019</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Technical Foul</td>
+<td class="center"></td>
+<td class="center">$2,000</td>
+<td class="center">for technical foul during IND-MIL game</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">01/13/2019</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Technical Foul</td>
+<td class="center"></td>
+<td class="center">$2,000</td>
+<td class="center">for technical foul during MIL-ATL game</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">12/27/2018</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Technical Foul</td>
+<td class="center"></td>
+<td class="center">$2,000</td>
+<td class="center">for technical foul during NYK-MIL game</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">04/01/2018</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Technical Foul</td>
+<td class="center"></td>
+<td class="center">$2,000</td>
+<td class="center">for technical foul during MIL-DEN game</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">04/01/2018</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Ejection</td>
+<td class="center"></td>
+<td class="center">$2,000</td>
+<td class="center">for ejection from MIL-DEN game</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">03/02/2018</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Technical Foul</td>
+<td class="center"></td>
+<td class="center">$2,000</td>
+<td class="center">for technical foul during IND-MIL game</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">11/20/2017</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Technical Foul</td>
+<td class="center"></td>
+<td class="center">$2,000</td>
+<td class="center">for technical foul during WAS-MIL game</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">04/15/2017</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Technical Foul</td>
+<td class="center"></td>
+<td class="center">$2,000</td>
+<td class="center">for technical foul during MIL-TOR game (playoff)</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">02/26/2017</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Technical Foul</td>
+<td class="center"></td>
+<td class="center">$2,000</td>
+<td class="center">for technical foul during PHX-MIL game</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">02/01/2017</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Technical Foul</td>
+<td class="center"></td>
+<td class="center">$2,000</td>
+<td class="center">for technical foul during MIL-UTH game</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">12/16/2016</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Technical Foul</td>
+<td class="center"></td>
+<td class="center">$2,000</td>
+<td class="center">for technical foul during MIL-CHI game</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">03/21/2016</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Technical Foul</td>
+<td class="center"></td>
+<td class="center">$2,000</td>
+<td class="center">for technical foul during MIL-DET game</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">02/25/2016</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Technical Foul</td>
+<td class="center"></td>
+<td class="center">$2,000</td>
+<td class="center">for technical foul during MIL-BOS game</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">05/02/2015</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center"></td>
+<td class="center">1 game</td>
+<td class="center">$17,763</td>
+<td class="center">for shoving Mike Dunleavy during CHI-MIL game (playoff); server at beginning of 2015-16 season</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">04/30/2015</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Ejection</td>
+<td class="center"></td>
+<td class="center">$2,000</td>
+<td class="center">for ejection (Flagrant 2) from CHI-MIL game (playoff)</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">12/13/2014</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Technical Foul</td>
+<td class="center"></td>
+<td class="center">$2,000</td>
+<td class="center">for technical foul during LAC-MIL game</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">11/29/2014</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Technical Foul</td>
+<td class="center"></td>
+<td class="center">$2,000</td>
+<td class="center">for technical foul during HOU-MIL game</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">11/07/2014</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Technical Foul</td>
+<td class="center"></td>
+<td class="center">$2,000</td>
+<td class="center">for technical foul during MIL-DET game</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">01/13/2014</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Technical Foul</td>
+<td class="center"></td>
+<td class="center">$2,000</td>
+<td class="center">for technical foul during MIL-TOR game</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">01/04/2014</td>
+<td class="center"><img alt="Player contract details by year" src="https://d1dglpr230r57l.cloudfront.net/images/thumb/nba_mil.png"/></td>
+<td class="center">Technical Foul</td>
+<td class="center"></td>
+<td class="center">$2,000</td>
+<td class="center">for technical foul during MIL-PHX game</td>
+</tr>
+<tr class="salaryRow">
+<td class="captotal center"></td>
+<td class="captotal center"></td>
+<td class="captotal center"></td>
+<td class="captotal center">2</td>
+<td class="captotal center">$261,989</td>
+<td class="captotal center"></td>
+</tr>
+</tbody>
+</table>
+</li>
+<!--- STATISTICS --->
+<li class="parent" data-content="playerstatistics" id="statistics">
+<style>
+.selectedteam {
+background: white;
+height: 90px;
+margin-bottom: 6px;
+color: black;
+position: relative;
+}
+.bigrank{  background:#eee;border-right: #030F1F 7px solid;
+font-family: Helvetica, Arial, sans-serif;
+font-size: 60px;
+line-height: 125%;
+float: left;
+position: relative;
+width: 150px;
+overflow: auto;
+padding: 5px;
+text-align: center;
+overflow: hidden;
+height: 80px;
+}
+.schoolinfo {width: 675px;
+position: relative;
+margin: 9px 0 0 18px;
+color: black;
+float: left;}
+h2.schoolname {
+font-weight: 700;
+font-family: Helvetica, Arial, sans-serif;
+font-size: 28px;
+line-height: 1.3em;
+display: inline;
+margin:0px !important;
+}
+.trendinginfo {
+font-family: Verdana, Arial, sans-serif;
+font-size: 11px;
+line-height: 1.4em;
+margin-top:5px;}
+.trendinginfo img {
+margin-right: 5px;
+float: left;
+}
+.trendinginfo h3 {
+font-size: 14px;
+margin:0px !important;
+font-weight: 700;
+font-family: Helvetica, Arial, sans-serif;
+}
+.progress {
+background-color: #f5f5f7;
+box-shadow: none;
+height: 40px;
+overflow:hidden;margin-bottom:20px;
+border-radius:4px;
+}
+.progress-bar {
+float:left;font-size:12px;color:#fff;text-align:center;
+line-height: 40px;
+box-shadow: none;
+background-color: #4EAE47;
+border-radius: 4px;
+}
+.progress-bar span.skill-number {
+font-size: 14px;
+color: #030F1F;
+background-color: #FFF;
+border-radius: 2px;
+padding: 3px 10px;
+line-height: 20px;
+margin-right: 5px;
+width:40px;
+
+}
+.progress-bar span{
+display: inline-block;
+font-weight: 700;
+font-family: "Roboto Sondensed",sans-serif;
+text-transform: uppercase;
+margin-left: 8px;
+line-height: 28px;
+margin-top: 7px;
+
+}
+.score-overall {
+background: #00471B;text-align: center;
+padding: 15px 0;
+}
+.score-number a{
+display: block;
+font: 400 68px/72px 'Roboto Slab',serif;
+color: #fff;
+
+}
+.score-desc a{
+display: inline-block;
+color: #fff;
+text-transform: uppercase;
+border-bottom: 1px solid #fff;
+
+}
+.review h4 {
+margin-top: 15px;
+padding-bottom: 8px;
+border-bottom: 1px solid #dadada;
+font-size:18px;
+font-family: inherit;
+font-weight: 600 !important;
+line-height: 1.1;
+color: #030F1F;
+text-align:left;
+}
+.review ul {
+list-style: none;
+font-size: 13px;
+color: #777;
+padding: 0;
+}
+.review li {
+position: relative;
+margin-bottom: 3px;
+padding-left: 15px;
+text-align:left;
+list-style: none;
+font-size: 14px;
+color: #777;  font-family: 'Roboto',sans-serif;
+}
+.review li i.fa {
+position: absolute;
+font-size: 14px;
+top: 1px;
+left: 1px;
+margin-right:5px;
+color:#030F1F;}
+</style>
+<header class="team-header">
+<h2>Statistics</h2>
+<span class="borderline"></span>
+</header>
+<table class="salaryTable">
+<thead>
+<tr class="salaryRow">
+<th class="header center">Season</th>
+<th class="header center"><span class="info" title="Team">Team</span></th>
+<th class="header center"><span class="info" title="Games">Games</span></th>
+<th class="header center"><span class="info" title="Minutes Per Game">MPG</span></th>
+<th class="header center"><span class="info" title="Field Goal %">FG%</span></th>
+<th class="header center"><span class="info" title="Three Point %">3PT%</span></th>
+<th class="header center"><span class="info" title="Free Throw %">FT%</span></th>
+<th class="header center"><span class="info" title="Offensive Rebounds">ORB</span></th>
+<th class="header center"><span class="info" title="Defensive Rebounds">DRB</span></th>
+<th class="header center"><span class="info" title="Rebounds">TRB</span></th>
+<th class="header center"><span class="info" title="Assists">AST</span></th>
+<th class="header center"><span class="info" title="Steals">STL</span></th>
+<th class="header center"><span class="info" title="Blocked Shots">BLK</span></th>
+<th class="header center"><span class="info" title="Turnovers">TOV</span></th>
+<th class="header center"><span class="info" title="Points">PT</span></th>
+<th class="header center"><span class="info" title="FantasyPoints">Prod Pts</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="salaryRow">
+<td class="center">2021</td>
+<td class="center">MIL</td>
+<td class="center">64</td>
+<td class="center">33.03</td>
+<td class="center">0.554</td>
+<td class="center">0.296</td>
+<td class="center">0.721</td>
+<td class="center">2.02</td>
+<td class="center">9.63</td>
+<td class="center">11.64</td>
+<td class="center">5.75</td>
+<td class="center">1.06</td>
+<td class="center">1.41</td>
+<td class="center">3.31</td>
+<td class="center">30.08</td>
+<td class="center">54.30</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">2020</td>
+<td class="center">MIL</td>
+<td class="center">61</td>
+<td class="center">32.89</td>
+<td class="center">0.569</td>
+<td class="center">0.303</td>
+<td class="center">0.685</td>
+<td class="center">1.59</td>
+<td class="center">9.41</td>
+<td class="center">11.00</td>
+<td class="center">5.85</td>
+<td class="center">1.18</td>
+<td class="center">1.20</td>
+<td class="center">3.39</td>
+<td class="center">28.15</td>
+<td class="center">51.49</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">2019</td>
+<td class="center">MIL</td>
+<td class="center">63</td>
+<td class="center">30.41</td>
+<td class="center">0.553</td>
+<td class="center">0.304</td>
+<td class="center">0.633</td>
+<td class="center">2.22</td>
+<td class="center">11.37</td>
+<td class="center">13.59</td>
+<td class="center">5.62</td>
+<td class="center">0.97</td>
+<td class="center">1.05</td>
+<td class="center">3.65</td>
+<td class="center">29.48</td>
+<td class="center">54.59</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">2018</td>
+<td class="center">MIL</td>
+<td class="center">72</td>
+<td class="center">32.75</td>
+<td class="center">0.578</td>
+<td class="center">0.256</td>
+<td class="center">0.729</td>
+<td class="center">2.21</td>
+<td class="center">10.26</td>
+<td class="center">12.47</td>
+<td class="center">5.89</td>
+<td class="center">1.28</td>
+<td class="center">1.53</td>
+<td class="center">3.72</td>
+<td class="center">27.69</td>
+<td class="center">53.38</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">2017</td>
+<td class="center">MIL</td>
+<td class="center">75</td>
+<td class="center">36.75</td>
+<td class="center">0.529</td>
+<td class="center">0.307</td>
+<td class="center">0.760</td>
+<td class="center">2.09</td>
+<td class="center">7.96</td>
+<td class="center">10.05</td>
+<td class="center">4.80</td>
+<td class="center">1.45</td>
+<td class="center">1.41</td>
+<td class="center">2.99</td>
+<td class="center">26.85</td>
+<td class="center">48.86</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">2016</td>
+<td class="center">MIL</td>
+<td class="center">80</td>
+<td class="center">35.56</td>
+<td class="center">0.522</td>
+<td class="center">0.272</td>
+<td class="center">0.770</td>
+<td class="center">1.76</td>
+<td class="center">6.95</td>
+<td class="center">8.71</td>
+<td class="center">5.44</td>
+<td class="center">1.65</td>
+<td class="center">1.89</td>
+<td class="center">2.93</td>
+<td class="center">22.90</td>
+<td class="center">45.66</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">2015</td>
+<td class="center">MIL</td>
+<td class="center">80</td>
+<td class="center">35.29</td>
+<td class="center">0.507</td>
+<td class="center">0.255</td>
+<td class="center">0.724</td>
+<td class="center">1.40</td>
+<td class="center">6.26</td>
+<td class="center">7.66</td>
+<td class="center">4.34</td>
+<td class="center">1.18</td>
+<td class="center">1.41</td>
+<td class="center">2.60</td>
+<td class="center">16.88</td>
+<td class="center">35.15</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">2014</td>
+<td class="center">MIL</td>
+<td class="center">81</td>
+<td class="center">31.36</td>
+<td class="center">0.491</td>
+<td class="center">0.159</td>
+<td class="center">0.741</td>
+<td class="center">1.23</td>
+<td class="center">5.46</td>
+<td class="center">6.69</td>
+<td class="center">2.56</td>
+<td class="center">0.90</td>
+<td class="center">1.05</td>
+<td class="center">2.14</td>
+<td class="center">12.72</td>
+<td class="center">26.34</td>
+</tr>
+<tr class="salaryRow">
+<td class="center">2013</td>
+<td class="center">MIL</td>
+<td class="center">75</td>
+<td class="center">24.77</td>
+<td class="center">0.422</td>
+<td class="center">0.348</td>
+<td class="center">0.685</td>
+<td class="center">1.04</td>
+<td class="center">3.41</td>
+<td class="center">4.45</td>
+<td class="center">1.99</td>
+<td class="center">0.80</td>
+<td class="center">0.81</td>
+<td class="center">1.57</td>
+<td class="center">6.95</td>
+<td class="center">16.92</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td class="stats-result">Totals</td>
+<td class="stats-result"></td>
+<td class="stats-result">651</td>
+<td class="stats-result">32.59</td>
+<td class="stats-result">0.535</td>
+<td class="stats-result">0.289</td>
+<td class="stats-result">0.718</td>
+<td class="stats-result">1.71</td>
+<td class="stats-result">7.68</td>
+<td class="stats-result">9.39</td>
+<td class="stats-result">4.61</td>
+<td class="stats-result">1.17</td>
+<td class="stats-result">1.31</td>
+<td class="stats-result">2.88</td>
+<td class="stats-result">21.87</td>
+<td class="stats-result">42.14</td>
+</tr>
+</tfoot>
+</table>
+<style>
+    .stats-result {  
+        background: #ddd !important;
+        font-weight: bold !important;
+    }
+</style>
+</li>
+</ul>
+</div>
+<!-- END PLAYER RANKINGS -->
+</div>
+<!-- end:main -->
+</div>
+<!-- Start Sidebar-->
+<div id="sidebar">
+<section class="module-singles relatedlinks">
+<!-- start:header -->
+<header>
+<h2>2021 Financial Rankings  <span class="fa fa-chart"></span></h2>
+<span class="borderline"></span>
+</header>
+<div role="tabpanel">
+<style>
+        .nav-tabs li a {  font-size:13px;color:#444;}
+        .nav-tabs li.active a { font-weight:bold !important;color:#cc3;}
+        .rankings .singles-container li { padding:5px 15px !important;}
+        .rankings .singles-container li a.view {font-size:13px !important;}
+        .rankings .singles-container li span {font-size:13px;color:#222;}
+        </style>
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+<li class="active" style="padding:0; background:none;text-transform:uppercase;"><a aria-controls="cap" data-toggle="tab" href="#cap" role="tab">Cap Hit</a></li>
+<li style="padding:0; background:none;text-transform:uppercase;"><a aria-controls="cash" data-toggle="tab" href="#cash" role="tab">Cash</a></li>
+<li style="padding:0; background:none;text-transform:uppercase;"><a aria-controls="average" data-toggle="tab" href="#average" role="tab">Average</a></li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+<div class="tab-pane rankings active" id="cap" role="tabpanel">
+<ul class="singles-container">
+<li class="odd" onclick="document.location='https://www.spotrac.com/nba/rankings/power-forward/'">
+<a class="view" href="#">#1</a>
+<span>Power Forward</span>
+</li>
+<li class="odd" onclick="document.location='https://www.spotrac.com/nba/rankings/milwaukee-bucks/'">
+<a class="view" href="#">#1</a>
+<span>Milwaukee Bucks</span>
+</li>
+<li class="odd" onclick="document.location='https://www.spotrac.com/nba/rankings//'">
+<a class="view" href="#">#7</a>
+<span>NBA</span>
+</li>
+</ul>
+</div>
+<div class="rankings tab-pane" id="cash" role="tabpanel">
+<ul class="singles-container">
+<li class="odd" onclick="document.location='https://www.spotrac.com/nba/rankings/cash/power-forward/'">
+<a class="view" href="#">#1</a>
+<span>Power Forward</span>
+</li>
+<li class="odd" onclick="document.location='https://www.spotrac.com/nba/rankings/cash//'">
+<a class="view" href="#">#6</a>
+<span>NBA</span>
+</li>
+</ul>
+</div>
+<div class="rankings tab-pane" id="average" role="tabpanel">
+<ul class="singles-container">
+<li class="odd" onclick="document.location='https://www.spotrac.com/nba/rankings/average/power-forward/'">
+<a class="view" href="#">#1</a>
+<span>Power Forward</span>
+</li>
+<li class="odd" onclick="document.location='https://www.spotrac.com/nba/rankings/average//'">
+<a class="view" href="#">#1</a>
+<span>NBA</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<div class="ad">
+<div class="ad ad-wrapper text-center">
+<!-- BEGIN THM STANDARD CODE -->
+<div id="3vvD3e7aBCvduyJPR18r">
+<script type="text/javascript">
+			var _avp = _avp || [];
+			_avp.push({ tagid: '3vvD3e7aBCvduyJPR18r', alias: '/', type: 'banner', zid: 326, pid: 0, iframe: true, width: 300, height: 250, refresh: 400, refresh_limit: 1, secure: true });
+			</script>
+</div>
+<!-- END THM STANDARD CODE -->
+</div>
+<section><style type="text/css">
+.articleitem .published {margin-bottom: 0px !important;}
+.articleitem .category {font-size:11px;text-transform:uppercase;}
+</style>
+<!-- start:section-module-news -->
+<section class="module-news top-margin" style="overflow: visible; text-align: left;">
+<!-- start:header -->
+<header>
+<h2 style="padding: 0;"><a href="https://theathletic.com/team/bucks/?source=spotrac&amp;pc=spotrac40off2" onclick="captureOutboundLink('https://theathletic.com/team/bucks/?source=spotrac&amp;pc=spotrac40off2'); return false;" style="color:#006699"><img alt="" src="https://cdn.theathletic.com/app/uploads/2016/01/24020756/cropped-cropped-favicon1-32x32.png" style="width: 18px; padding: 5px 0;" width="18"/> Bucks – The Athletic</a></h2>
+<span class="borderline"></span>
+</header>
+<!-- end:header -->
+<!-- start:article-container -->
+<div class="article-container">
+<!-- start:article -->
+<article class="clearfix articleitem">
+<a href="https://theathletic.com/3213459/2022/04/05/nba-power-rankings-four-squads-lead-contenders-tier-plus-gauging-success-and-final-week-focus-for-all-30-teams/?source=spotrac&amp;pc=spotrac40off2"><img alt="NBA Power Rankings: Four teams lead contenders; Suns No. 1; plus gauging success and final-week focus for all 30 teams" src="https://cdn.theathletic.com/app/uploads/2022/04/04092541/BUCKS_4_1-1024x512.jpg" style="width:75px;padding:5px 0px;"/></a>
+<span class="published" style="display: block;border-right:0px;">Apr 05, 2022</span>
+<span class="category"><a href="https://theathletic.com/author/zach-harper/?source=spotrac&amp;pc=spotrac40off2" onclick="captureOutboundLink('https://theathletic.com/author/zach-harper/?source=spotrac&amp;pc=spotrac40off2'); return false;">Zach Harper</a></span>
+<h3><a href="https://theathletic.com/3213459/2022/04/05/nba-power-rankings-four-squads-lead-contenders-tier-plus-gauging-success-and-final-week-focus-for-all-30-teams/?source=spotrac&amp;pc=spotrac40off2" onclick="captureOutboundLink('https://theathletic.com/3213459/2022/04/05/nba-power-rankings-four-squads-lead-contenders-tier-plus-gauging-success-and-final-week-focus-for-all-30-teams/?source=spotrac&amp;pc=spotrac40off2'); return false;">NBA Power Rankings: Four teams lead contenders; Suns No. 1; plus gauging success and final-week focus for all 30 teams</a></h3>
+</article>
+<!-- end:article -->
+<!-- start:article -->
+<article class="clearfix articleitem">
+<a href="https://theathletic.com/3227942/2022/04/04/lakers-face-long-road-back-per-record-tiebreakers-scouting-dukes-mark-williams-hollingers-week-that-was/?source=spotrac&amp;pc=spotrac40off2"><img alt="Lakers face long road back; PER record; tiebreakers; scouting Duke’s Mark Williams: Hollinger’s Week That Was" src="https://cdn.theathletic.com/app/uploads/2022/04/04122227/Lakers-2-e1649089422408-1024x512.jpg" style="width:75px;padding:5px 0px;"/></a>
+<span class="published" style="display: block;border-right:0px;">Apr 04, 2022</span>
+<span class="category"><a href="https://theathletic.com/author/john-hollinger/?source=spotrac&amp;pc=spotrac40off2" onclick="captureOutboundLink('https://theathletic.com/author/john-hollinger/?source=spotrac&amp;pc=spotrac40off2'); return false;">John Hollinger</a></span>
+<h3><a href="https://theathletic.com/3227942/2022/04/04/lakers-face-long-road-back-per-record-tiebreakers-scouting-dukes-mark-williams-hollingers-week-that-was/?source=spotrac&amp;pc=spotrac40off2" onclick="captureOutboundLink('https://theathletic.com/3227942/2022/04/04/lakers-face-long-road-back-per-record-tiebreakers-scouting-dukes-mark-williams-hollingers-week-that-was/?source=spotrac&amp;pc=spotrac40off2'); return false;">Lakers face long road back; PER record; tiebreakers; scouting Duke’s Mark Williams: Hollinger’s Week That Was</a></h3>
+</article>
+<!-- end:article -->
+<!-- start:article -->
+<article class="clearfix articleitem">
+<a href="https://theathletic.com/3227810/2022/04/03/giannis-antetokounmpo-khris-middleton-flustered-by-mavs-defense-in-bucks-loss-they-caused-some-chaos/?source=spotrac&amp;pc=spotrac40off2"><img alt="Giannis Antetokounmpo, Khris Middleton flustered by Mavs’ defense in Bucks’ loss: ‘They caused some chaos’" src="https://cdn.theathletic.com/app/uploads/2022/04/03214253/Giannis-220403-scaled-e1649036615295-1024x684.jpg" style="width:75px;padding:5px 0px;"/></a>
+<span class="published" style="display: block;border-right:0px;">Apr 03, 2022</span>
+<span class="category"><a href="https://theathletic.com/author/eric-nehm/?source=spotrac&amp;pc=spotrac40off2" onclick="captureOutboundLink('https://theathletic.com/author/eric-nehm/?source=spotrac&amp;pc=spotrac40off2'); return false;">Eric Nehm</a></span>
+<h3><a href="https://theathletic.com/3227810/2022/04/03/giannis-antetokounmpo-khris-middleton-flustered-by-mavs-defense-in-bucks-loss-they-caused-some-chaos/?source=spotrac&amp;pc=spotrac40off2" onclick="captureOutboundLink('https://theathletic.com/3227810/2022/04/03/giannis-antetokounmpo-khris-middleton-flustered-by-mavs-defense-in-bucks-loss-they-caused-some-chaos/?source=spotrac&amp;pc=spotrac40off2'); return false;">Giannis Antetokounmpo, Khris Middleton flustered by Mavs’ defense in Bucks’ loss: ‘They caused some chaos’</a></h3>
+</article>
+<!-- end:article -->
+<a class="more" href="https://theathletic.com/team/bucks/?source=spotrac&amp;pc=spotrac40off2">» View More</a>
+</div>
+<!-- end:article-container -->
+</section>
+<!-- end:section-module-news -->
+<script>
+/**
+* Function that captures a click on an outbound link in Analytics.
+* This function takes a valid URL string as an argument, and uses that URL string
+* as the event label. Setting the transport method to 'beacon' lets the hit be sent
+* using 'navigator.sendBeacon' in browser that support it.
+*/
+var captureOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {
+     'transport': 'beacon',
+     'hitCallback': function(){document.location = url;}
+   });
+}
+</script>
+</section>
+</div>
+<div class="xs-hide"></div>
+<!-- Sidebar Transactions-->
+<section class="playertransactions">
+<!-- start:header -->
+<header>
+<h2>Transactions <span class="fa fa-calendar"></span></h2>
+<span class="borderline"></span>
+</header>
+<!-- end:header -->
+<div>
+<div class="transitem">
+<span class="transdate">Dec 15 2020</span><span class="transdesc">Signed a 5 year $228.2 million designated maximum contract extension with Milwaukee (MIL) - includes 2025 Player Option</span>
+</div>
+<div class="transitem">
+<span class="transdate">Aug 12 2020</span><span class="transdesc">Suspended 1 game (forfeit $178,226) for headbutting Mo Wagner (WAS)</span>
+</div>
+<div class="transitem">
+<span class="transdate">Aug 11 2020</span><span class="transdesc">Fined $2,000 for ejection from MIL-WAS game</span>
+</div>
+<div class="transitem">
+<span class="transdate">Apr 1 2018</span><span class="transdesc">Fined $2,000 for ejection from MIL-DEN game</span>
+</div>
+<div class="transitem">
+<span class="transdate">Sep 19 2016</span><span class="transdesc">Signed a 4 year $100 million rookie extension with Milwaukee (MIL)</span>
+</div>
+<div class="transitem">
+<span class="transdate">Oct 26 2015</span><span class="transdesc">Milwaukee (MIL) exercised $3 million option for 2016-2017</span>
+</div>
+<div class="transitem">
+<span class="transdate">May 2 2015</span><span class="transdesc">Suspended 1 game (forfeit $17,763) for shoving Mike Dunleavy during CHI-MIL game (playoff); server at beginning of 2015-16 season</span>
+</div>
+<div class="transitem">
+<span class="transdate">Apr 30 2015</span><span class="transdesc">Fined $2,000 for ejection (Flagrant 2) from CHI-MIL game (playoff)</span>
+</div>
+<div class="transitem">
+<span class="transdate">Oct 16 2014</span><span class="transdesc">Milwaukee (MIL) exercised $1.95 million option for 2015-2016</span>
+</div>
+<div class="transitem">
+<span class="transdate">Jul 30 2013</span><span class="transdesc">Signed a 4 year $8.62 million contract with Milwaukee (MIL)</span>
+</div>
+<div class="transitem">
+<span class="transdate">Jun 27 2013</span><span class="transdesc">Drafted by Milwaukee (MIL): Round 1 (#15overall)</span>
+</div>
+</div>
+</section>
+<!-- start:advertising -->
+<div class="ad xs-hide">
+<div class="ad ad-wrapper text-center">
+<!-- BEGIN THM STANDARD CODE -->
+<div id="3vvD3e7aBCvduyJPR18r">
+<script type="text/javascript">
+			var _avp = _avp || [];
+			_avp.push({ tagid: '3vvD3e7aBCvduyJPR18r', alias: '/', type: 'banner', zid: 326, pid: 0, iframe: true, width: 300, height: 250, refresh: 400, refresh_limit: 1, secure: true });
+			</script>
+</div>
+<!-- END THM STANDARD CODE -->
+</div>
+</div>
+<!-- end:advertising -->
+</div>
+<!-- end:sidebar -->
+</div>
+<!-- end:page content -->
+</div>
+<!-- end:page content -->
+<!-- footer:page footer -->
+<footer id="page-footer">
+<!-- start:container -->
+<div class="container xlarge">
+<nav class="hidden-xs" id="foot-menu">
+<ul class="clearfix">
+<li class="home current"><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+<li class="cat-nfl"><a href="https://www.spotrac.com/nfl/">NFL</a></li>
+<li class="cat-nba"><a href="https://www.spotrac.com/nba/">NBA</a></li>
+<li class="cat-mlb"><a href="https://www.spotrac.com/mlb/">MLB</a></li>
+<li class="cat-nhl"><a href="https://www.spotrac.com/nhl/">NHL</a></li>
+<li class="cat-mls"><a href="https://www.spotrac.com/mls/">MLS</a></li>
+<li class="cat-epl"><a href="https://www.spotrac.com/epl/">EPL</a></li>
+<li class="cat-wnba"><a href="https://www.spotrac.com/wnba/">WNBA</a></li>
+<li class="cat-extra"><a href="https://www.spotrac.com/research/">Research</a></li>
+<li class="cat-extra"><a href="https://www.spotrac.com/radio/" target="_blank">Podcast</a></li>
+<li class="options"><a class="scrollToTop" href="#">Back to top <span class="glyphicon glyphicon-chevron-up"></span></a></li>
+</ul>
+</nav>
+<!-- start:row -->
+<div class="about row">
+<!-- start:col -->
+<div class="col-sm-12 col-md-3 xs-hide">
+<h3><a href="https://www.spotrac.com/"><img alt="Spotrac" src="https://www.spotrac.com/resources/images/logo-black.png"/></a></h3>
+</div>
+<!-- end:col -->
+<!-- start:col -->
+<div class="col-sm-6 col-md-5">
+<h4>About Spotrac</h4>
+<p>Browse our online application for MLB, NBA, NFL, NHL, EPL, or MLS player contracts, salaries, transactions, and more.</p>
+<a href="https://www.twitter.com/spotrac" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+<a href="https://www.facebook.com/spotrac" target="_blank"><i class="fa fa-facebook-square fa-lg"></i></a>
+<a href="https://www.instagram.com/spotrac" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
+<a href="https://www.youtube.com/channel/UCnPyh3fHoapXM7HCgWIbxrg" target="_blank"><i class="fa fa-youtube-square fa-lg"></i></a>
+<a href="https://sportsdata.io/" target="_blank"><img alt="Sports Data Provider" src="https://sportsdata.io/assets/images/badges/sportsdataio_dark_100.png?v=1"/></a>
+</div>
+<!-- end:col -->
+<!-- start:col -->
+<div class="col-sm-6 col-md-4">
+<h4>Additional information</h4>
+<ul>
+<li><a href="https://www.spotrac.com/about/">About Spotrac</a></li>
+<li><a href="https://www.spotrac.com/media/">Media Requests</a></li>
+<li><a href="https://www.spotrac.com/advertise/">Advertise with Us</a></li>
+<li><a href="https://www.spotrac.com/contact/">Contact Us</a></li>
+<li><a href="https://www.spotrac.com/privacy/">Privacy Policy</a></li>
+<li><a href="javascript:void(0);" onclick="__tcfapi('showConsentManager')">Privacy Settings</a></li>
+<li><a href="https://www.spotrac.com/service/">Terms of Service</a></li>
+<li><a href="https://www.spotrac.com/accessibility/">Accessibility</a></li>
+<li><a href="https://policies.google.com/technologies/partner-sites" target="_blank">Google Privacy</a></li>
+</ul>
+</div>
+<!-- end:col -->
+</div>
+<!-- end:row -->
+<!-- start:row -->
+<div class="copyright row">
+<!-- start:col -->
+<div class="col-sm-6">© <a href="https://www.spotrac.com/">Spotrac</a> 2022. All rights reserved.</div>
+<!-- end:col -->
+<!-- start:col -->
+<div class="col-sm-6 text-right">Partnered with the USA TODAY Sports Media Group  |  Powered by <a href="https://mg3webworks.com">MG3 WebWorks</a>.</div>
+<!-- end:col -->
+</div>
+<div class="copyright row text-center"><p>This website is not directly or indirectly affiliated, associated, or connected in any way to Major League Baseball, the National Basketball Association, the National Football League or the National Hockey League. Use of any marks, trademarks, or logos on this website shall not constitute a sponsorship or endorsement by the trademark holder.</p></div>
+<!-- end:row -->
+</div>
+<!-- end:container -->
+</footer>
+<!-- end:page footer -->
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	 
+  ga('create', 'UA-4232275-1', 'auto');
+  ga('require', 'linkid', 'linkid.js'); 
+    ga('send', 'pageview', '/nba/player/13328/_/giannis-antetokounmpo/milwaukee-bucks/contracts');
+  	 
+</script>
+<script src="https://www.spotrac.com/resources/js/ga_social_tracking.js"></script>
+<script>
+  _ga.trackTwitter();
+  _ga.trackFacebook();//Google Analytics tracking
+
+</script>
+<script>
+$(document).ready(function(){	
+	$("select").keypress(function(event) {
+		if (event.which == 13) {
+			event.preventDefault();
+			$("form:not(#mc-embedded-subscribe-form)").submit();
+		}
+	});
+});
+</script>
+<!-- BEGIN THM ADHESION CODE -->
+<div id="adhesionlUBTTVDFixqaaWWuziZ0">
+<script type="text/javascript">
+var _avp = _avp || [];
+_avp.push({ tagid: 'adhesionlUBTTVDFixqaaWWuziZ0', alias: '/', type: 'banner', zid: 582, pid: 0, iframe: true, width: 728, height: 90, refresh: 400, refresh_limit: 1, adhesion: true, closeable: true, placement: 'bottom_center', polite: false, secure: true });
+</script>
+</div>
+<!-- END THM ADHESION CODE -->
+<!-- BEGIN THM SKIN CODE -->
+<div id="tYeui6BK135tspHTq9P9">
+<script type="text/javascript">
+var _avp = _avp || [];
+_avp.push({ tagid: 'tYeui6BK135tspHTq9P9', alias: '/', type: 'banner', zid: 1061, pid: 0, iframe: true, width: 1, height: 1, refresh: 400, refresh_limit: 1, secure: true });
+</script>
+</div>
+<!-- END THM SKIN CODE -->
+<!-- BEGIN THM OUTSTREAM CODE -->
+<div id="tBOUT8putbt9aWdlU5OU">
+<script type="text/javascript">
+var _avp = _avp || [];
+_avp.push({ tagid: 'tBOUT8putbt9aWdlU5OU', alias: '/', type: 'banner', zid: 1064, pid: 0, iframe: true, width: 1, height: 1, refresh: 400, refresh_limit: 1, secure: true });
+</script>
+</div>
+<!-- END THM OUTSTREAM CODE -->
+</div>
+<!-- end:page inner wrap -->
+<!-- Modal -->
+<div aria-labelledby="myModalLabel" class="modal fade" id="shareModal" role="dialog" tabindex="-1">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+<h4 class="modal-title">Share/Embed Player Profile</h4>
+</div>
+<div class="modal-body">
+<div style="background:#1FB0E4; color:white; display:inline; padding:5px;">iframe</div><input class="iframe-text" style="width:90%; display:inline" type="text" value='&lt;iframe src="https://www.spotrac.com/widget/player/13328/" width="610px" height="610px" frameborder="0" &gt;&lt;/iframe&gt;'/>
+<br/><br/>
+<iframe frameborder="0" height="610px" src="https://www.spotrac.com/widget/player/13328/?track=false" width="610px"></iframe>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- end:page outer wrap -->
+<!-- start:scripts -->
+<script src="https://www.spotrac.com/resources/js/bootstrap.min.js"></script>
+<script src="https://www.spotrac.com/resources/js/jquery.sidr.min.js"></script>
+<script src="https://www.spotrac.com/resources/js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script src="https://www.spotrac.com/resources/js/jquery.touchSwipe.min.js"></script>
+<script src="https://www.spotrac.com/resources/js/tabs/js/main.js"></script>
+<script src="https://www.spotrac.com/resources/js/functions.js"></script>
+<script src="https://www.spotrac.com/resources/js/bootstrap-select2.js"></script>
+<script>
+$(document).ready(function() {
+    $('#player_select2').select2();
+	
+	 $('#player_select2').on('change', function() {
+		       
+		 document.location.href = 'https://www.spotrac.com/redirect/player//'+$(this).val()+'/';
+    })
+	
+});
+
+$("form#filter select").change(function(){
+$("form#filter").submit();
+});
+
+
+$("ul#rankings-tabs li a").click(function(e){
+e.preventDefault();
+
+$("ul.ranks").hide();
+$("ul#rankings-tabs li").removeClass("selected");
+
+$(this).parent().addClass("selected");
+$("ul."+$(this).attr("data-toggle")+"").show();
+});
+
+$('span.info').tooltip();
+
+$("a.rank-graph-tab").click(function(){
+	id = $(this).attr("data-toggle");
+	
+	$("td.captotal").removeClass("captotal");
+	$(this).parents("tr").find("td").addClass("captotal");
+
+	$("div.graphs").css("visibility","hidden").hide();
+	$("div#"+id+"").css("visibility","visible").show();
+	
+	return false;
+});
+
+$(".embed").click(function(){
+	$("#shareModal").modal("show");
+});
+
+$(".iframe-text").focus(function() {
+    $(this).select();
+});
+
+</script>
+<link href="https://www.spotrac.com/resources/css/responsive-tabs.css" rel="stylesheet" type="text/css"/>
+<script src="https://www.spotrac.com/resources/js/jquery.responsiveTabs.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+	 
+if ( $(window).width() < 768 ) {
+	$("table.salaryTable").addClass("rtable");
+}
+else if ( $("div#main").width() > 663 && $("div#main").width() < 1025 ) {
+
+	$("table.salaryTable").each(function(){
+		
+		if( $("div#main").width() > 781 )
+		{
+			//$(this).addClass("rtable");
+		}
+		else if( $("div#main").width() > 663 && $("div#main").width() < 783 &&  $(this).width() > 694 )
+		{
+			$(this).addClass("rtable");
+		}
+		
+	});
+}   
+
+  $(document).ready(function () {
+      var $tabs = $('#horizontalTab');
+      $tabs.responsiveTabs({
+          rotate: false,
+          startCollapsed: 'accordion',
+          collapsible: 'accordion',
+          setHash: false
+
+      });
+
+			
+
+     
+
+		 });
+    </script>
+<!-- end:scripts -->
+</div></body>
+</html>
