@@ -14,7 +14,7 @@ def get_page(base_url, page_name, path=''):
 
 # Let's get all the players on spotrac and their personal webpages
 
-base_url = "https://www.spotrac.com/nba/contracts/sort-value/all-time/limit-2000/"
+base_url = "https://www.spotrac.com/nba/contracts/sort-value/all-time/limit-10000/"
 page_name = "all_players"
 path = "webpages"
 
@@ -33,7 +33,7 @@ for link in players:
     page_index = page_index.append(d, ignore_index=True)
 
 # Let's save the csv
-# page_index.to_csv('spotrac_index.csv', index=False)
+page_index.to_csv('spotrac_index.csv', index=False)
 
 # Read the csv
 page_index = pd.read_csv('spotrac_index.csv')
@@ -43,7 +43,10 @@ train = pd.read_csv('data_Bplayers_2000_TRAIN.csv', encoding = 'unicode_escape')
 test = pd.read_csv('data_Bplayers_2000_TEST.csv', encoding = 'unicode_escape')
 df = train.append(test)
 
+# Create an empty dataframe to store all the contracts
+player_contracts = pd.DataFrame(columns=['player_name', 'year', 'signed_using'])
 
+### LOOP HERE: WORK IN PROGRESS
 base_url = page_index['player_page'][0]
 page_name = page_index['player_name'][0].replace(' ', '_')
 path = "webpages"
@@ -52,3 +55,10 @@ get_page(base_url=base_url, page_name=page_name, path=path)
 
 page = open(os.path.join(path,page_name) + ".txt", 'rb')
 soup = BeautifulSoup(page, "html.parser")
+contracts = soup.find_all("span", class_="playerValue")
+tmp = pd.DataFrame(columns=['player_name', 'expiring', 'signed_using'])
+for i in range(0, len(contracts), 5):
+    d = {'player_name' : page_index['player_name'][0],
+         'expiring' : int(contracts[i-1].get_text()[:4]),
+         'signed_using' : contracts[i-2].get_text()}
+    tmp = tmp.append(d, ignore_index=True).sort_values('expiring', ascending=True)
