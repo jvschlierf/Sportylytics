@@ -42,36 +42,68 @@ test_basket_x = subset(test_basket, select = -Salary_Cap_Perc) # feature and tar
 test_basket_y = test_basket[, "Salary_Cap_Perc"]
 
 #training a simple k=5 model without any dimensionality reduction techniques
-model = knnreg( Salary_Cap_Perc ~ ., data=train_basket)
-model
+model_1 = knnreg( Salary_Cap_Perc ~ ., data=train_basket)
+model_1
 
 #more complex model that tries different k's
-model_knn <- train(
+model_2 <- train(
   Salary_Cap_Perc ~.,
   data = train_basket,
-  method = 'knn',)
-model_knn
+  method = 'knn')
+model_2
 
-plot(model_knn)
+plot(model_2)
+
+#next, let's try a model where (as a pre-processing step), we standardize and center our features
+model_3 <- train(
+  Salary_Cap_Perc ~.,
+  data = train_basket,
+  preProcess = c("center", "scale"),
+  method = 'knn')
+
+plot(model_3)
+
+ctrl <- trainControl(method="repeatedcv",repeats = 3)
+
+model_4 <- train(
+  Salary_Cap_Perc ~.,
+  data = train_basket,
+  trControl = ctrl,
+  preProcess = c("center", "scale"),
+  method = 'kknn',
+  tuneLength = 20)
+
+plot(model_4)
 
 #predict using different models
-predictions_5 = predict(model, newdata=test_basket_x)
-predictions_9 = predict(model_knn, newdata=test_basket_x)
+predictions_1 <- predict(model_1, newdata=test_basket_x)
+predictions_2 <- predict(model_2, newdata=test_basket_x)
+predictions_3 <- predict(model_3, newdata=test_basket_x)
+predictions_4 <- predict(model_4, newdata=test_basket_x)
 
-# RMSE for both
-RMSE_simple = sqrt(mean((test_basket_y - predictions_5)^2))
-RMSE_complex = sqrt(mean((test_basket_y - predictions_9)^2))
 
-print(c(RMSE_simple, RMSE_complex))
+# Root Mean Standard Error on Test Set
+RMSE_01 <- sqrt(mean((test_basket_y - predictions_1)^2))
+RMSE_02 <- sqrt(mean((test_basket_y - predictions_2)^2))
+RMSE_03 <- sqrt(mean((test_basket_y - predictions_3)^2))
+RMSE_04 <- sqrt(mean((test_basket_y - predictions_4)^2))
 
-cor(test_basket_y, predictions_5) ^ 2
-cor(test_basket_y, predictions_9) ^ 2
+print(c(RMSE_01, RMSE_02, RMSE_03, RMSE_04))
+
+cor(test_basket_y, predictions_1) ^ 2
+cor(test_basket_y, predictions_2) ^ 2
+cor(test_basket_y, predictions_3) ^ 2
+cor(test_basket_y, predictions_4) ^ 2
 
 #save models so we don;'t have to retrain every time
-saveRDS(model, file = "knn_simple.Rds")
-saveRDS(model_knn, file = "knn_complex.Rds")
+saveRDS(model_1, file = "knn_1.Rds")
+saveRDS(model_2, file = "knn_2.Rds")
+saveRDS(model_3, file = "knn_3.Rds")
+saveRDS(model_4, file = "knn_4.Rds")
 
 # use following code to read models
-# test <- readRDS(file = "knn_complex.Rds")
-
+model_1 <- readRDS(file = "knn_01.Rds")
+model_2 <- readRDS(file = 'knn_02.Rds')
+model_3 <- readRDS(file = 'knn_03.Rds')
+model_4 <- readRDS(file = 'knn_04.Rds')
 
