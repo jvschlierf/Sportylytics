@@ -121,23 +121,37 @@ saveRDS(svm_tuned, file = "svm_tuned.Rds")
 # svm_tuned <- readRDS(file = "svm_tuned.Rds")
 ### RMSE_tuned = 0.04249109
 
+
+
 ### 4. FEATURES SELECTION ###
 
 #Divide X and Y in train
 train_basket_x = subset(train_basket, select = -Salary_Cap_Perc) # feature and target array
 train_basket_y = train_basket[, "Salary_Cap_Perc"]
 
-#Recursive feature elimination
-svmFeatures <- rfe(train_basket_x, train_basket_y, sizes = c(5, 10, 20, 30, 40, 52),
+
+#Recursive feature elimination (using cv)
+svm_features_cv <- rfe(train_basket_x, train_basket_y, sizes = c(5, 10, 20, 30, 40, 52),
                    rfeControl = rfeControl(functions = caretFuncs, method = 'cv', number = 5), method = "svmRadial")
 
-print(svmFeatures)
-
 #Save features
-saveRDS(svmFeatures, file = "svmFeatures.Rds")
+# saveRDS(svm_features_cv, file = "svm_features_cv.Rds")
 
 #Load features
-# svmFeatures <- readRDS(file = "svmFeatures.Rds")
+svm_features_cv <- readRDS(file = "svm_features_cv.Rds")
+print(svm_features_cv)
 
-### We keep the full model
+
+#Recursive feature elimination (using bootstrap)
+svm_features_bs <- rfe(train_basket_x, train_basket_y, sizes = c(5, 10, 20, 30, 40, 52),
+                    rfeControl = rfeControl(functions = caretFuncs, number = 200), method = "svmRadial")
+
+#Save features
+saveRDS(svm_features_bs, file = "svm_features_bs.Rds")
+
+#Load features
+# svm_features_bs <- readRDS(file = "svm_features_bs.Rds")
+print(svm_features_bs)
+
+### No significant improvement, we keep the full model
 ### Best RMSE = 0.04249109
