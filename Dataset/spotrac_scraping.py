@@ -33,7 +33,7 @@ for link in players:
     page_index = page_index.append(d, ignore_index=True)
 
 # Let's save the csv
-page_index.to_csv('spotrac_index.csv', index=False)
+# page_index.to_csv('spotrac_index.csv', index=False)
 
 # Read the csv
 page_index = pd.read_csv('spotrac_index.csv')
@@ -41,7 +41,10 @@ page_index = pd.read_csv('spotrac_index.csv')
 # Load our previously scraped dataset
 train = pd.read_csv('data_Bplayers_2000_TRAIN.csv', encoding = 'unicode_escape')
 test = pd.read_csv('data_Bplayers_2000_TEST.csv', encoding = 'unicode_escape')
-df = train.append(test)
+dataset = train.append(test).reset_index(drop=True)
+
+# Keep the columns we need to match with the contracts
+df = dataset[['Player', 'season', 'Salary_Cap_Perc']]
 
 # Create an empty dataframe to store all the contracts
 player_contracts = pd.DataFrame(columns=['player_name', 'year', 'signed_using'])
