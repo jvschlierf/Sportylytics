@@ -117,6 +117,7 @@ get_player_data_pvt <- function(Nome_Giocatore, slug, tabella) {
   final_tab = merge(clean_df, stats_sal[,c("Season", "Salary")], by.x = "season", by.y = "Season")
   final_tab[,c("slug", "player")] <- NULL
   final_tab$Player = Nome_Giocatore
+  final_tab$Image_Link = html %>% html_nodes("[itemscope='image']") %>% html_attr("src") 
   final_tab$Nationality = nationality
   final_tab$US_Player = 0
   final_tab$US_Player[final_tab$Nationality %in% c('Us')] <- 1
@@ -147,6 +148,8 @@ data_giocat_totale = data.frame()
 #Start the scrape
 for (i in 1:ran){
   
+  print(i)
+  
   tryCatch({
     
     #Take per-game statistics and advanced statistics for each player
@@ -171,7 +174,7 @@ for (i in 1:ran){
     }
     
     #Merge the two dataset of per_game and advanced statistics
-    total1 <- merge(aa_1, bb_1,by=c("Player","Nationality","US_Player","season","age","tm","lg","pos","g","Salary"))
+    total1 <- merge(aa_1, bb_1,by=c("Player","Nationality","Image_Link","US_Player","season","age","tm","lg","pos","g","Salary"))
     data_giocat_totale <- rbind(data_giocat_totale, total1)
     
   }, error = function(e){})
