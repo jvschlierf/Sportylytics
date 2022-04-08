@@ -34,7 +34,7 @@ pre_treat <- function(dataset){
   dataset <- dummy_cols(dataset, select_columns = 'pos')
   
   #Let's drop columns we won't use
-  drops <- c("season","Player",'tm','lg','Salary_Cap','Salary', 'pos')
+  drops <- c("season","Player",'tm','lg','Salary_Cap','Salary', 'pos', 'Image_Link')
   dataset = dataset[ , !(names(dataset) %in% drops)]
   
   #We replace NA with 0
@@ -52,6 +52,10 @@ test_basket_y = test_basket[, "Salary_Cap_Perc"]
 
 ### 2. TUNING OF GRADIENT BOOSTING MODEL ###
 
+# randomize data
+random_index <- sample(1:nrow(train_basket), nrow(train_basket))
+random_basket_train <- train_basket[random_index, ]
+
 hyper_grid <- expand.grid(
   shrinkage = c(.01, .1, .3),
   interaction.depth = c(1, 3, 5),
@@ -60,13 +64,6 @@ hyper_grid <- expand.grid(
   optimal_trees = 0,               # a place to dump results
   min_RMSE = 0                     # a place to dump results
 )
-
-# total number of combinations
-nrow(hyper_grid)
-
-# randomize data
-random_index <- sample(1:nrow(train_basket), nrow(train_basket))
-random_basket_train <- train_basket[random_index, ]
 
 # grid search 
 for(i in 1:nrow(hyper_grid)) {
@@ -101,17 +98,17 @@ hyper_grid %>%
   dplyr::arrange(min_RMSE) %>%
   head(10)
 
-#shrinkage interaction.depth n.minobsinnode bag.fraction optimal_trees   min_RMSE
-#1       0.01                 5              5         0.65          1971 0.04176487
-#2       0.01                 5              5         0.80          3186 0.04182010
-#3       0.01                 5             10         0.65          4637 0.04195413
-#4       0.01                 5             15         0.65          3559 0.04199782
-#5       0.10                 5              5         0.80           449 0.04201419
-#6       0.01                 5              5         1.00          2232 0.04205214
-#7       0.01                 5             10         0.80          2197 0.04209576
-#8       0.01                 5             15         0.80          4443 0.04212771
-#9       0.10                 5             15         0.80           224 0.04214367
-#10      0.10                 5             10         0.80           228 0.04218651
+#      shrinkage  interaction.depth   n.minobsinnode   bag.fraction    optimal_trees    min_RMSE
+#1       0.01            5                   5             0.65            1971        0.04176487
+#2       0.01            5                   5             0.80            3186        0.04182010
+#3       0.01            5                   10            0.65            4637        0.04195413
+#4       0.01            5                   15            0.65            3559        0.04199782
+#5       0.10            5                   5             0.80            449         0.04201419
+#6       0.01            5                   5             1.00            2232        0.04205214
+#7       0.01            5                   10            0.80            2197        0.04209576
+#8       0.01            5                   15            0.80            4443        0.04212771
+#9       0.10            5                   15            0.80            224         0.04214367
+#10      0.10            5                   10            0.80            228         0.04218651
 
 ### 3. TRAINING ON THE BEST MODEL ###
 
@@ -138,7 +135,7 @@ saveRDS(gbm_final, file = "gbm_final.Rds")
 ### 4. PREDICTION ###
 
 # use following code to read models
-# test <- readRDS(file = "gbm_final.Rds")
+# gbm_final <- readRDS(file = "gbm_final.Rds")
 
 pred_basket_y = predict.gbm(gbm_final, test_basket_x)
 
