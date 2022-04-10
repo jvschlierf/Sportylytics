@@ -83,10 +83,10 @@ predictions_4 <- predict(model_4, newdata=test_basket_x)
 
 
 # Root Mean Standard Error on Test Set
-RMSE_01 <- sqrt(mean((test_basket_y - predictions_1)^2))
-RMSE_02 <- sqrt(mean((test_basket_y - predictions_2)^2))
-RMSE_03 <- sqrt(mean((test_basket_y - predictions_3)^2))
-RMSE_04 <- sqrt(mean((test_basket_y - predictions_4)^2))
+RMSE_01 <- sqrt(mean((test_basket_y - predictions_1)^2)) # 0.04277610
+RMSE_02 <- sqrt(mean((test_basket_y - predictions_2)^2)) # 0.04552834
+RMSE_03 <- sqrt(mean((test_basket_y - predictions_3)^2)) # 0.04344705
+RMSE_04 <- sqrt(mean((test_basket_y - predictions_4)^2)) # 0.03812077
 
 print(c(RMSE_01, RMSE_02, RMSE_03, RMSE_04))
 
@@ -95,15 +95,32 @@ cor(test_basket_y, predictions_2) ^ 2
 cor(test_basket_y, predictions_3) ^ 2
 cor(test_basket_y, predictions_4) ^ 2
 
-#save models so we don;'t have to retrain every time
+
+#plot best model against truth
+x_ax = 1:length(predictions_4)
+plot(x_ax, test_basket_y, col="blue", pch=20, cex=.9)
+lines(x_ax, predictions_4, col="red", pch=20, cex=.9) 
+
+
+#append best model to test data
+test_basket['pred'] <- predictions_4
+
+test_basket['performance'] <- test_basket$Salary_Cap_Perc - test_basket$pred
+
+mean(test_basket$performance) # 0.0009173233
+
+
+
+
+ #save models so we don;'t have to retrain every time
 saveRDS(model_1, file = "knn_1.Rds")
 saveRDS(model_2, file = "knn_2.Rds")
 saveRDS(model_3, file = "knn_3.Rds")
 saveRDS(model_4, file = "knn_4.Rds")
 
 # use following code to read models
-model_1 <- readRDS(file = "knn_01.Rds")
-model_2 <- readRDS(file = 'knn_02.Rds')
-model_3 <- readRDS(file = 'knn_03.Rds')
-model_4 <- readRDS(file = 'knn_04.Rds')
+model_1 <- readRDS(file = "knn_1.Rds")
+model_2 <- readRDS(file = 'knn_2.Rds')
+model_3 <- readRDS(file = 'knn_3.Rds')
+model_4 <- readRDS(file = 'knn_4.Rds')
 
