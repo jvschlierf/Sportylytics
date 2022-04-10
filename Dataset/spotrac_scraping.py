@@ -1,6 +1,9 @@
+from ctypes.wintypes import HACCEL
+from urllib.error import HTTPError
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import pandas as pd
+import time
 import os 
 
 
@@ -34,6 +37,7 @@ for link in players:
     page_index = page_index.append(d, ignore_index=True)
 
 # Let's save the csv
+page_index = page_index.drop_duplicates().reset_index(drop=True)
 # page_index.to_csv('spotrac_index.csv', index=False)
 
 # Read the csv
@@ -48,17 +52,22 @@ dataset = train.append(test).reset_index(drop=True)
 df = dataset[['Player', 'season', 'Salary_Cap_Perc']]
 df['season_year'] = df['season'].str[:4].apply(int)
 
-# Create an empty dataframe to store all the contracts, one row for each season
-player_contracts = pd.DataFrame(columns=['player_name', 'season', 'season_year', 'signed_using'])
-
-path = "webpages" # Path where we dump the txts
-
-# Download the txt file for each player (may take a long time, and it is going to save ... in webpages/)
+# Download the txt file for each player (may take a long time, and it is going to save ~300 mb in webpages/)
+### WARNING: May get getaway timeout error once every ~1000 requests
 for i, row in page_index.iterrows():
     player_name = row['player_name']
     base_url = row['player_page']
     page_name = player_name.replace(' ', '_')
-    get_page(base_url=base_url, page_name=page_name, path=path)
+    try:
+        get_page(base_url=base_url, page_name=page_name, path=path)
+    except HTTPError:
+        time.sleep(300)
+        get_page(base_url=base_url, page_name=page_name, path=path)
+
+# Create an empty dataframe to store all the contracts, one row for each season
+player_contracts = pd.DataFrame(columns=['player_name', 'season', 'starting_year', 'ending_year', 'signed_using'])
+
+path = "webpages" # Path where we dump the txts
 
 # Iterate over each player (page)
 for i, row in page_index.iterrows():
@@ -67,51 +76,182 @@ for i, row in page_index.iterrows():
     path = "webpages"
     page = open(os.path.join(path,page_name) + ".txt", 'rb')
     soup = BeautifulSoup(page, "html.parser")
-    contracts = soup.find_all("span", class_="playerValue") # Contracts information
-    page.close()
+    try:
+        current_years = [x.get_text() for x in soup.find_all("td", class_="salaryYear center") if len(x.get_text()) > 4]
+        current_signed =  [x.get_text()[14:] for x in soup.find("table", class_="salaryTable salaryInfo hidden-xs").find_all("td", class_='contract-item') if x.get_text().startswith(" Signed Using:")][0]
+        previous_years = [x.get_text()[:9] for x in soup.find_all("span", class_="contract-type-years")]
+        previous_signed = [x.get_text()[14:] for y in soup.find_all("table", class_="salaryTable salaryInfo hidden-xs")[-len(previous_years):] for x in y.find_all("td", class_='contract-item') if x.get_text().startswith(" Signed Using:")]
+    except AttributeError:
+        print(player_name)
+        continue
+    tmp = pd.DataFrame(columns=['player_name', 'season', 'starting_year', 'ending_year', 'signed_using'])
 
-    # Create an empty dataframe for each player, to store all of his contracts (1 row = 1 contract)
-    tmp_c = pd.DataFrame(columns=['player_name', 'expiring', 'signed_using'])
-
-    # Scraping the class "playerValue"
-    # 5 rows = 1 contract signed by the player
-    # for each contract, we need its fourth and fifth rows
-    for i in range(0, len(contracts), 5):
+    for year in current_years:
+        ending = int(year[-2:])
+        if ending > 40:
+            ending_year = 1900 + ending
+        else:
+            ending_year = 2000 + ending
+        starting_year = int(year[:4])
         d = {'player_name' : player_name,
-            'expiring' : int(contracts[i-1].get_text()[:4]),
-            'signed_using' : contracts[i-2].get_text()}
-        tmp_c = tmp_c.append(d, ignore_index=True).sort_values('expiring', ascending=True).reset_index(drop=True)
+            'season' : year,
+            'starting_year' : starting_year,
+            'ending_year' : ending_year,
+            'signed_using': current_signed}
+        tmp = tmp.append(d, ignore_index=True)
 
-    # Create an empty dataframe for each player, to store all of his seasons (1 row = 1 season)
-    tmp_p = df[df['Player']==player_name].sort_values('season_year', ascending=True).reset_index(drop=True)
-
-    ### We need to go from a row for each contract (tmp_c) to a row for each
-    ### season (player_contracts) iterating one player at the time (tmp_p)
-
-    # Iterate over all the contracts of a single player
-    for ic, rowc in tmp_c.iterrows():
-        cexp = rowc['expiring']
-        ctype= rowc['signed_using']
-        # Iterate over all the seasons of a single player
-        for ip, rowp in tmp_p.iterrows():
-            # Using the expiring date we check if the player was playing this season on this contract
-            if cexp > rowp['season_year']: 
+    for year, signed in zip(previous_years, previous_signed):
+        try:
+            starting = int(year[:4])
+            ending = int(year[-4:])
+            for season_year in range(starting, ending+1):
+                season = str(season_year) + '-' + str(season_year+1)[-2:]
                 d = {'player_name' : player_name,
-                    'season' : rowp['season'],
-                    'season_year' : rowp['season_year'],
-                    'signed_using' : ctype}
-                # If true, we append a season played on this contract
-                player_contracts = player_contracts.append(d, ignore_index=True) 
-            else: 
-                # The contract has expired, we move to the next one
-                break 
+                    'season' : season,
+                    'starting_year' : season_year,
+                    'ending_year' : season_year+1,
+                    'signed_using': signed}
+                tmp = tmp.append(d, ignore_index=True)
+        except ValueError:
+            print(player_name, year, signed)
+            continue
+
+    tmp = tmp.sort_values('ending_year', ascending=False).reset_index(drop=True)
+    tmp = tmp.drop_duplicates(subset=['season', 'starting_year', 'ending_year'], keep='first').reset_index(drop=True)
+    player_contracts = player_contracts.append(tmp, ignore_index=True)
+    page.close()    
 
 # Save to csv
 player_contracts.to_csv('spotrac_contracts.csv', index=False)
 
-""" # Let's cleanup from all the txt files
+# Let's cleanup from all the txt files
 for file in os.listdir(path):
     if file == 'all_players.txt':
         continue
     else:
-        os.remove(os.path.join(path, file)) """
+        os.remove(os.path.join(path, file))
+
+"""
+Exceptions Handled:
+
+Wesley Matthews 0-0Retain Retained
+Larry Hughes
+Raef Lafrentz 0-2008 
+Wally Szczerbiak 0-0 
+Kenny Thomas 0-2009 
+John Henson 0-0Retain Retained
+Bobby Simmons 0-0 
+Malik Rose 0-0 
+Marko Jaric 0-2010 
+Mark Blount 0-2009 
+Matthew Dellavedova 0-0Retain Retained
+Scott Brooks 2016-0 Free Agent
+Jerome James 0-2009 
+Antonio Daniels 0-2009 
+Greg Buckner 0-2010 
+Clifford Robinson
+Trenton Hassell
+Speedy Claxton 0-2009 
+Matt Harpring 0-2009 
+Eduardo Najera
+Matt Carroll
+Mike James 0-2009 
+Sam Cassell 0-0 Free Agent
+Morris Peterson
+Darius Songaila 0-2010 
+Marcus Banks
+Rodney Hood 2021-0 
+Steven Hunter 0-2009 
+Anthony Tolliver 0-0Retain Retained
+Jason Smith 0-0Retain Retained
+Bobby Jackson 0-0 
+Jay Williams
+Desmond Mason 0-0 
+Fabricio Oberto 0-0 
+Mark Madsen 0-2009 
+Kenny Atkinson 0-0 Extension
+Cuttino Mobley 0-2009 
+Mouhamed Sene 0-2010 
+Sergio Rodriguez 0-2010 
+Bruce Bowen 0-2009 
+Robert Swift 0-0 
+Cedric Simmons 0-2010 
+Sean Williams 0-2011 
+Oleksiy Pecherov 0-2011 
+Javaris Crittenton
+Jarron Collins 0-0 
+Quincy Douby 0-2010 
+Jamorio Moon
+Josh Boone
+Scott Burrell
+Chris Mihm 0-0 
+Travis Diener 0-0 
+David Andersen
+Mardy Collins 0-2010 
+Anthony Johnson 0-2009 
+Roko Ukic 0-2010 
+Jarvis Hayes
+Brevin Knight 0-0 
+Maceo Baston 0-0 
+Sean May
+Marcelo Huertas 0-0Retain Retained
+Jacque Vaughn 0-2008 
+Ricky Davis 0-2009 
+Livio Jean-Charles 0-0 
+Luis Montero 2017-0 Two Way
+Calvin Booth 0-0 
+Patrick O'Bryant
+Rasho Nesterovic 0-0 
+Flip Murray 0-2009 
+David Vaughn
+Yakhouba Diawara 0-0 
+Leon Powe 0-2010 
+Chris Hunter 0-2010 
+Theo Pinson 2021-0 
+Randolph Morris 0-2009 
+Cory Higgins
+Devean George 0-2009 
+Bobby Brown 0-2009 
+Reggie Perry 2021-0 
+London Perrantes 0-0 Two Way
+Tim Thomas 0-2010 
+Brian Skinner 0-0 
+Lindsey Hunter 0-2009 
+DJ Mbenga 0-2010 
+Jawad Williams 0-2010 
+Nathan Jawai 0-0 
+Sean Singletary
+Mike Taylor 0-2009 
+Sun Yue 0-2009 
+Quinton Ross
+Gabe Pruitt 0-2009 
+Jermareo Davidson 0-0 
+Devin Brown 0-2009 
+Primoz Brezec 0-2009 
+James Singleton 0-0 
+Ronald Dupree 0-2010 
+Luther Head 0-2010 
+Pops Mensah-Bonsu 0-2010 
+Larry Owens
+Linton Johnson III 0-0 
+Marcus Williams 0-2009 
+Anthony Roberson 0-2009 
+Marcus Williams 0-2009 
+Will Conroy 0-2009 
+Jonathan Bender 0-2009 
+Taylor Griffin
+Walter Sharpe 0-2009 
+Mailk Hairston 0-0 
+Mike James 0-2009 
+Ryan Richards 0-0 
+Josh Owens
+Sergey Gladyr 0-2009 
+Mustafa Shakur
+JamesOn Curry 0-2009 
+Mario West 0-0 
+Othello Hunter 0-0 
+Dontell Jefferson
+DeMarcus Nelson 0-0 
+Chris Richard 0-0 
+
+"""
