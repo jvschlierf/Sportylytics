@@ -130,7 +130,7 @@ train_basket_x = subset(train_basket, select = -Salary_Cap_Perc) # feature and t
 train_basket_y = train_basket[, "Salary_Cap_Perc"]
 
 
-#Recursive feature elimination (using cv)
+#Recursive feature elimination (using cross validation)
 svm_features_cv <- rfe(train_basket_x, train_basket_y, sizes = c(5, 10, 20, 30, 40, 52),
                    rfeControl = rfeControl(functions = caretFuncs, method = 'cv', number = 5), method = "svmRadial")
 
