@@ -49,32 +49,48 @@ test_basket = pre_treat(test_basket)
 #Divide X and Y in test
 test_basket_x = subset(test_basket, select = -Salary_Cap_Perc) # feature and target array
 test_basket_y = test_basket[, "Salary_Cap_Perc"]
+
+### Random Forest ###
 set.seed(123)
-#Start with basic RF
 rf = randomForest(train_basket$Salary_Cap_Perc~. ,
                   data = train_basket)
-prim(rf)
+print(rf)
 rf_pred = predict(rf, test_basket_x)
 rmse = sqrt(mean((test_basket_y - rf_pred)^2))
-rmse #0.04233882
+rmse 
+#0.04233882
 saveRDS(rf, file = "rf_simple.Rds")
 
-#Tune m 
+#Choose the best values for m 
+set.seed(123)
 t = tuneRF(train_basket[,-4], train_basket[,4], 
        stepFactor = 0.5,
        plot = TRUE, 
        mtryStart = 5,
-       ntreeTry=1000,
+       ntreeTry=2000, #didn't improve much increasing the size
        trace = TRUE,
        improve = 0.01)
-
+#best with m = 20
+best.m <- t[t[, 2] == min(t), 1]
+set.seed(123)
 rfm = randomForest(train_basket$Salary_Cap_Perc~. ,
                   data = train_basket,
-                  ntree = 1000,
+                  ntree = 2000,
                   mtry = 20,
                   importance = TRUE)
+
 print(rfm)
 rfm_pred = predict(rfm, test_basket_x)
 rmse_m = sqrt(mean((test_basket_y - rfm_pred)^2))
-print(c(rmse, rmse_m))
+print(rmse_m)  ##0.04222568
+
 saveRDS(rfm, file = "rf_m.Rds")
+
+model <- readRDS(file = "rf_m.Rds")
+model_pred = predict(model, test_basket_x)
+rmse = sqrt(mean((test_basket_y - model_pred)^2))
+print(rmse)  
+
+#Evaluate variable importance
+importance(model)
+varImpPlot(model, n.var = 15)
