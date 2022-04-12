@@ -20,8 +20,8 @@ for (j in listofpackages){
 }
 
 #Load Data (both train and test)
-train_basket <- read.csv('../Dataset/data_Bplayers_2000_TRAIN.csv')
-test_basket <- read.csv('../Dataset/data_Bplayers_2000_TEST.csv')
+train_basket <- read.csv('../Dataset/Final Datasets/Final_data_Bplayers_2000_TRAIN.csv')
+test_basket <- read.csv('../Dataset/Final Datasets/Final_data_Bplayers_2000_TEST.csv')
 
 test_players = test_basket$Player
 test_season = test_basket$season
@@ -211,7 +211,7 @@ shinyApp(
       if (length(subset(test_basket, Player==x1 & Season==x2)$Salary_Cap_Perc_Pred)==0){
         output$table1 <- NULL
       } else {
-        output$table1 <- renderDataTable(subset(test_basket, Player==x1 & Season==x2)[,c(3,29:52)], options = list(dom = 'ft', searching = FALSE, info = FALSE))
+        output$table1 <- renderDataTable(subset(test_basket, Player==x1 & Season==x2)[,c(3,33:56)], options = list(dom = 'ft', searching = FALSE, info = FALSE))
       }
       
       output$caption3 <- renderText({
@@ -221,7 +221,7 @@ shinyApp(
       if (length(subset(test_basket, Player==x1 & Season==x2)$Salary_Cap_Perc_Pred)==0){
         output$table2 <- NULL
       } else {
-        output$table2 <- renderDataTable(subset(test_basket, Player==x1 & Season==x2)[,c(9:28)], options = list(dom = 'ft', searching = FALSE, info = FALSE))
+        output$table2 <- renderDataTable(subset(test_basket, Player==x1 & Season==x2)[,c(13:32)], options = list(dom = 'ft', searching = FALSE, info = FALSE))
       }
       
     })
