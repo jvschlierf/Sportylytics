@@ -24,8 +24,9 @@ players_2 = players_2 %>% distinct()
 contracts = contracts %>% distinct()
 
 merger <- function(dataset){
-  merged_data = merge(dataset, contracts[,c("player_name","season","rookie_contract","bird_rights","maximum_contract","super_max_contract")], by.x = c("Player","season"), by.y = c("player_name","season"), all.x = TRUE)
+  merged_data = merge(dataset, contracts[,c("player_name","season","contract_type","rookie_contract","bird_rights","maximum_contract","super_max_contract")], by.x = c("Player","season"), by.y = c("player_name","season"), all.x = TRUE)
   merged_data[c("rookie_contract","bird_rights","maximum_contract","super_max_contract")][is.na(merged_data[c("rookie_contract","bird_rights","maximum_contract","super_max_contract")])] <- 0
+  merged_data[c("contract_type")][is.na(merged_data[c("contract_type")])] <- "Undefined"
   merged_data
 }
 
