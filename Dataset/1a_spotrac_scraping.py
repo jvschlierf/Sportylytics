@@ -44,8 +44,8 @@ page_index = page_index.drop_duplicates().reset_index(drop=True)
 page_index = pd.read_csv('Source Datasets/spotrac_index.csv')
 
 # Load our previously scraped dataset
-train = pd.read_csv('Final Datasets/data_Bplayers_2000_TRAIN.csv', encoding = 'unicode_escape')
-test = pd.read_csv('Final Datasets/data_Bplayers_2000_TEST.csv', encoding = 'unicode_escape')
+train = pd.read_csv('Source Datasets/data_Bplayers_2000_TRAIN.csv', encoding = 'unicode_escape')
+test = pd.read_csv('Source Datasets/data_Bplayers_2000_TEST.csv', encoding = 'unicode_escape')
 dataset = train.append(test).reset_index(drop=True)
 
 # Keep the columns we need to match with the contracts
