@@ -41,11 +41,11 @@ page_index = page_index.drop_duplicates().reset_index(drop=True)
 # page_index.to_csv('spotrac_index.csv', index=False)
 
 # Read the csv
-page_index = pd.read_csv('spotrac_index.csv')
+page_index = pd.read_csv('Source Datasets/spotrac_index.csv')
 
 # Load our previously scraped dataset
-train = pd.read_csv('data_Bplayers_2000_TRAIN.csv', encoding = 'unicode_escape')
-test = pd.read_csv('data_Bplayers_2000_TEST.csv', encoding = 'unicode_escape')
+train = pd.read_csv('Final Datasets/data_Bplayers_2000_TRAIN.csv', encoding = 'unicode_escape')
+test = pd.read_csv('Final Datasets/data_Bplayers_2000_TEST.csv', encoding = 'unicode_escape')
 dataset = train.append(test).reset_index(drop=True)
 
 # Keep the columns we need to match with the contracts
@@ -149,7 +149,7 @@ for i, row in page_index.iterrows():
     page.close() 
 
 # Save to csv
-player_contracts.to_csv('spotrac_contracts.csv', index=False)
+player_contracts.to_csv('Source Datasets/spotrac_contracts.csv', index=False)
 
 # Let's cleanup all the txt files
 for file in os.listdir(path):

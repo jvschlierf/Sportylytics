@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Import scraped contracts
-df = pd.read_csv('spotrac_contracts.csv')
+df = pd.read_csv('Source Datasets/spotrac_contracts.csv')
 df['signed_using'] = df['signed_using'].fillna('Standard') # Fill empty values
 
 # Dictionary to encode contract types, we have to reduce the number of options
@@ -52,5 +52,5 @@ for i, row in df.iterrows():
         df.iat[i, 9] = 1
 
 # Save to csv
-df.to_csv('spotrac_contracts_encoded.csv', index=False)
+df.to_csv('Source Datasets/spotrac_contracts_encoded.csv', index=False)
 
