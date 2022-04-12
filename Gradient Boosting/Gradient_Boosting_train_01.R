@@ -22,8 +22,8 @@ for (j in listofpackages){
 ### 1. PREPROCESSING ###
 
 #Load Data (both train and test)
-train_basket <- read.csv('../Dataset/data_Bplayers_2000_TRAIN.csv')
-test_basket <- read.csv('../Dataset/data_Bplayers_2000_TEST.csv')
+train_basket <- read.csv('../Dataset/Final Datasets/Final_data_Bplayers_2000_TRAIN.csv')
+test_basket <- read.csv('../Dataset/Final Datasets/Final_data_Bplayers_2000_TEST.csv')
 
 #Creating and applying a function for common pre-treatment of train and test
 pre_treat <- function(dataset){
@@ -58,9 +58,9 @@ random_basket_train <- train_basket[random_index, ]
 
 hyper_grid <- expand.grid(
   shrinkage = c(.01, .1, .3),
-  interaction.depth = c(1, 3, 5),
-  n.minobsinnode = c(5, 10, 15),
-  bag.fraction = c(.65, .8, 1), 
+  interaction.depth = c(3, 5, 7),
+  n.minobsinnode = c(5, 10),
+  bag.fraction = c(.65, .8), 
   optimal_trees = 0,               # a place to dump results
   min_RMSE = 0                     # a place to dump results
 )
@@ -79,7 +79,7 @@ for(i in 1:nrow(hyper_grid)) {
     distribution = "gaussian",
     cv.folds = 5,
     data = random_basket_train,
-    n.trees = 5000,
+    n.trees = 2500,
     interaction.depth = hyper_grid$interaction.depth[i],
     shrinkage = hyper_grid$shrinkage[i],
     n.minobsinnode = hyper_grid$n.minobsinnode[i],
@@ -99,16 +99,16 @@ hyper_grid %>%
   head(10)
 
 #      shrinkage  interaction.depth   n.minobsinnode   bag.fraction    optimal_trees    min_RMSE
-#1       0.01            5                   5             0.65            1971        0.04176487
-#2       0.01            5                   5             0.80            3186        0.04182010
-#3       0.01            5                   10            0.65            4637        0.04195413
-#4       0.01            5                   15            0.65            3559        0.04199782
-#5       0.10            5                   5             0.80            449         0.04201419
-#6       0.01            5                   5             1.00            2232        0.04205214
-#7       0.01            5                   10            0.80            2197        0.04209576
-#8       0.01            5                   15            0.80            4443        0.04212771
-#9       0.10            5                   15            0.80            224         0.04214367
-#10      0.10            5                   10            0.80            228         0.04218651
+#1       0.10           7                    5             0.65             105        0.03900368
+#2       0.10           7                    10            0.65             97         0.03916743
+#3       0.10           5                    5             0.65             246        0.03923621
+#4       0.01           5                    10            0.80             2469       0.03928118
+#5       0.01           7                    10            0.80             1949       0.03929594
+#6       0.01           5                    5             0.80             2468       0.03929648
+#7       0.01           7                    5             0.80             1980       0.03935238
+#8       0.01           5                    5             0.65             2155       0.03941086
+#9       0.01           7                    10            0.65             1798       0.03942306
+#10      0.10           7                    5             0.80             168        0.03942928
 
 ### 3. TRAINING ON THE BEST MODEL ###
 
@@ -119,10 +119,10 @@ gbm_final <- gbm(
   formula = Salary_Cap_Perc ~ .,
   distribution = "gaussian",
   data = train_basket,
-  n.trees = 1971,
+  n.trees = 105,
   cv.folds = 5,
-  interaction.depth = 5,
-  shrinkage = 0.01,
+  interaction.depth = 7,
+  shrinkage = 0.1,
   n.minobsinnode = 5,
   bag.fraction = .65, 
   train.fraction = 1,
@@ -141,12 +141,12 @@ pred_basket_y = predict.gbm(gbm_final, test_basket_x)
 
 ### 5. ANALYSIS OF RESULTS ###
 RMSE = sqrt(mean((test_basket_y - pred_basket_y)^2))
-cat('The root mean square error of the test data is ', round(RMSE,3),'\n')
-#RMSE is 0.042
+cat('The root mean square error of the test data is ', round(RMSE,6),'\n')
+#RMSE is 0.03586
 
 rsq <- (cor(pred_basket_y, test_basket$Salary_Cap_Perc))^2
-cat('The R-square of the test data is ', round(rsq,3), '\n')
-#R-square is 0.66
+cat('The R-square of the test data is ', round(rsq,6), '\n')
+#R-square is 0.743249
 
 gbm.perf(gbm_final, method = "cv")
 
@@ -160,5 +160,5 @@ summary(gbm_final, cBars = 10, method = relative.influence, las = 2)
 
 #Partial dependence
 gbm_final %>%
-     partial(pred.var = "pts", n.trees = gbm_final$n.trees, grid.resolution = 100) %>%
+     partial(pred.var = "mp", n.trees = gbm_final$n.trees, grid.resolution = 100) %>%
      autoplot(rug = TRUE, train = train_basket)

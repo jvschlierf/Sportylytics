@@ -211,7 +211,7 @@ shinyApp(
       if (length(subset(test_basket, Player==x1 & Season==x2)$Salary_Cap_Perc_Pred)==0){
         output$table1 <- NULL
       } else {
-        output$table1 <- renderDataTable(subset(test_basket, Player==x1 & Season==x2)[,c(3,33:56)], options = list(dom = 'ft', searching = FALSE, info = FALSE))
+        output$table1 <- renderDataTable(subset(test_basket, Player==x1 & Season==x2)[,c(3,25:48)], options = list(dom = 'ft', searching = FALSE, info = FALSE))
       }
       
       output$caption3 <- renderText({
@@ -221,7 +221,7 @@ shinyApp(
       if (length(subset(test_basket, Player==x1 & Season==x2)$Salary_Cap_Perc_Pred)==0){
         output$table2 <- NULL
       } else {
-        output$table2 <- renderDataTable(subset(test_basket, Player==x1 & Season==x2)[,c(13:32)], options = list(dom = 'ft', searching = FALSE, info = FALSE))
+        output$table2 <- renderDataTable(subset(test_basket, Player==x1 & Season==x2)[,c(5:24)], options = list(dom = 'ft', searching = FALSE, info = FALSE))
       }
       
     })
