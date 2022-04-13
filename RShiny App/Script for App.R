@@ -38,7 +38,7 @@ pre_treat <- function(dataset){
   dataset <- dummy_cols(dataset, select_columns = 'pos')
   
   #Let's drop columns we won't use
-  drops <- c("season","Player",'tm','lg','Salary_Cap','Salary', 'pos', 'Image_Link')
+  drops <- c("season","Player",'tm','lg','Salary_Cap','Salary', 'pos', 'Image_Link', 'contract_type')
   dataset = dataset[ , !(names(dataset) %in% drops)]
   
   #We replace NA with 0

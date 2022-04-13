@@ -24,6 +24,11 @@ for (j in listofpackages){
 #Load Data (both train and test)
 train_basket <- read.csv('../Dataset/Final Datasets/Final_data_Bplayers_2000_TRAIN.csv')
 test_basket <- read.csv('../Dataset/Final Datasets/Final_data_Bplayers_2000_TEST.csv')
+
+#We drop players that played less than 20 games in a season
+train_basket = subset(train_basket, g >= 20)
+test_basket = subset(test_basket, g >= 20)
+
 final_test_basket = test_basket
 
 #Creating and applying a function for common pre-treatment of train and test
@@ -99,17 +104,17 @@ hyper_grid %>%
   dplyr::arrange(min_RMSE) %>%
   head(10)
 
-#      shrinkage  interaction.depth   n.minobsinnode   bag.fraction    optimal_trees    min_RMSE
-#1       0.10           7                    5             0.65             105        0.03900368
-#2       0.10           7                    10            0.65             97         0.03916743
-#3       0.10           5                    5             0.65             246        0.03923621
-#4       0.01           5                    10            0.80             2469       0.03928118
-#5       0.01           7                    10            0.80             1949       0.03929594
-#6       0.01           5                    5             0.80             2468       0.03929648
-#7       0.01           7                    5             0.80             1980       0.03935238
-#8       0.01           5                    5             0.65             2155       0.03941086
-#9       0.01           7                    10            0.65             1798       0.03942306
-#10      0.10           7                    5             0.80             168        0.03942928
+#shrinkage interaction.depth n.minobsinnode bag.fraction optimal_trees   min_RMSE
+#1       0.10                 5             10         0.80           916 0.03809362
+#2       0.01                 7             10         0.65          2456 0.03814948
+#3       0.01                 7              5         0.65          2286 0.03823351
+#4       0.01                 5              5         0.65          2497 0.03824995
+#5       0.01                 7              5         0.80          2499 0.03826323
+#6       0.01                 5             10         0.65          2497 0.03833240
+#7       0.10                 7             10         0.80           762 0.03841872
+#8       0.01                 5              5         0.80          2469 0.03845889
+#9       0.10                 7              5         0.80           832 0.03847642
+#10      0.01                 7             10         0.80          2497 0.03848019
 
 ### 3. TRAINING ON THE BEST MODEL ###
 
@@ -120,34 +125,34 @@ gbm_final <- gbm(
   formula = Salary_Cap_Perc ~ .,
   distribution = "gaussian",
   data = train_basket,
-  n.trees = 105,
+  n.trees = 916,
   cv.folds = 5,
   interaction.depth = 7,
-  shrinkage = 0.1,
-  n.minobsinnode = 5,
-  bag.fraction = .65, 
+  shrinkage = 0.10,
+  n.minobsinnode = 10,
+  bag.fraction = .8, 
   train.fraction = 1,
   n.cores = NULL, # will use all cores by default
   verbose = FALSE
 ) 
 
-saveRDS(gbm_final, file = "gbm_final.Rds")
+saveRDS(gbm_final, file = "gbm_final_over20Games.Rds")
 
 ### 4. PREDICTION ###
 
 # use following code to read models
-# gbm_final <- readRDS(file = "gbm_final.Rds")
+#gbm_final <- readRDS(file = "gbm_final_over20Games.Rds")
 
 pred_basket_y = predict.gbm(gbm_final, test_basket_x)
 
 ### 5. ANALYSIS OF RESULTS ###
 RMSE = sqrt(mean((test_basket_y - pred_basket_y)^2))
 cat('The root mean square error of the test data is ', round(RMSE,6),'\n')
-#RMSE is 0.03586
+#RMSE is 0.036596
 
 rsq <- (cor(pred_basket_y, test_basket$Salary_Cap_Perc))^2
 cat('The R-square of the test data is ', round(rsq,6), '\n')
-#R-square is 0.743249
+#R-square is 0.738001 
 
 gbm.perf(gbm_final, method = "cv")
 
@@ -161,8 +166,8 @@ summary(gbm_final, cBars = 10, method = relative.influence, las = 2)
 
 #Partial dependence
 gbm_final %>%
-     partial(pred.var = "maximum_contract", n.trees = gbm_final$n.trees, grid.resolution = 100) %>%
-     autoplot(rug = TRUE, train = train_basket)
+  partial(pred.var = "maximum_contract", n.trees = gbm_final$n.trees, grid.resolution = 100) %>%
+  autoplot(rug = TRUE, train = train_basket)
 
 #Let's analyse predictions 
 final_test_basket$Prediction = pred_basket_y
@@ -185,21 +190,21 @@ final_test_basket$High_Low = lapply(final_test_basket$Pred_Diff, function(x) if 
 final_test_basket$High_Low = unlist(final_test_basket[,"High_Low"])
 
 ggplot(final_test_basket, aes(x=High_Low, fill=pos_eval)) +
-       geom_bar(stat="count", width=0.6, position=position_dodge())+
-       geom_text(aes(label = ..count..), stat = "count", vjust = 1.5, position = position_dodge(0.6), color="white")+
-       theme(axis.text.x = element_text(angle = 45, vjust = 0.95, hjust=1))
+  geom_bar(stat="count", width=0.6, position=position_dodge())+
+  geom_text(aes(label = ..count..), stat = "count", vjust = 1.5, position = position_dodge(0.6), color="white")+
+  theme(axis.text.x = element_text(angle = 45, vjust = 0.95, hjust=1))
 
 #Barplot to analyze differences across Nationality
 ggplot(final_test_basket, aes(x=US_Player, fill=High_Low)) +
-       geom_bar(stat="count", width=0.6, position=position_dodge())+
-       geom_text(aes(label = ..count..), stat = "count", vjust = 1.5, position = position_dodge(0.6), color="white")+
-       theme(axis.text.x = element_text(angle = 45))
+  geom_bar(stat="count", width=0.6, position=position_dodge())+
+  geom_text(aes(label = ..count..), stat = "count", vjust = 1.5, position = position_dodge(0.6), color="white")+
+  theme(axis.text.x = element_text(angle = 45))
 #Increase of 3.34% in underpayment if you're from US!
 
 #Barplot to analyze Age
 ggplot(final_test_basket, aes(x=age, fill=High_Low)) +
-       geom_bar(stat="count", width=0.6, position=position_dodge())+
-       theme(axis.text.x = element_text(angle = 45))
+  geom_bar(stat="count", width=0.6, position=position_dodge())+
+  theme(axis.text.x = element_text(angle = 45))
 #Trend of underpayment tends to decrease as players become older! Great finding
 
 #Now we see which are the players with highest/lowest difference
