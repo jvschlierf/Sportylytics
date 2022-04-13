@@ -34,8 +34,11 @@ pre_treat <- function(dataset){
   dataset$pos = unlist(dataset[,"pos"])
   dataset <- dummy_cols(dataset, select_columns = 'pos')
   
+  #Selecting Seasons
+  dataset <- dataset %>% filter(season == "2014-15"| season == "2015-16" | season == "2016-17" | season == "2017-18" | season == "2018-19" | season == "2019-20" | season == "2020-21") 
+  
   #Let's drop columns we won't use
-  drops <- c("season","Player",'tm','lg','Salary_Cap','Salary', 'pos', 'Image_Link', "contract_type")
+  drops <- c("season","Player",'tm','lg','Salary_Cap','Salary', 'pos', 'Image_Link')
   dataset = dataset[ , !(names(dataset) %in% drops)]
   
   #We replace NA with 0
@@ -100,16 +103,16 @@ hyper_grid %>%
   head(10)
 
 #      shrinkage  interaction.depth   n.minobsinnode   bag.fraction    optimal_trees    min_RMSE
-#1       0.10           7                    5             0.65             105        0.03900368
-#2       0.10           7                    10            0.65             97         0.03916743
-#3       0.10           5                    5             0.65             246        0.03923621
-#4       0.01           5                    10            0.80             2469       0.03928118
-#5       0.01           7                    10            0.80             1949       0.03929594
-#6       0.01           5                    5             0.80             2468       0.03929648
-#7       0.01           7                    5             0.80             1980       0.03935238
-#8       0.01           5                    5             0.65             2155       0.03941086
-#9       0.01           7                    10            0.65             1798       0.03942306
-#10      0.10           7                    5             0.80             168        0.03942928
+#1       0.01             7                  5              0.65           1519        0.03383620
+#2       0.01             7                  10             0.65           1229        0.03393017
+#3       0.01             7                  5              0.80           1930        0.03400956
+#4       0.10             5                  5              0.6            66          0.03404039
+#5       0.01             5                  5              0.80           1958        0.03408783
+#6       0.10             5                  10             0.65           244         0.03415903
+#7       0.10             7                  5              0.65           101         0.03417233
+#8       0.01             5                  5              0.65           1228        0.03421585
+#9       0.01             7                  10             0.80           1338        0.03423356
+#10      0.01             5                  10             0.65           1414        0.03436837
 
 ### 3. TRAINING ON THE BEST MODEL ###
 
@@ -120,7 +123,7 @@ gbm_final <- gbm(
   formula = Salary_Cap_Perc ~ .,
   distribution = "gaussian",
   data = train_basket,
-  n.trees = 105,
+  n.trees = 1519,
   cv.folds = 5,
   interaction.depth = 7,
   shrinkage = 0.1,
@@ -131,23 +134,23 @@ gbm_final <- gbm(
   verbose = FALSE
 ) 
 
-saveRDS(gbm_final, file = "gbm_final.Rds")
+saveRDS(gbm_final, file = "gbm_final_14-21.Rds")
 
 ### 4. PREDICTION ###
 
 # use following code to read models
-#gbm_final <- readRDS(file = "gbm_final.Rds")
+gbm_final <- readRDS(file = "gbm_final_14-21.Rds")
 
 pred_basket_y = predict.gbm(gbm_final, test_basket_x)
 
 ### 5. ANALYSIS OF RESULTS ###
 RMSE = sqrt(mean((test_basket_y - pred_basket_y)^2))
 cat('The root mean square error of the test data is ', round(RMSE,6),'\n')
-#RMSE is 0.03586
+#RMSE is 0.036007
 
 rsq <- (cor(pred_basket_y, test_basket$Salary_Cap_Perc))^2
 cat('The R-square of the test data is ', round(rsq,6), '\n')
-#R-square is 0.743249
+#R-square is 0.772923 
 
 gbm.perf(gbm_final, method = "cv")
 
@@ -161,8 +164,8 @@ summary(gbm_final, cBars = 10, method = relative.influence, las = 2)
 
 #Partial dependence
 gbm_final %>%
-     partial(pred.var = "mp", n.trees = gbm_final$n.trees, grid.resolution = 100) %>%
-     autoplot(rug = TRUE, train = train_basket)
+  partial(pred.var = "mp", n.trees = gbm_final$n.trees, grid.resolution = 100) %>%
+  autoplot(rug = TRUE, train = train_basket)
 
 #Let's analyse predictions 
 final_test_basket$Prediction = pred_basket_y
@@ -175,9 +178,6 @@ p<-ggplot(data=maxdata, aes(x=contract_type, y=Pred_Diff)) +
   geom_bar(stat="identity", fill="steelblue")+
   theme(axis.text.x = element_text(angle = 45, vjust = 0.95, hjust=1))
 p
-#SUPER-MAXIMUM/BIRD has the highest difference (that means they're the players that do not
-#repay the expenditure)
-#MINIMUM has the lowest difference
 
 #Now we see which are the players with highest/lowest difference
 plotbest_worst <- function(dataset){
