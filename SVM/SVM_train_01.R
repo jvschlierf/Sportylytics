@@ -98,7 +98,9 @@ RMSE_linear = sqrt(mean((test_basket_y - pred_linear)^2))
 RMSE_poly = sqrt(mean((test_basket_y - pred_poly)^2))
 
 print(c(RMSE_radial, RMSE_linear, RMSE_poly))
-# 0.03712062 0.04282188 0.03664644
+# Radial: 0.03712062 
+# Linear: 0.04282188 
+# Poly: 0.03664644
 
 cor(test_basket_y, pred_radial)^2  # 0.7266582
 cor(test_basket_y, pred_linear)^2  # 0.6400517
@@ -118,34 +120,54 @@ saveRDS(svm_poly, file = "svm_poly.Rds")
 
 ### 3. HYPER-PARAMETERS TUNING (ALL VARIABLES) ###
 
-tuneGrid <- expand.grid(C = c(0.25, 0.5, 0.75, 1, 1.25, 1.5), sigma = c(0.05, 0.01, 0.015))
+tuneGrid_radial <- expand.grid(C = c(0.10, 0.25, 0.5, 0.75, 1, 1.25, 1.5), sigma = c(0.001, 0.005, 0.01, 0.015))
+tuneGrid_poly <- expand.grid(degree = c(1, 2, 3, 5), scale = c(0.001, 0.003, 0.005, 0.01), C = c(0.10, 0.25, 0.5, 0.75, 1, 1.25, 1.5))
 
 svm_radial_tuned <- train(Salary_Cap_Perc ~ ., data = train_basket, method = 'svmRadial', 
                     preProcess = c("center", "scale"), trCtrl = trctrl, 
-                    tuneGrid = tuneGrid)
+                    tuneGrid = tuneGrid_radial)
+
+svm_poly_tuned <- train(Salary_Cap_Perc ~ ., data = train_basket, method = 'svmPoly', 
+                          preProcess = c("center", "scale"), trCtrl = trctrl, 
+                          tuneGrid = tuneGrid_poly)
 
 print(svm_radial_tuned)
 # C     sigma  RMSE        Rsquared   MAE       
 # 1.50  0.010  0.03879415  0.7183434  0.02665650
 
+print(svm_poly_tuned)
+# TO RUN
+# TO RUN
+
 #Prediction
-pred_tuned = predict(svm_tuned, newdata=test_basket_x)
-RMSE_tuned = sqrt(mean((test_basket_y - pred_tuned)^2))
-print(c(RMSE_radial, RMSE_tuned))  # 0.03712062 0.03619767
-cor(test_basket_y, pred_tuned)^2   # 0.7398564
+pred_radial_tuned = predict(svm_radial_tuned, newdata=test_basket_x)
+pred_poly_tuned = predict(svm_poly_tuned, newdata=test_basket_x)
+
+RMSE_radial_tuned = sqrt(mean((test_basket_y - pred_radial_tuned)^2))
+RMSE_poly_tuned = sqrt(mean((test_basket_y - pred_poly_tuned)^2))
+
+print(c(RMSE_radial, RMSE_radial_tuned))  # Radial:       0.03712062 
+                                          # Radial Tuned: 0.03619767
+print(c(RMSE_poly, RMSE_poly_tuned))      # Poly:         0.03664644
+                                          # Poly Tuned:
+
+cor(test_basket_y, pred_radial_tuned)^2   # 0.7398564
+cor(test_basket_y, pred_poly_tuned)^2     #
 
 #Save model
 saveRDS(svm_radial_tuned, file = "svm_radial_tuned.Rds")
+saveRDS(svm_poly_tuned, file = "svm_poly_tuned.Rds")
 
 #Load model
 # svm_radial_tuned <- readRDS(file = "svm_radial_tuned.Rds")
+
 ### RMSE_radial_tuned = 0.03619767
 
 
-######### SVM POLY TUNED #########
-
 
 ### 4. FEATURES SELECTION ###
+
+##### TO UPDATE #####
 
 #Divide X and Y in train
 train_basket_x = subset(train_basket, select = -Salary_Cap_Perc) # feature and target array
@@ -153,15 +175,23 @@ train_basket_y = train_basket[, "Salary_Cap_Perc"]
 
 
 #Recursive feature elimination (using cross validation)
-svm_features_cv <- rfe(train_basket_x, train_basket_y, sizes = c(5, 10, 20, 30, 40, 52),
-                   rfeControl = rfeControl(functions = caretFuncs, method = 'cv', number = 5), method = "svmRadial")
+svm_features_radial <- rfe(train_basket_x, train_basket_y, sizes = c(5, 10, 20, 30, 40, 52),
+                       rfeControl = rfeControl(functions = caretFuncs, method = 'cv', number = 5), method = "svmRadial")
+
+svm_features_poly <- rfe(train_basket_x, train_basket_y, sizes = c(5, 10, 20, 30, 40, 52),
+                     rfeControl = rfeControl(functions = caretFuncs, method = 'cv', number = 5), method = "svmPoly")
 
 #Save features
-# saveRDS(svm_features_cv, file = "svm_features_cv.Rds")
+saveRDS(svm_features_radial, file = "svm_features_radial.Rds")
+saveRDS(svm_features_poly, file = "svm_features_poly.Rds")
 
 #Load features
-svm_features_cv <- readRDS(file = "svm_features_cv.Rds")
-print(svm_features_cv)
+svm_features_radial <- readRDS(file = "svm_features_radial.Rds")
+print(svm_features_radial)
+
+svm_features_poly <- readRDS(file = "svm_features_poly.Rds")
+print(svm_features_poly)
+
 
 
 ### No significant improvement, we keep the full model
