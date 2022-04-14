@@ -12,8 +12,8 @@ my_packages <- c("quantmod","PerformanceAnalytics","ellipse","reshape2","ggplot2
 lapply(my_packages, require, character.only = TRUE)
 
 #Load Data (both train and test)
-train_basket <- read.csv('../Dataset/data_Bplayers_2000_TRAIN.csv')
-test_basket <- read.csv('../Dataset/data_Bplayers_2000_TEST.csv')
+train_basket <- read.csv('../Dataset/Final\ Datasets/Final_data_Bplayers_2000_TRAIN.csv')
+test_basket <- read.csv('../Dataset/Final\ Datasets/Final_data_Bplayers_2000_TEST.csv')
 
 pre_treat <- function(dataset){
   
@@ -23,7 +23,7 @@ pre_treat <- function(dataset){
   dataset <- dummy_cols(dataset, select_columns = 'pos')
   
   #drop columns we won't use
-  drops <- c("Player", 'season', 'tm' , 'lg','Salary_Cap','Salary', 'pos')
+  drops <- c("Player", 'season', 'Image_Link', 'tm' , 'lg','Salary_Cap','Salary')
   dataset = dataset[ , !(names(dataset) %in% drops)]
   
   #We replace NA with 0
@@ -97,13 +97,13 @@ cor(test_basket_y, predictions_4) ^ 2
 
 
 #plot best model against truth
-x_ax = 1:length(predictions_4)
+x_ax = 1:length(predictions_3)
 plot(x_ax, test_basket_y, col="blue", pch=20, cex=.9)
-lines(x_ax, predictions_4, col="red", pch=20, cex=.9) 
+lines(x_ax, predictions_3, col="red", pch=20, cex=.9) 
 
 
 #append best model to test data
-test_basket['pred'] <- predictions_4
+test_basket['pred'] <- predictions_3
 
 test_basket['performance'] <- test_basket$Salary_Cap_Perc - test_basket$pred
 
