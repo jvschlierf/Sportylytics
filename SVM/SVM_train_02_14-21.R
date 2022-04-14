@@ -90,6 +90,14 @@ print(svm_poly)
 # degree  scale  C     RMSE        Rsquared   MAE       
 # 2       0.010  0.50  0.03572270  0.7790242  0.02340006
 
+#Save model
+saveRDS(svm_radial, file = "svm_radial_14-21.Rds")
+saveRDS(svm_poly, file = "svm_poly_14-21.Rds")
+
+#Load model
+# svm_radial <- readRDS(file = "svm_radial_14-21.Rds")
+# svm_poly <- readRDS(file = "svm_poly_14-21.Rds")
+
 #Predict using different kernels
 pred_radial = predict(svm_radial, newdata=test_basket_x)
 pred_linear = predict(svm_linear, newdata=test_basket_x)
@@ -109,15 +117,8 @@ cor(test_basket_y, pred_radial)^2  # 0.8095724
 cor(test_basket_y, pred_linear)^2  # 0.8095724
 cor(test_basket_y, pred_poly)^2    # 0.8221326
 
-### We proceed with the best performing, the radial kernel
-
-#Save model
-saveRDS(svm_radial, file = "svm_radial_14-21.Rds")
-saveRDS(svm_poly, file = "svm_poly_14-21.Rds")
-
-#Load model
-# svm_radial <- readRDS(file = "svm_radial_14-21.Rds")
-# svm_poly <- readRDS(file = "svm_poly_14-21.Rds")
+### Best RMSE:
+### Poly = 0.03212347
 
 
 
@@ -165,13 +166,6 @@ saveRDS(svm_poly_tuned, file = "svm_poly_tuned_14-21.Rds")
 # svm_radial_tuned <- readRDS(file = "svm_radial_tuned_14-21.Rds")
 # svm_poly_tuned <- readRDS(file = "svm_poly_tuned_14-21.Rds")
 
-### RMSE_radial_tuned = 0.03195912
-
-##### TO UPDATE #####
-
-### 4. FEATURES SELECTION ###
-
-#Divide X and Y in train
-train_basket_x = subset(train_basket, select = -Salary_Cap_Perc) # feature and target array
-train_basket_y = train_basket[, "Salary_Cap_Perc"]
+### Best RMSE:
+### Radial (tuned) = 0.03195912
 
