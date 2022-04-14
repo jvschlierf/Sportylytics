@@ -143,21 +143,6 @@ print(svm_poly_tuned)
 # degree  scale  C     RMSE        Rsquared   MAE
 # 2       0.005  1.25  0.03742853  0.7681067  0.02441984
 
-#Prediction
-pred_radial_tuned = predict(svm_radial_tuned, newdata=test_basket_x)
-pred_poly_tuned = predict(svm_poly_tuned, newdata=test_basket_x)
-
-RMSE_radial_tuned = sqrt(mean((test_basket_y - pred_radial_tuned)^2))
-RMSE_poly_tuned = sqrt(mean((test_basket_y - pred_poly_tuned)^2))
-
-print(c(RMSE_radial, RMSE_radial_tuned))  # Radial:       0.03349787     
-                                          # Radial Tuned: 0.03195912
-print(c(RMSE_poly, RMSE_poly_tuned))      # Poly:         0.03212347      
-                                          # Poly Tuned:   0.03223360
-
-cor(test_basket_y, pred_radial_tuned)^2   # 0.824852
-cor(test_basket_y, pred_poly_tuned)^2     # 0.8208999
-
 #Save model
 saveRDS(svm_radial_tuned, file = "svm_radial_tuned_14-21.Rds")
 saveRDS(svm_poly_tuned, file = "svm_poly_tuned_14-21.Rds")
@@ -166,6 +151,54 @@ saveRDS(svm_poly_tuned, file = "svm_poly_tuned_14-21.Rds")
 # svm_radial_tuned <- readRDS(file = "svm_radial_tuned_14-21.Rds")
 # svm_poly_tuned <- readRDS(file = "svm_poly_tuned_14-21.Rds")
 
+#Prediction
+pred_radial_tuned = predict(svm_radial_tuned, newdata=test_basket_x)
+pred_poly_tuned = predict(svm_poly_tuned, newdata=test_basket_x)
+
+RMSE_radial_tuned = sqrt(mean((test_basket_y - pred_radial_tuned)^2))
+RMSE_poly_tuned = sqrt(mean((test_basket_y - pred_poly_tuned)^2))
+
+print(c(RMSE_radial, RMSE_radial_tuned))  # Radial:       0.03349787     
+                                          # Radial (tuned): 0.03195912
+print(c(RMSE_poly, RMSE_poly_tuned))      # Poly:         0.03212347      
+                                          # Poly (tuned):   0.03223360
+
+cor(test_basket_y, pred_radial_tuned)^2   # 0.824852
+cor(test_basket_y, pred_poly_tuned)^2     # 0.8208999
+
 ### Best RMSE:
 ### Radial (tuned) = 0.03195912
 
+
+
+### 4. RESULTS ANALYSIS ###
+
+best_model <- readRDS(file = "svm_radial_tuned_14-21.Rds")
+final_test_basket <- read.csv('../Dataset/Final Datasets/Final_data_Bplayers_2000_TEST.csv')
+final_test_basket = pre_treat(final_test_basket)
+
+pred_basket_y = predict(best_model, newdata=test_basket_x)
+RMSE = sqrt(mean((test_basket_y - pred_basket_y)^2))
+cat('The root mean square error of the test data is ', round(RMSE,6),'\n')
+# The root mean square error of the test data is  0.031959
+
+rsq <- (cor(pred_basket_y, test_basket$Salary_Cap_Perc))^2
+cat('The R-square of the test data is ', round(rsq,6), '\n')
+# The R-square of the test data is  0.824852
+
+# Visualize the model, actual and predicted data
+x_ax = 1:length(pred_basket_y)
+plot(x_ax, test_basket_y, col="blue", pch=20, cex=.9)
+lines(x_ax, pred_basket_y, col="red", pch=20, cex=.9) 
+
+# Let's analyse predictions 
+final_test_basket$Prediction = pred_basket_y
+final_test_basket$Pred_Diff = final_test_basket$Salary_Cap_Perc - final_test_basket$Prediction
+
+# Let's see which are the contract connected with the highest/lowest difference with Real %
+maxdata = aggregate(data = final_test_basket, Pred_Diff~contract_type, FUN = mean)
+
+p <- ggplot(data=maxdata, aes(x=contract_type, y=Pred_Diff)) +
+     geom_bar(stat="identity", fill="steelblue")+
+     theme(axis.text.x = element_text(angle = 45, vjust = 0.95, hjust=1))
+p
