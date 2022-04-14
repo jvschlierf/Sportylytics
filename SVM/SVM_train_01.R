@@ -1,6 +1,7 @@
 # 20630 - Introduction to Sports Analytics
 # Group 2 Project 3 - Supervised Machine Learning Model
-# Model X: Support Vector Machine
+# Model: Support Vector Machine
+# Seasons: 1999-2021
 
 
 #Clear environment & set working directory
@@ -85,7 +86,15 @@ svm_poly <- train(Salary_Cap_Perc ~ ., data = train_basket, method = 'svmPoly',
 
 print(svm_poly)
 # degree  scale  C     RMSE        Rsquared    MAE       
-# 2       0.001  0.25  0.04467952  0.64633559  0.03117615
+# 2       0.010  0.25  0.03749101  0.73267296  0.02478167
+
+#Save model
+saveRDS(svm_radial, file = "svm_radial.Rds")
+saveRDS(svm_poly, file = "svm_poly.Rds")
+
+#Load model
+# svm_radial <- readRDS(file = "svm_radial.Rds")
+# svm_poly <- readRDS(file = "svm_poly.Rds")
 
 #Predict using different kernels
 pred_radial = predict(svm_radial, newdata=test_basket_x)
@@ -100,23 +109,16 @@ RMSE_poly = sqrt(mean((test_basket_y - pred_poly)^2))
 print(c(RMSE_radial, RMSE_linear, RMSE_poly))
 # Radial: 0.03712062 
 # Linear: 0.04282188 
-# Poly: 0.03664644
+# Poly:   0.03403545
 
 cor(test_basket_y, pred_radial)^2  # 0.7266582
 cor(test_basket_y, pred_linear)^2  # 0.6400517
-cor(test_basket_y, pred_poly)^2    # 0.734441
+cor(test_basket_y, pred_poly)^2    # 0.7709223
 
-### We proceed with the best performing, the radial kernel
+### Best RMSE:
+### Poly = 0.03403545
 
-#Save model
-saveRDS(svm_radial, file = "svm_radial.Rds")
-saveRDS(svm_poly, file = "svm_poly.Rds")
-
-#Load model
-# svm_radial <- readRDS(file = "svm_radial.Rds")
-# svm_poly <- readRDS(file = "svm_poly.Rds")
-
-
+##########################################################     TUNE POLY     ##########################################################
 
 ### 3. HYPER-PARAMETERS TUNING (ALL VARIABLES) ###
 
@@ -136,8 +138,8 @@ print(svm_radial_tuned)
 # 1.50  0.010  0.03879415  0.7183434  0.02665650
 
 print(svm_poly_tuned)
-# TO RUN
-# TO RUN
+# degree  scale  C     RMSE        Rsquared    MAE
+# 
 
 #Prediction
 pred_radial_tuned = predict(svm_radial_tuned, newdata=test_basket_x)
@@ -146,10 +148,10 @@ pred_poly_tuned = predict(svm_poly_tuned, newdata=test_basket_x)
 RMSE_radial_tuned = sqrt(mean((test_basket_y - pred_radial_tuned)^2))
 RMSE_poly_tuned = sqrt(mean((test_basket_y - pred_poly_tuned)^2))
 
-print(c(RMSE_radial, RMSE_radial_tuned))  # Radial:       0.03712062 
-                                          # Radial Tuned: 0.03619767
-print(c(RMSE_poly, RMSE_poly_tuned))      # Poly:         0.03664644
-                                          # Poly Tuned:
+print(c(RMSE_radial, RMSE_radial_tuned))  # Radial:         0.03712062 
+                                          # Radial (tuned): 0.03619767
+print(c(RMSE_poly, RMSE_poly_tuned))      # Poly:           0.03403545
+                                          # Poly (tuned):
 
 cor(test_basket_y, pred_radial_tuned)^2   # 0.7398564
 cor(test_basket_y, pred_poly_tuned)^2     #
@@ -160,40 +162,35 @@ saveRDS(svm_poly_tuned, file = "svm_poly_tuned.Rds")
 
 #Load model
 # svm_radial_tuned <- readRDS(file = "svm_radial_tuned.Rds")
+# svm_poly_tuned <- readRDS(file = "svm_poly_tuned.Rds")
 
-### RMSE_radial_tuned = 0.03619767
-
-
-
-### 4. FEATURES SELECTION ###
-
-##### TO UPDATE #####
-
-#Divide X and Y in train
-train_basket_x = subset(train_basket, select = -Salary_Cap_Perc) # feature and target array
-train_basket_y = train_basket[, "Salary_Cap_Perc"]
-
-
-#Recursive feature elimination (using cross validation)
-svm_features_radial <- rfe(train_basket_x, train_basket_y, sizes = c(5, 10, 20, 30, 40, 52),
-                       rfeControl = rfeControl(functions = caretFuncs, method = 'cv', number = 5), method = "svmRadial")
-
-svm_features_poly <- rfe(train_basket_x, train_basket_y, sizes = c(5, 10, 20, 30, 40, 52),
-                     rfeControl = rfeControl(functions = caretFuncs, method = 'cv', number = 5), method = "svmPoly")
-
-#Save features
-saveRDS(svm_features_radial, file = "svm_features_radial.Rds")
-saveRDS(svm_features_poly, file = "svm_features_poly.Rds")
-
-#Load features
-svm_features_radial <- readRDS(file = "svm_features_radial.Rds")
-print(svm_features_radial)
-
-svm_features_poly <- readRDS(file = "svm_features_poly.Rds")
-print(svm_features_poly)
+### Best RMSE:
+###
 
 
 
-### No significant improvement, we keep the full model
-### Best RMSE = 
+### 4. RESULTS ANALYSIS ###
 
+best_model <- readRDS(file = "svm_radial_tuned.Rds")
+final_test_basket <- read.csv('../Dataset/Final Datasets/Final_data_Bplayers_2000_TEST.csv')
+final_test_basket = pre_treat(final_test_basket)
+
+pred_basket_y = predict(best_model, newdata=test_basket_x)
+RMSE = sqrt(mean((test_basket_y - pred_basket_y)^2))
+cat('The root mean square error of the test data is ', round(RMSE,6),'\n')
+# The root mean square error of the test data is  0.031959
+
+rsq <- (cor(pred_basket_y, test_basket$Salary_Cap_Perc))^2
+cat('The R-square of the test data is ', round(rsq,6), '\n')
+# The R-square of the test data is  0.824852
+
+# Visualize the model, actual and predicted data
+x_ax = 1:length(pred_basket_y)
+plot(x_ax, test_basket_y, col="blue", pch=20, cex=.9)
+lines(x_ax, pred_basket_y, col="red", pch=20, cex=.9) 
+
+# Let's analyse predictions 
+final_test_basket$Prediction = pred_basket_y
+final_test_basket$Pred_Diff = final_test_basket$Salary_Cap_Perc - final_test_basket$Prediction
+final_test_basket$pos_eval = lapply(final_test_basket$pos, function(x) if (nchar(x)>2) {x=unlist(str_split(x, ",", simplify = TRUE)[1,1])} else {x})
+final_test_basket$pos_eval = unlist(final_test_basket[,"pos_eval"])
