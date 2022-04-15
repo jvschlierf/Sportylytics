@@ -148,12 +148,12 @@ print(svm_poly_tuned)
 # 2       0.005  1.50  0.03744592  0.7711941  0.02529181
 
 #Save model
-saveRDS(svm_radial_tuned, file = "svm_radial_over20games.Rds")
-saveRDS(svm_poly_tuned, file = "svm_poly_over20games.Rds")
+saveRDS(svm_radial_tuned, file = "svm_radial_tuned_over20games.Rds")
+saveRDS(svm_poly_tuned, file = "svm_poly_tuned_over20games.Rds")
 
 #Load model
-# svm_radial_tuned <- readRDS(file = "svm_radial_over20games.Rds")
-# svm_poly_tuned <- readRDS(file = "svm_poly_over20games.Rds")
+# svm_radial_tuned <- readRDS(file = "svm_radial_tuned_over20games.Rds")
+# svm_poly_tuned <- readRDS(file = "svm_poly_tuned_over20games.Rds")
 
 #Prediction
 pred_radial_tuned = predict(svm_radial_tuned, newdata=test_basket_x)
@@ -177,7 +177,7 @@ cor(test_basket_y, pred_poly_tuned)^2     # 0.8127785
 
 ### 4. RESULTS ANALYSIS ###
 
-best_model <- readRDS(file = "svm_poly_over20games.Rds")
+best_model <- readRDS(file = "svm_poly_tuned_over20games.Rds")
 final_test_basket <- read.csv('../Dataset/Final Datasets/Final_data_Bplayers_2000_TEST.csv')
 final_test_basket = pre_treat(final_test_basket)
 final_test_basket = subset(final_test_basket, g >= 20)
