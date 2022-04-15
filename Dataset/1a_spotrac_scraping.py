@@ -16,6 +16,8 @@ def get_page(base_url, page_name, path=''):
     file.write(str(soup))
     file.close()
 
+####################   1. CREATE A PLAYER INDEX   ####################
+
 # Let's get all the players on spotrac and their personal webpages
 
 base_url = "https://www.spotrac.com/nba/contracts/sort-value/all-time/limit-10000/"
@@ -39,6 +41,8 @@ for link in players:
 # Let's save the csv
 page_index = page_index.drop_duplicates().reset_index(drop=True)
 # page_index.to_csv('spotrac_index.csv', index=False)
+
+####################   2. DOWNLOAD ALL THE WEBPAGES IN THE INDEX   ####################
 
 # Read the csv
 page_index = pd.read_csv('Source Datasets/spotrac_index.csv')
@@ -68,6 +72,8 @@ for i, row in page_index.iterrows():
 player_contracts = pd.DataFrame(columns=['player_name', 'season', 'starting_year', 'ending_year', 'signed_using'])
 
 path = "webpages" # Path where we dump the txts
+
+####################   3. SCRAPE CURRENT & PREVIOUS CONTRACT TYPES   ####################
 
 # Iterate over each player (webpage)
 for i, row in page_index.iterrows():
@@ -150,6 +156,8 @@ for i, row in page_index.iterrows():
 
 # Save to csv
 player_contracts.to_csv('Source Datasets/spotrac_contracts.csv', index=False)
+
+####################   4. CLEANUP TXT FILES   ####################
 
 # Let's cleanup all the txt files
 for file in os.listdir(path):
