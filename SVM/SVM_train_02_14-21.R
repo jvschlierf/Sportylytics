@@ -158,9 +158,9 @@ pred_poly_tuned = predict(svm_poly_tuned, newdata=test_basket_x)
 RMSE_radial_tuned = sqrt(mean((test_basket_y - pred_radial_tuned)^2))
 RMSE_poly_tuned = sqrt(mean((test_basket_y - pred_poly_tuned)^2))
 
-print(c(RMSE_radial, RMSE_radial_tuned))  # Radial:       0.03349787     
+print(c(RMSE_radial, RMSE_radial_tuned))  # Radial:         0.03349787     
                                           # Radial (tuned): 0.03195912
-print(c(RMSE_poly, RMSE_poly_tuned))      # Poly:         0.03212347      
+print(c(RMSE_poly, RMSE_poly_tuned))      # Poly:           0.03212347      
                                           # Poly (tuned):   0.03223360
 
 cor(test_basket_y, pred_radial_tuned)^2   # 0.824852
