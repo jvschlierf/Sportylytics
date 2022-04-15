@@ -139,7 +139,7 @@ print(svm_radial_tuned)
 
 print(svm_poly_tuned)
 # degree  scale  C     RMSE        Rsquared    MAE
-# 
+# 2       0.003  1.50  0.03720518  0.7368216  0.02486363
 
 #Prediction
 pred_radial_tuned = predict(svm_radial_tuned, newdata=test_basket_x)
@@ -151,10 +151,10 @@ RMSE_poly_tuned = sqrt(mean((test_basket_y - pred_poly_tuned)^2))
 print(c(RMSE_radial, RMSE_radial_tuned))  # Radial:         0.03712062 
                                           # Radial (tuned): 0.03619767
 print(c(RMSE_poly, RMSE_poly_tuned))      # Poly:           0.03403545
-                                          # Poly (tuned):
+                                          # Poly (tuned):   0.03438451
 
 cor(test_basket_y, pred_radial_tuned)^2   # 0.7398564
-cor(test_basket_y, pred_poly_tuned)^2     #
+cor(test_basket_y, pred_poly_tuned)^2     # 0.7665357
 
 #Save model
 saveRDS(svm_radial_tuned, file = "svm_radial_tuned.Rds")
@@ -165,32 +165,45 @@ saveRDS(svm_poly_tuned, file = "svm_poly_tuned.Rds")
 # svm_poly_tuned <- readRDS(file = "svm_poly_tuned.Rds")
 
 ### Best RMSE:
-###
+### Poly: 0.03403545
 
 
 
 ### 4. RESULTS ANALYSIS ###
 
-best_model <- readRDS(file = "svm_radial_tuned.Rds")
+best_model <- readRDS(file = "svm_poly.Rds")
 final_test_basket <- read.csv('../Dataset/Final Datasets/Final_data_Bplayers_2000_TEST.csv')
 final_test_basket = pre_treat(final_test_basket)
 
 pred_basket_y = predict(best_model, newdata=test_basket_x)
 RMSE = sqrt(mean((test_basket_y - pred_basket_y)^2))
 cat('The root mean square error of the test data is ', round(RMSE,6),'\n')
-# The root mean square error of the test data is  0.031959
+# The root mean square error of the test data is  0.034035
 
 rsq <- (cor(pred_basket_y, test_basket$Salary_Cap_Perc))^2
 cat('The R-square of the test data is ', round(rsq,6), '\n')
-# The R-square of the test data is  0.824852
+# The R-square of the test data is  0.770922
 
-# Visualize the model, actual and predicted data
+#Visualize the model, actual and predicted data
 x_ax = 1:length(pred_basket_y)
 plot(x_ax, test_basket_y, col="blue", pch=20, cex=.9)
 lines(x_ax, pred_basket_y, col="red", pch=20, cex=.9) 
 
-# Let's analyse predictions 
+#Let's analyse predictions 
 final_test_basket$Prediction = pred_basket_y
 final_test_basket$Pred_Diff = final_test_basket$Salary_Cap_Perc - final_test_basket$Prediction
-final_test_basket$pos_eval = lapply(final_test_basket$pos, function(x) if (nchar(x)>2) {x=unlist(str_split(x, ",", simplify = TRUE)[1,1])} else {x})
-final_test_basket$pos_eval = unlist(final_test_basket[,"pos_eval"])
+
+#Barplot to see who is higher in occurrencies (if higher or lower)
+final_test_basket$High_Low = lapply(final_test_basket$Pred_Diff, function(x) if (x>0) {x = "Higher"} else {x = "Lower"})
+final_test_basket$High_Low = unlist(final_test_basket[,"High_Low"])
+
+#Barplot to analyze differences across Nationality
+ggplot(final_test_basket, aes(x=US_Player, fill=High_Low)) +
+  geom_bar(stat="count", width=0.6, position=position_dodge())+
+  geom_text(aes(label = ..count..), stat = "count", vjust = 1.5, position = position_dodge(0.6), color="white")+
+  theme(axis.text.x = element_text(angle = 45))
+
+#Barplot to analyze Age
+ggplot(final_test_basket, aes(x=age, fill=High_Low)) +
+  geom_bar(stat="count", width=0.6, position=position_dodge())+
+  theme(axis.text.x = element_text(angle = 45))
