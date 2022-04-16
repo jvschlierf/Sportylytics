@@ -23,7 +23,11 @@ for (j in listofpackages){
 
 #Load Data (both train and test)
 train_basket <- read.csv('../Dataset/Final Datasets/Final_data_Bplayers_2000_TRAIN.csv')
-test_basket <- read.csv('../Dataset/Final Datasets/Final_data_Bplayers_2000_TEST.csv', encoding = "latin1")
+test_basket <- read.csv('../Dataset/Final Datasets/Final_data_Bplayers_2000_TEST.csv',encoding = "latin1")
+
+#We drop players that played less than 20 games in a season
+train_basket = subset(train_basket, g >= 20)
+test_basket = subset(test_basket, g >= 20)
 final_test_basket = test_basket
 
 #Creating and applying a function for common pre-treatment of train and test
@@ -33,6 +37,9 @@ pre_treat <- function(dataset){
   dataset$pos = lapply(dataset$pos, function(x) if (nchar(x)>2) {x=unlist(str_split(x, ",", simplify = TRUE)[1,1])} else {x})
   dataset$pos = unlist(dataset[,"pos"])
   dataset <- dummy_cols(dataset, select_columns = 'pos')
+  
+  #Selecting Seasons
+  dataset <- dataset %>% filter(season == "2014-15"| season == "2015-16" | season == "2016-17" | season == "2017-18" | season == "2018-19" | season == "2019-20" | season == "2020-21")
   
   #drop columns we won't use
   drops <- c("season","Player",'tm','lg','Salary_Cap','Salary', 'pos', 'Image_Link', "contract_type")
@@ -57,12 +64,12 @@ test_basket_y = test_basket[, "Salary_Cap_Perc"]
 set.seed(123)
 rf = randomForest(train_basket$Salary_Cap_Perc~. ,
                   data = train_basket)
-print(rf) #%Var 72.36
+print(rf) #%Var 75.21
 rf_pred = predict(rf, test_basket_x)
 rmse = sqrt(mean((test_basket_y - rf_pred)^2))
 rmse 
-#0.03612642
-saveRDS(rf, file = "rf_simple.Rds")
+#0.03675275
+saveRDS(rf, file = "rf_simple_o20.Rds")
 
 #Tuning the model
 
@@ -99,37 +106,35 @@ hyper_grid %>%
   head(10)
 
 
-#n_tree optimal_m    min_RMSE
-#1    n_tree optimal_m    min_RMSE
-#1   1000        32 0.001454118
-#2   2000        64 0.001455522
-#3   1500        32 0.001459374
-#4    500        32 0.001467940
+#  n_tree optimal_m    min_RMSE
+#1   1500        32 0.001463501
+#2   2000        32 0.001467051
+#3    500        32 0.001470334
+#4   1000        32 0.001477890
 
 
 # Train on the best model
 set.seed(123)
 rf_final = randomForest(train_basket$Salary_Cap_Perc~. ,
-                  data = train_basket,
-                  ntree = 1000,
-                  mtry = 32,
-                  importance = TRUE)
+                        data = train_basket,
+                        ntree = 1500,
+                        mtry = 32,
+                        importance = TRUE)
 
-print(rf_final) #%Var 72.52
+print(rf_final) #%Var 75.64
 rf_final_pred = predict(rf_final, test_basket_x)
 rmse_final = sqrt(mean((test_basket_y - rf_final_pred)^2))
-print(rmse_final)  ## 0.03588078
+print(rmse_final)  ## 0.03642129
 
-#saveRDS(rf_final, file = "rf_final.Rds")
-
+saveRDS(rf_final, file = "rf_final_o20.Rds")
 # Load the model
-model <- readRDS(file = "rf_final.Rds")
+model <- readRDS(file = "rf_final_o20.Rds")
 model_pred = predict(model, test_basket_x)
 rmse_model = sqrt(mean((test_basket_y - model_pred)^2))
-print(rmse_model)  ## 0.03588078
+print(rmse_model)  ## 0.03642129
 
 ###  ANALYSIS OF RESULTS ###
-  
+
 #Evaluate variable importance
 importance(model)
 varImpPlot(model, n.var = 15)

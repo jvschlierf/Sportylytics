@@ -23,8 +23,8 @@ for (j in listofpackages){
 
 #Load Data (both train and test)
 train_basket <- read.csv('../Dataset/Final Datasets/Final_data_Bplayers_2000_TRAIN.csv')
-test_basket <- read.csv('../Dataset/Final Datasets/Final_data_Bplayers_2000_TEST.csv', encoding = "latin1")
-final_test_basket = test_basket
+test_basket <- read.csv('../Dataset/Final Datasets/Final_data_Bplayers_2000_TEST.csv',encoding = "latin1")
+final_test_basket = test_basket %>% filter(season == "2014-15"| season == "2015-16" | season == "2016-17" | season == "2017-18" | season == "2018-19" | season == "2019-20" | season == "2020-21")
 
 #Creating and applying a function for common pre-treatment of train and test
 pre_treat <- function(dataset){
@@ -34,7 +34,10 @@ pre_treat <- function(dataset){
   dataset$pos = unlist(dataset[,"pos"])
   dataset <- dummy_cols(dataset, select_columns = 'pos')
   
-  #drop columns we won't use
+  #Selecting Seasons
+  dataset <- dataset %>% filter(season == "2014-15"| season == "2015-16" | season == "2016-17" | season == "2017-18" | season == "2018-19" | season == "2019-20" | season == "2020-21")
+ 
+   #drop columns we won't use
   drops <- c("season","Player",'tm','lg','Salary_Cap','Salary', 'pos', 'Image_Link', "contract_type")
   dataset = dataset[ , !(names(dataset) %in% drops)]
   
@@ -47,7 +50,6 @@ pre_treat <- function(dataset){
 train_basket = pre_treat(train_basket)
 test_basket = pre_treat(test_basket)
 
-
 #Divide X and Y in test
 test_basket_x = subset(test_basket, select = -Salary_Cap_Perc) # feature and target array
 test_basket_y = test_basket[, "Salary_Cap_Perc"]
@@ -57,12 +59,12 @@ test_basket_y = test_basket[, "Salary_Cap_Perc"]
 set.seed(123)
 rf = randomForest(train_basket$Salary_Cap_Perc~. ,
                   data = train_basket)
-print(rf) #%Var 72.36
+print(rf) #%Var 75.94
 rf_pred = predict(rf, test_basket_x)
 rmse = sqrt(mean((test_basket_y - rf_pred)^2))
 rmse 
-#0.03612642
-saveRDS(rf, file = "rf_simple.Rds")
+#0.03510314
+saveRDS(rf, file = "rf_simple_14-21.Rds")
 
 #Tuning the model
 
@@ -100,36 +102,35 @@ hyper_grid %>%
 
 
 #n_tree optimal_m    min_RMSE
-#1    n_tree optimal_m    min_RMSE
-#1   1000        32 0.001454118
-#2   2000        64 0.001455522
-#3   1500        32 0.001459374
-#4    500        32 0.001467940
+#1   2000        32 0.001372958
+#2   1500        32 0.001373978
+#3   1000        32 0.001375052
+#4    500        32 0.001378118
 
 
 # Train on the best model
 set.seed(123)
 rf_final = randomForest(train_basket$Salary_Cap_Perc~. ,
-                  data = train_basket,
-                  ntree = 1000,
-                  mtry = 32,
-                  importance = TRUE)
+                        data = train_basket,
+                        ntree = 2000,
+                        mtry = 32,
+                        importance = TRUE)
 
-print(rf_final) #%Var 72.52
+print(rf_final) #%Var 76.5
 rf_final_pred = predict(rf_final, test_basket_x)
 rmse_final = sqrt(mean((test_basket_y - rf_final_pred)^2))
-print(rmse_final)  ## 0.03588078
+print(rmse_final)  ## 0.03489092
 
-#saveRDS(rf_final, file = "rf_final.Rds")
+#saveRDS(rf_final, file = "rf_final_14-21.Rds")
 
 # Load the model
-model <- readRDS(file = "rf_final.Rds")
+model <- readRDS(file = "rf_final_14-21.Rds")
 model_pred = predict(model, test_basket_x)
 rmse_model = sqrt(mean((test_basket_y - model_pred)^2))
-print(rmse_model)  ## 0.03588078
+print(rmse_model)  ## 0.03489092
 
 ###  ANALYSIS OF RESULTS ###
-  
+
 #Evaluate variable importance
 importance(model)
 varImpPlot(model, n.var = 15)
@@ -142,6 +143,7 @@ lines(x_ax, model_pred, col="red", pch=20, cex=.9)
 
 
 #Let's analyse predictions
+final_test_basket = final_test_basket  %>% filter(season == "2014-15"| season == "2015-16" | season == "2016-17" | season == "2017-18" | season == "2018-19" | season == "2019-20" | season == "2020-21")
 final_test_basket$Prediction = model_pred
 final_test_basket$Pred_Diff = final_test_basket$Salary_Cap_Perc - final_test_basket$Prediction
 final_test_basket$pos_eval = lapply(final_test_basket$pos, function(x) if (nchar(x)>2) {x=unlist(str_split(x, ",", simplify = TRUE)[1,1])} else {x})
@@ -195,6 +197,6 @@ plotbest_worst <- function(dataset){
     scale_fill_brewer(palette="Paired")+
     theme(axis.text.x = element_text(angle = 45, vjust = 0.95, hjust=1))
 }
-
-plotbest_worst(final_test_basket[order(-final_test_basket$Pred_Diff),])
 plotbest_worst(final_test_basket[order(final_test_basket$Pred_Diff),])
+plotbest_worst(final_test_basket[order(-final_test_basket$Pred_Diff),])
+
