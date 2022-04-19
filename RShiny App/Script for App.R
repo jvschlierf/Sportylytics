@@ -227,5 +227,11 @@ shinyApp(
       }
       
     })
+    
+    autoInvalidate <- reactiveTimer(10000)
+    observe({
+      autoInvalidate()
+      cat(".")
+    })
   }
 )
