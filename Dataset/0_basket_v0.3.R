@@ -84,15 +84,6 @@ get_player_data_pvt <- function(Nome_Giocatore, slug, tabella) {
   table <- rvest::html_table(node, header = TRUE)
   table$slug <- slug
   
-  player_name_node <- rvest::html_node(html, 
-                                       '#footer_header > 
-                                       div:nth-child(2) > 
-                                       span:nth-child(4) > 
-                                       strong:nth-child(1) > 
-                                       span:nth-child(1)')
-  player_name <- rvest::html_text(player_name_node)
-  table$player <- gsub("\\*", "", player_name)
-  
   converted <- lapply(table, empty_string_to_na)
   converted <- as.data.frame(converted, stringsAsFactors = FALSE)
   
@@ -115,7 +106,7 @@ get_player_data_pvt <- function(Nome_Giocatore, slug, tabella) {
     html_table()
   
   final_tab = merge(clean_df, stats_sal[,c("Season", "Salary")], by.x = "season", by.y = "Season")
-  final_tab[,c("slug", "player")] <- NULL
+  final_tab[,c("slug")] <- NULL
   final_tab$Player = Nome_Giocatore
   final_tab$Image_Link = html %>% html_nodes("[itemscope='image']") %>% html_attr("src") 
   final_tab$Nationality = nationality
@@ -146,7 +137,7 @@ ran = dim(data_slug)[1]
 data_giocat_totale = data.frame()
 
 #Start the scrape
-for (i in 1:ran){
+for (i in 1:5){
   
   print(i)
   
