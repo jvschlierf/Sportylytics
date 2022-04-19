@@ -54,15 +54,6 @@ clean_colnames <- function(df) {
   names(df) <- tolower(names(df))
   df
 }
-parse_season_table <- function(table) {
-  duplicated_header_rows <- table$Rk == "Rk"
-  table <- table[!duplicated_header_rows, ]
-  converted <- lapply(table, maybe_as_numeric)
-  converted <- lapply(converted, empty_string_to_na)
-  df <- as.data.frame(converted, stringsAsFactors = FALSE)
-  df <- clean_colnames(df)
-  df
-}
 #Most important one to scrape players
 get_player_data_pvt <- function(Nome_Giocatore, slug, tabella) {
   stopifnot(is.character(slug))
@@ -137,7 +128,7 @@ ran = dim(data_slug)[1]
 data_giocat_totale = data.frame()
 
 #Start the scrape
-for (i in 1:5){
+for (i in 1:ran){
   
   print(i)
   
