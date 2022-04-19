@@ -17,7 +17,7 @@ for (j in listofpackages){
 }
 
 #Load Data (both train and test)
-urlfile_test<-'https://raw.githubusercontent.com/jvschlierf/Sportylytics/main/RShiny%20App/Heroku_App/With_predictions.csv?token=GHSAT0AAAAAABTUXIQTIGTDUUS2FK5BV5FUYS622AA'
+urlfile_test<-'https://raw.githubusercontent.com/jvschlierf/Sportylytics/main/RShiny%20App/Heroku_App/With_predictions.csv?token=GHSAT0AAAAAABTUXIQTJ62YWQ5T46K3Q4Z6YS65PQA'
 test_basket <- read.csv(urlfile_test, encoding = "latin1", stringsAsFactors = FALSE)
 
 server <- function(input, output, session) {
