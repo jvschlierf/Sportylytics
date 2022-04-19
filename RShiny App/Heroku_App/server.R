@@ -118,7 +118,7 @@ server <- function(input, output, session) {
         if (length(subset(test_basket, Player==x1 & Season==x2)$Salary_Cap_Perc_Pred)==0){
           paste("")
         } else {
-          paste("Cap of the year:", format_dollars(subset(test_basket, Player==x1 & Season==x2)$Cap))
+          paste("Cap of the year:", format_dollars(subset(test_basket, Player==x1 & Season==x2)$Cap),". Contract type:", subset(test_basket, Player==x1 & Season==x2)$Contract_Type)
         }
       })
       

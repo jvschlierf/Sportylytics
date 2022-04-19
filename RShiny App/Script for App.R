@@ -28,6 +28,7 @@ test_season = test_basket$season
 test_link = test_basket$Image_Link
 test_capofyear = test_basket$Salary_Cap
 test_sal = test_basket$Salary
+test_ctype = test_basket$contract_type
 
 #Creating and applying a function for common pre-treatment of train and test
 pre_treat <- function(dataset){
@@ -63,6 +64,7 @@ test_basket$Season = test_season
 test_basket$Player = test_players
 test_basket$Link = test_link
 test_basket$Cap = test_capofyear
+test_basket$Contract_Type = test_ctype
 
 write.csv(test_basket, "Heroku_App/With_predictions.csv", row.names=FALSE)
 
@@ -196,7 +198,7 @@ shinyApp(
         if (length(subset(test_basket, Player==x1 & Season==x2)$Salary_Cap_Perc_Pred)==0){
           paste("")
         } else {
-          paste("Cap of the year:", format_dollars(subset(test_basket, Player==x1 & Season==x2)$Cap))
+          paste("Cap of the year:", format_dollars(subset(test_basket, Player==x1 & Season==x2)$Cap),". Contract type:", subset(test_basket, Player==x1 & Season==x2)$Contract_Type)
         }
       })
       
