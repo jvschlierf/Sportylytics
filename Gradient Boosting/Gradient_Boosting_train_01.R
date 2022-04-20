@@ -136,7 +136,7 @@ saveRDS(gbm_final, file = "gbm_final.Rds")
 ### 4. PREDICTION ###
 
 # use following code to read models
-# gbm_final <- readRDS(file = "gbm_final.Rds")
+gbm_final <- readRDS(file = "gbm_final.Rds")
 
 pred_basket_y = predict.gbm(gbm_final, test_basket_x)
 

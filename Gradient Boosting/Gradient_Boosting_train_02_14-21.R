@@ -38,7 +38,7 @@ pre_treat <- function(dataset){
   dataset <- dataset %>% filter(season == "2014-15"| season == "2015-16" | season == "2016-17" | season == "2017-18" | season == "2018-19" | season == "2019-20" | season == "2020-21") 
   
   #Let's drop columns we won't use
-  drops <- c("season","Player",'tm','lg','Salary_Cap','Salary', 'pos', 'Image_Link')
+  drops <- c("season","Player",'tm','lg','Salary_Cap','Salary', 'pos', 'Image_Link', 'contract_type')
   dataset = dataset[ , !(names(dataset) %in% drops)]
   
   #We replace NA with 0
@@ -161,6 +161,9 @@ lines(x_ax, pred_basket_y, col="red", pch=20, cex=.9)
 
 #Relative influence
 summary(gbm_final, cBars = 10, method = relative.influence, las = 2)
+##Comparing Variable Importance from all seasons to variable importance of just last 7 seasons,
+#three point percentage greatly increased its importance over time! From 0.062656253 to 0.39973439,
+#with a percentage increase of +537.98%
 
 #Partial dependence
 gbm_final %>%
