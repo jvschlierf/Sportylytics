@@ -1,6 +1,6 @@
 # 20630 - Introduction to Sports Analytics
 # Group 2 Project 3 - Supervised Machine Learning Model
-# Working on the baseline model: Stepwise Regression
+# Working on Reducing The Number of Seasons - Selection Criteria: Forward Selection variables removal (based on AIC)
 
 # clear environment & set working directory
 rm(list=ls()) 
@@ -19,11 +19,12 @@ for (j in listofpackages){
   library(j, character.only = T)
 }
 
-### 1. PREPROCESSING & INVESTIGATION###
+### 1. PREPROCESSING & INVESTIGATION ###
 
 #Load Data (both train and test)
 train_basket <- read.csv('../Dataset/Final Datasets/Final_data_Bplayers_2000_TRAIN.csv')
 test_basket <- read.csv('../Dataset/Final Datasets/Final_data_Bplayers_2000_TEST.csv', encoding = "latin1")
+
 
 #Creating and applying a function for common pre-treatment of train and test
 pre_treat <- function(dataset){
@@ -33,6 +34,9 @@ pre_treat <- function(dataset){
   dataset$pos = unlist(dataset[,"pos"])
   dataset <- dummy_cols(dataset, select_columns = 'pos')
   
+  #Selecting Seasons
+  dataset <- dataset %>% filter(season == "2014-15"| season == "2015-16" | season == "2016-17" | season == "2017-18" | season == "2018-19" | season == "2019-20"| season == "2020-21") 
+  
   #Let's drop columns we won't use
   drops <- c("season","Player",'tm','lg','Salary_Cap','Salary', 'pos', 'Image_Link', "contract_type")
   dataset = dataset[ , !(names(dataset) %in% drops)]
@@ -40,9 +44,18 @@ pre_treat <- function(dataset){
   #We replace NA with 0
   dataset[is.na(dataset)] = 0
   
+  #Removing variables excluded by Forward Selection procedure
+  dataset = subset(dataset, select = c(Salary_Cap_Perc,pts, bird_rights, age, maximum_contract, drb,rookie_contract, gs, pf, three_p_pct,ast, ast_pct, 
+                                       super_max_contract,vorp, pos_PG, super_max_contract, US_Player, pos_SG, trb_pct, pos_SF, three_par, two_p_pct,tov, tov_pct, fta) )
+  
   dataset
 }
 
+
+
+## SEASONS 2014-15 to 2020-21
+
+#Train & Test with Variable Selection.
 train_basket = pre_treat(train_basket)
 test_basket = pre_treat(test_basket)
 
@@ -51,25 +64,33 @@ test_basket_x = subset(test_basket, select = -Salary_Cap_Perc) # feature and tar
 test_basket_y = test_basket[, "Salary_Cap_Perc"]
 
 
-### 2. REGRESSION & PREDICTION###
-
+###INVESTIGATING WHAT'S RELEVANT###
+set.seed(123)
 #Simple Linear Regression
 lm_model <- lm(Salary_Cap_Perc ~ ., data=train_basket)
 
-#Forward Stepwise Regression
-Forw_reg <- ols_step_forward_p(lm_model, penter = 0.05) #I want a p-value of at least 0.05
-Forw_reg
-
-#Backward Stepwise Regression: Doesn't work for aliased coefficients
-Back_reg <- ols_step_backward_p(lm_model, prem = 0.05) #I want a p-value of at least 0.05
-Back_reg
-
-#Bi-directional Stepwise regression: Same results as forward
-Both_reg <- ols_step_both_p(lm_model, penter = 0.05, prem = 0.05)
-Both_reg
-
 #Forward Stepwise Regression::Using AIC
-Forw_reg2 <- ols_step_forward_aic(lm_model, progress = TRUE) # Enter predictors based on AIC
-Forw_reg2
+#Forw_reg <- ols_step_forward_aic(lm_model, progress = TRUE) 
+#Forw_reg
 
-#File of investigation for what concerns Stepwise variable reduction techniques
+
+### 2. REGRESSION & PREDICTION###
+set.seed(123)
+#Simple Linear Regression 
+lm_model2 <- lm(Salary_Cap_Perc ~ ., data=train_basket)
+
+#Predictions
+predictions <- predict(lm_model2, newdata=test_basket_x)
+
+
+### 3. ANALYSIS OF RESULTS ###
+
+#RMSE on test set
+RMSE <- sqrt(mean((test_basket_y - predictions)^2))
+cat('The root mean square error of the test data is ', round(RMSE,3),'\n')
+#RMSE is 0.04 (Best for now)
+
+#R-squared
+rsq <- (cor(predictions, test_basket$Salary_Cap_Perc))^2
+cat('The R-square of the test data is ', round(rsq,3), '\n')
+#R-squared is 0.715

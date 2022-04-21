@@ -22,8 +22,8 @@ for (j in listofpackages){
 ### 1. PREPROCESSING & INVESTIGATION###
 
 #Load Data (both train and test)
-train_basket <- read.csv('../Sportylytics-main/data_Bplayers_2000_TRAIN.csv')
-test_basket <- read.csv('../Sportylytics-main/data_Bplayers_2000_TEST.csv')
+train_basket <- read.csv('../Dataset/Final Datasets/Final_data_Bplayers_2000_TRAIN.csv')
+test_basket <- read.csv('../Dataset/Final Datasets/Final_data_Bplayers_2000_TEST.csv', encoding = "latin1")
 
 #Creating and applying a function for common pre-treatment of train and test
 pre_treat <- function(dataset){
@@ -34,16 +34,15 @@ pre_treat <- function(dataset){
   dataset <- dummy_cols(dataset, select_columns = 'pos')
   
   #Let's drop columns we won't use
-  drops <- c("season","Player",'tm','lg','Salary_Cap','Salary', 'pos')
+  drops <- c("season","Player",'tm','lg','Salary_Cap','Salary', 'pos', 'Image_Link', "contract_type")
   dataset = dataset[ , !(names(dataset) %in% drops)]
   
   #We replace NA with 0
   dataset[is.na(dataset)] = 0
   
-  #Removing variables excluded by Forward Selection procedure
-  dataset = subset(dataset, select = -c(three_par, ftr, orb_pct, trb_pct, blk_pct, ows, dws, obpm,
-                                        bpm, mp, fg, fga, three_p, three_pa, two_pa, efg_pct, ft,
-                                        ft_pct, orb, trb, pos_C, pos_PF) )
+  #Select variables included by Forward Selection procedure
+  dataset = subset(dataset, select = c(Salary_Cap_Perc,pts, bird_rights, age, maximum_contract, drb,rookie_contract, two_pa, fta,US_Player,ts_pct, gs, super_max_contract,ast,pos_PG,ast_pct,pf,
+                                       blk, tov_pct, stl, mp, usg_pct, dbpm, fg_pct, g,trb_pct, two_p_pct, pos_SG, pos_SF,blk_pct, tov, trb, stl_pct,ft, three_p_pct, pos_C,pos_PF ) )
   
   dataset
 }
@@ -70,9 +69,9 @@ predictions_1 <- predict(lm_model, newdata=test_basket_x)
 #RMSE on test set
 RMSE_01 <- sqrt(mean((test_basket_y - predictions_1)^2))
 cat('The root mean square error of the test data is ', round(RMSE_01,3),'\n')
-#RMSE is 0.048 (Same as baseline model)
+#RMSE is 0.042 
 
 #R-squared
 rsq_01 <- (cor(predictions_1, test_basket$Salary_Cap_Perc))^2
 cat('The R-square of the test data is ', round(rsq_01,3), '\n')
-#R-squared is 0.545 (little better vs 0.543)
+#R-squared is 0.655 

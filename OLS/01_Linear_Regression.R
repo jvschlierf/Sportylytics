@@ -22,8 +22,8 @@ for (j in listofpackages){
 ### 1. PREPROCESSING & INVESTIGATION###
 
 #Load Data (both train and test)
-train_basket <- read.csv('../Sportylytics-main/data_Bplayers_2000_TRAIN.csv')
-test_basket <- read.csv('../Sportylytics-main/data_Bplayers_2000_TEST.csv')
+train_basket <- read.csv('../Dataset/Final Datasets/Final_data_Bplayers_2000_TRAIN.csv')
+test_basket <- read.csv('../Dataset/Final Datasets/Final_data_Bplayers_2000_TEST.csv', encoding = "latin1")
 
 #Creating and applying a function for common pre-treatment of train and test
 pre_treat <- function(dataset){
@@ -34,9 +34,9 @@ pre_treat <- function(dataset){
   dataset <- dummy_cols(dataset, select_columns = 'pos')
   
   #Let's drop columns we won't use
-  drops <- c("season","Player",'tm','lg','Salary_Cap','Salary', 'pos')
+  drops <- c("season","Player",'tm','lg','Salary_Cap','Salary', 'pos', 'Image_Link', "contract_type")
   dataset = dataset[ , !(names(dataset) %in% drops)]
-  
+
   #We replace NA with 0
   dataset[is.na(dataset)] = 0
   
@@ -50,17 +50,17 @@ test_basket = pre_treat(test_basket)
 test_basket_x = subset(test_basket, select = -Salary_Cap_Perc) # feature and target array
 test_basket_y = test_basket[, "Salary_Cap_Perc"]
 
+
+#Salary Percentages
+xaxis = 1:5494
+ggplot(train_basket, aes(x=xaxis, y=Salary_Cap_Perc)) + geom_point(color="darkblue")
+
 #Correlation
 res <- cor(test_basket_x, method = c("pearson"))
 round(res, 2)
-
 # Get some colors and draw the heatmap
 col<- colorRampPalette(c("blue", "white", "red"))(20)
 heatmap(x = res, col = col, symm = TRUE)
-
-#Plot Salary Percentages
-xaxis = 1:6043
-ggplot(train_basket, aes(x=xaxis, y=Salary_Cap_Perc)) + geom_point()
 
 
 ### 2. REGRESSION & PREDICTION###
@@ -78,21 +78,15 @@ predictions_1 <- predict(lm_model, newdata=test_basket_x)
 #RMSE on test set
 RMSE_01 <- sqrt(mean((test_basket_y - predictions_1)^2))
 cat('The root mean square error of the test data is ', round(RMSE_01,3),'\n')
-#RMSE is 0.048
+#RMSE is 0.041
 
 #R-squared
 rsq_01 <- (cor(predictions_1, test_basket$Salary_Cap_Perc))^2
 cat('The R-square of the test data is ', round(rsq_01,3), '\n')
-#R-squared is 0.543
+#R-squared is 0.656
 
 
-### 4. EXTRAs - When Needed ###
-
-#Saving our model
-saveRDS(lm_model, file = "lm_1.Rds")
-
-#Use this code to upload the model
-lm_model <- readRDS(file = "lm_1.Rds")
+### 4. Plot
 
 #Visualize the model, actual and predicted data
 x_ax = 1:length(predictions_1)
