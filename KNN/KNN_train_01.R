@@ -22,6 +22,8 @@ model_4 <- readRDS(file = 'knn_4.Rds')
 train_basket <- read.csv('../Dataset/Final\ Datasets/Final_data_Bplayers_2000_TRAIN.csv')
 test_basket <- read.csv('../Dataset/Final\ Datasets/Final_data_Bplayers_2000_TEST.csv')
 plot_basket <- read.csv('../Dataset/Final\ Datasets/Final_data_Bplayers_2000_TEST.csv')
+train_basket_q4 <- read.csv('../Dataset/Final\ Datasets/Datasets_Season_Filters/train_basket_Q4.csv')
+test_basket_q4 <- read.csv('../Dataset/Final\ Datasets/Datasets_Season_Filters/test_basket_Q4.csv')
 
 pre_treat <- function(dataset){
   
@@ -49,6 +51,8 @@ test_basket = pre_treat(test_basket)
 test_basket_x = subset(test_basket, select = -Salary_Cap_Perc) # feature and target array
 test_basket_y = test_basket[, "Salary_Cap_Perc"]
 
+test_basketq4_x = subset(test_basket_q4, select = -Salary_Cap_Perc)
+test_basketq4_y = test_basket_q4[, "Salary_Cap_Perc"]
 
 ################################
 # Training of Models           #
@@ -86,6 +90,21 @@ model_4 <- train(
   method = 'kknn',
   tuneLength = 20)
 
+
+
+
+#run best model on just the last 5 years of data
+model_5 <- train(
+  Salary_Cap_Perc ~.,
+  data = train_basket_q4,
+  trControl = ctrl,
+  preProcess = c("center", "scale"),
+  method = 'kknn',
+  tuneLength = 20)
+
+
+
+
 ####################
 # End of Training  #
 ####################
@@ -97,27 +116,30 @@ model_3
 plot(model_3)
 model_4
 plot(model_4)
+model_5
+plot(model_5)
 
 #predict using different models
 predictions_1 <- predict(model_1, newdata=test_basket_x)
 predictions_2 <- predict(model_2, newdata=test_basket_x)
 predictions_3 <- predict(model_3, newdata=test_basket_x)
 predictions_4 <- predict(model_4, newdata=test_basket_x)
-
+predictions_5 <- predict(model_5, newdata=test_basketq4_x)
 
 # Root Mean Standard Error on Test Set
 RMSE_01 <- sqrt(mean((test_basket_y - predictions_1)^2)) # 0.04957655
 RMSE_02 <- sqrt(mean((test_basket_y - predictions_2)^2)) # 0.04813333
 RMSE_03 <- sqrt(mean((test_basket_y - predictions_3)^2)) # 0.03634415
 RMSE_04 <- sqrt(mean((test_basket_y - predictions_4)^2)) # 0.03469860
+RMSE_05 <- sqrt(mean((test_basketq4_y - predictions_5)^2)) # 0.03622753
 
-print(c(RMSE_01, RMSE_02, RMSE_03, RMSE_04))
+print(c(RMSE_01, RMSE_02, RMSE_03, RMSE_04, RMSE_05))
 
 cor(test_basket_y, predictions_1) ^ 2
 cor(test_basket_y, predictions_2) ^ 2
 cor(test_basket_y, predictions_3) ^ 2
 cor(test_basket_y, predictions_4) ^ 2
-
+cor(test_basketq4_y, predictions_5) ^ 2
 
 #plot best model against truth
 x_ax = 1:length(predictions_4)
@@ -138,6 +160,7 @@ saveRDS(model_1, file = "knn_1.Rds")
 saveRDS(model_2, file = "knn_2.Rds")
 saveRDS(model_3, file = "knn_3.Rds")
 saveRDS(model_4, file = "knn_4.Rds")
+saveRDS(model_5, file = "knn_5.Rds")
 
 
 
