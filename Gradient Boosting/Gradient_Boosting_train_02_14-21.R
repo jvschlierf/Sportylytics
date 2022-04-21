@@ -25,6 +25,8 @@ for (j in listofpackages){
 train_basket <- read.csv('../Dataset/Final Datasets/Final_data_Bplayers_2000_TRAIN.csv')
 test_basket <- read.csv('../Dataset/Final Datasets/Final_data_Bplayers_2000_TEST.csv')
 final_test_basket = test_basket
+#Selecting Seasons
+final_test_basket <- final_test_basket %>% filter(season == "2014-15"| season == "2015-16" | season == "2016-17" | season == "2017-18" | season == "2018-19" | season == "2019-20" | season == "2020-21") 
 
 #Creating and applying a function for common pre-treatment of train and test
 pre_treat <- function(dataset){
@@ -146,11 +148,11 @@ pred_basket_y = predict.gbm(gbm_final, test_basket_x)
 ### 5. ANALYSIS OF RESULTS ###
 RMSE = sqrt(mean((test_basket_y - pred_basket_y)^2))
 cat('The root mean square error of the test data is ', round(RMSE,6),'\n')
-#RMSE is 0.036007
+#RMSE is 0.035693
 
 rsq <- (cor(pred_basket_y, test_basket$Salary_Cap_Perc))^2
 cat('The R-square of the test data is ', round(rsq,6), '\n')
-#R-square is 0.772923 
+#R-square is 0.776824 
 
 gbm.perf(gbm_final, method = "cv")
 
@@ -161,9 +163,6 @@ lines(x_ax, pred_basket_y, col="red", pch=20, cex=.9)
 
 #Relative influence
 summary(gbm_final, cBars = 10, method = relative.influence, las = 2)
-##Comparing Variable Importance from all seasons to variable importance of just last 7 seasons,
-#three point percentage greatly increased its importance over time! From 0.062656253 to 0.39973439,
-#with a percentage increase of +537.98%
 
 #Partial dependence
 gbm_final %>%
@@ -173,31 +172,94 @@ gbm_final %>%
 #Let's analyse predictions 
 final_test_basket$Prediction = pred_basket_y
 final_test_basket$Pred_Diff = final_test_basket$Salary_Cap_Perc - final_test_basket$Prediction
+final_test_basket$pos_eval = lapply(final_test_basket$pos, function(x) if (nchar(x)>2) {x=unlist(str_split(x, ",", simplify = TRUE)[1,1])} else {x})
+final_test_basket$pos_eval = unlist(final_test_basket[,"pos_eval"])
 
 #Let's see which are the contract connected with the highest/lowest difference with Real %
-maxdata = aggregate(data = final_test_basket, Pred_Diff~contract_type, FUN = mean)
-
-p<-ggplot(data=maxdata, aes(x=contract_type, y=Pred_Diff)) +
-  geom_bar(stat="identity", fill="steelblue")+
+maxdata = aggregate(data = final_test_basket, Pred_Diff~contract_type+pos_eval, FUN = mean)
+ggplot(maxdata, aes(x=contract_type, y=Pred_Diff, fill=pos_eval)) +
+  geom_bar(stat="identity")+
   theme(axis.text.x = element_text(angle = 45, vjust = 0.95, hjust=1))
-p
+#TEAM OPTION has the highest difference (that means they're the players that do not
+#repay the expenditure)
+#MINIMUM has the lowest difference (that means they tend to have players that play
+#well with low expenditure)
+
+#Barplot to see who is higher in occurrencies (if higher or lower)
+final_test_basket$High_Low = lapply(final_test_basket$Pred_Diff, function(x) if (x>0) {x = "Higher"} else {x = "Lower"})
+final_test_basket$High_Low = unlist(final_test_basket[,"High_Low"])
+
+ggplot(final_test_basket, aes(x=High_Low, fill=pos_eval)) +
+  geom_bar(stat="count", width=0.6, position=position_dodge())+
+  geom_text(aes(label = ..count..), stat = "count", vjust = 1.5, position = position_dodge(0.6), color="white")+
+  theme(axis.text.x = element_text(angle = 45, vjust = 0.95, hjust=1))
+
+#Barplot to analyze differences across Nationality
+ggplot(final_test_basket, aes(x=US_Player, fill=High_Low)) +
+  geom_bar(stat="count", width=0.6, position=position_dodge())+
+  geom_text(aes(label = ..count..), stat = "count", vjust = 1.5, position = position_dodge(0.6), color="white")+
+  theme(axis.text.x = element_text(angle = 45))
+#Increase of 6.42% in underpayment if you're from US!
+
+#Barplot to analyze Age
+ggplot(final_test_basket, aes(x=age, fill=High_Low)) +
+  geom_bar(stat="count", width=0.6, position=position_dodge())+
+  theme(axis.text.x = element_text(angle = 45))
+#Trend of underpayment tends to decrease as players become older! Great finding
 
 #Now we see which are the players with highest/lowest difference
-plotbest_worst <- function(dataset){
+plotbest_worst <- function(dataset, number){
   dat = data.frame()
-  for (i in 1:10) {
-    name = dataset[i, "Player"]
+  for (i in 1:number) {
+    name = paste(dataset[i, "Player"],dataset[i, "season"])
     sal_perc = dataset[i, "Salary_Cap_Perc"]
     pr = dataset[i, "Prediction"]
     to_app = data.frame(Name = name,Salary_Cap_Perc = "True", Amount = sal_perc)
     to_app = rbind(to_app, data.frame(Name = name,Salary_Cap_Perc = "Predicted", Amount = pr))
     dat = rbind(dat, to_app)
   }
+  print(dat)
   ggplot(data=dat, aes(x=Name, y=Amount, fill=Salary_Cap_Perc)) +
     geom_bar(stat="identity", position=position_dodge())+
     scale_fill_brewer(palette="Paired")+
     theme(axis.text.x = element_text(angle = 45, vjust = 0.95, hjust=1))
 }
 
-plotbest_worst(final_test_basket[order(-final_test_basket$Pred_Diff),])
-plotbest_worst(final_test_basket[order(final_test_basket$Pred_Diff),])
+plotbest_worst(final_test_basket[order(-final_test_basket$Pred_Diff),],10)
+plotbest_worst(final_test_basket[order(final_test_basket$Pred_Diff),],10)
+#Now we deal with variable importance comparing it to model with all seasons
+gbm_final <- readRDS(file = "gbm_final.Rds")
+pred_basket_y = predict.gbm(gbm_final, test_basket_x)
+total_imp = summary(gbm_final, cBars = 10, method = relative.influence, las = 2)
+
+gbm_final <- readRDS(file = "gbm_final_14-21.Rds")
+pred_basket_y = predict.gbm(gbm_final, test_basket_x)
+season_imp = summary(gbm_final, cBars = 10, method = relative.influence, las = 2)
+
+comparison = merge(total_imp, season_imp, by = "var")
+colnames(comparison) = c("var","imp_total","imp_1421")
+comparison$perc_diff = ((comparison$imp_1421*100)/comparison$imp_total)
+comparison = subset(comparison, imp_total != 0)
+
+plotbest_worst2 <- function(dataset){
+  dat = data.frame()
+  for (i in 1:10) {
+    name = dataset[i, "var"]
+    imp_tot = dataset[i, "imp_total"]
+    imp_1421 = dataset[i, "imp_1421"]
+    to_app = data.frame(Name = name,Imp = "Total", Amount = imp_tot)
+    to_app = rbind(to_app, data.frame(Name = name,Imp = "1421", Amount = imp_1421))
+    dat = rbind(dat, to_app)
+  }
+  ggplot(data=dat, aes(x=Name, y=Amount, fill=Imp)) +
+    geom_bar(stat="identity", position=position_dodge())+
+    scale_fill_brewer(palette="Paired")+
+    theme(axis.text.x = element_text(angle = 45, vjust = 0.95, hjust=1))
+}
+
+plotbest_worst2(comparison[order(-comparison$perc_diff),])
+plotbest_worst2(comparison[order(comparison$perc_diff),])
+#Variable that are increasing the most their variable importance are THREE POINT PERCENTAGE
+#(with an 11x increase), followed by Box plus/minus (8x) and Defensive win Share (7.9x)
+#Variable that are decreasing the most their variable importance are ROOKIE CONTRACT 
+#(0.14x), followed by two_points (0.36x) and Minutes_Played (0.39x)

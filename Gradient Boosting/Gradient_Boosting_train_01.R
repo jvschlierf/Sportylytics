@@ -143,11 +143,11 @@ pred_basket_y = predict.gbm(gbm_final, test_basket_x)
 ### 5. ANALYSIS OF RESULTS ###
 RMSE = sqrt(mean((test_basket_y - pred_basket_y)^2))
 cat('The root mean square error of the test data is ', round(RMSE,6),'\n')
-#RMSE is 0.03586
+#RMSE is 0.035768
 
 rsq <- (cor(pred_basket_y, test_basket$Salary_Cap_Perc))^2
 cat('The R-square of the test data is ', round(rsq,6), '\n')
-#R-square is 0.743249
+#R-square is 0.744587
 
 gbm.perf(gbm_final, method = "cv")
 
@@ -206,7 +206,7 @@ ggplot(final_test_basket, aes(x=age, fill=High_Low)) +
 plotbest_worst <- function(dataset){
   dat = data.frame()
   for (i in 1:10) {
-    name = dataset[i, "Player"]
+    name = paste(dataset[i, "Player"],dataset[i, "season"])
     sal_perc = dataset[i, "Salary_Cap_Perc"]
     pr = dataset[i, "Prediction"]
     to_app = data.frame(Name = name,Salary_Cap_Perc = "True", Amount = sal_perc)
