@@ -16,14 +16,12 @@ model_1 <- readRDS(file = "knn_1.Rds")
 model_2 <- readRDS(file = 'knn_2.Rds')
 model_3 <- readRDS(file = 'knn_3.Rds')
 model_4 <- readRDS(file = 'knn_4.Rds')
-
+model_5 <- readRDS(file = 'knn_5.Rds')
 
 #Load Data (both train and test)
 train_basket <- read.csv('../Dataset/Final\ Datasets/Final_data_Bplayers_2000_TRAIN.csv')
 test_basket <- read.csv('../Dataset/Final\ Datasets/Final_data_Bplayers_2000_TEST.csv')
-plot_basket <- read.csv('../Dataset/Final\ Datasets/Final_data_Bplayers_2000_TEST.csv')
-train_basket_q4 <- read.csv('../Dataset/Final\ Datasets/Datasets_Season_Filters/train_basket_Q4.csv')
-test_basket_q4 <- read.csv('../Dataset/Final\ Datasets/Datasets_Season_Filters/test_basket_Q4.csv')
+
 
 pre_treat <- function(dataset){
   
@@ -42,17 +40,38 @@ pre_treat <- function(dataset){
   dataset
 }
 
+pre_treat_7 <- function(dataset){
+  
+  #Create dummies for position
+  dataset$pos = lapply(dataset$pos, function(x) if (nchar(x)>2) {x=unlist(str_split(x, ",", simplify = TRUE)[1,1])} else {x})
+  dataset$pos = unlist(dataset[,"pos"])
+  dataset <- dummy_cols(dataset, select_columns = 'pos')
+  
+  #Selecting Seasons
+  dataset <- dataset %>% filter(season == "2014-15"| season == "2015-16" | season == "2016-17" | season == "2017-18" | season == "2018-19" | season == "2019-20"| season == "2020-21") 
+  
+  #Let's drop columns we won't use
+  drops <- c("season","Player",'tm','lg','Salary_Cap','Salary', 'pos', 'Image_Link')
+  dataset = dataset[ , !(names(dataset) %in% drops)]
+  
+  #We replace NA with 0
+  dataset[is.na(dataset)] = 0
+  
+  dataset
+}
 
+train_basket_tr = pre_treat(train_basket)
+test_basket_tr = pre_treat(test_basket)
 
-train_basket = pre_treat(train_basket)
-test_basket = pre_treat(test_basket)
+train_basket_7 = pre_treat_7(train_basket)
+test_basket_7 = pre_treat_7(test_basket)
 
 #Splitting off independent variables
-test_basket_x = subset(test_basket, select = -Salary_Cap_Perc) # feature and target array
-test_basket_y = test_basket[, "Salary_Cap_Perc"]
+test_basket_x = subset(test_basket_tr, select = -Salary_Cap_Perc) # feature and target array
+test_basket_y = test_basket_tr[, "Salary_Cap_Perc"]
 
-test_basketq4_x = subset(test_basket_q4, select = -Salary_Cap_Perc)
-test_basketq4_y = test_basket_q4[, "Salary_Cap_Perc"]
+test_basket7_x = subset(test_basket_7, select = -Salary_Cap_Perc)
+test_basket7_y = test_basket_7[, "Salary_Cap_Perc"]
 
 ################################
 # Training of Models           #
@@ -93,10 +112,10 @@ model_4 <- train(
 
 
 
-#run best model on just the last 5 years of data
+#run best model on just the last 7 years of data
 model_5 <- train(
   Salary_Cap_Perc ~.,
-  data = train_basket_q4,
+  data = train_basket_7,
   trControl = ctrl,
   preProcess = c("center", "scale"),
   method = 'kknn',
@@ -124,22 +143,23 @@ predictions_1 <- predict(model_1, newdata=test_basket_x)
 predictions_2 <- predict(model_2, newdata=test_basket_x)
 predictions_3 <- predict(model_3, newdata=test_basket_x)
 predictions_4 <- predict(model_4, newdata=test_basket_x)
-predictions_5 <- predict(model_5, newdata=test_basketq4_x)
+predictions_5 <- predict(model_5, newdata=test_basket7_x)
 
 # Root Mean Standard Error on Test Set
 RMSE_01 <- sqrt(mean((test_basket_y - predictions_1)^2)) # 0.04957655
 RMSE_02 <- sqrt(mean((test_basket_y - predictions_2)^2)) # 0.04813333
 RMSE_03 <- sqrt(mean((test_basket_y - predictions_3)^2)) # 0.03634415
 RMSE_04 <- sqrt(mean((test_basket_y - predictions_4)^2)) # 0.03469860
-RMSE_05 <- sqrt(mean((test_basketq4_y - predictions_5)^2)) # 0.03622753
+RMSE_05 <- sqrt(mean((test_basket7_y - predictions_5)^2)) # 0.03316408
 
+RMSE_05
 print(c(RMSE_01, RMSE_02, RMSE_03, RMSE_04, RMSE_05))
 
 cor(test_basket_y, predictions_1) ^ 2
 cor(test_basket_y, predictions_2) ^ 2
 cor(test_basket_y, predictions_3) ^ 2
 cor(test_basket_y, predictions_4) ^ 2
-cor(test_basketq4_y, predictions_5) ^ 2
+cor(test_basket7_y, predictions_5) ^ 2
 
 #plot best model against truth
 x_ax = 1:length(predictions_4)
