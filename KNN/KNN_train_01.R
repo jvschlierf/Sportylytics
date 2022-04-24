@@ -21,6 +21,7 @@ model_5 <- readRDS(file = 'knn_5.Rds')
 #Load Data (both train and test)
 train_basket <- read.csv('../Dataset/Final\ Datasets/Final_data_Bplayers_2000_TRAIN.csv')
 test_basket <- read.csv('../Dataset/Final\ Datasets/Final_data_Bplayers_2000_TEST.csv')
+final_test_basket = test_basket %>% filter(season == "2014-15"| season == "2015-16" | season == "2016-17" | season == "2017-18" | season == "2018-19" | season == "2019-20" | season == "2020-21")
 
 
 pre_treat <- function(dataset){
@@ -171,7 +172,62 @@ RMSE_05 <- sqrt(mean((test_basket7_y - predictions_5)^2)) # 0.03316408
 cor(test_basket7_y, predictions_5) ^ 2 #0.8081245
 
 
-#save models so we don;'t have to retrain every time
+#Let's analyse predictions
+final_test_basket$Prediction = predictions_5
+final_test_basket$Pred_Diff = final_test_basket$Salary_Cap_Perc - final_test_basket$Prediction
+final_test_basket$pos_eval = lapply(final_test_basket$pos, function(x) if (nchar(x)>2) {x=unlist(str_split(x, ",", simplify = TRUE)[1,1])} else {x})
+final_test_basket$pos_eval = unlist(final_test_basket[,"pos_eval"])
+
+#Let's see which are the contract connected with the highest/lowest difference with Real %
+maxdata = aggregate(data = final_test_basket, Pred_Diff~contract_type+pos_eval, FUN = mean)
+ggplot(maxdata, aes(x=contract_type, y=Pred_Diff, fill=pos_eval)) +
+  geom_bar(stat="identity")+
+  theme(axis.text.x = element_text(angle = 45, vjust = 0.95, hjust=1))
+
+#Barplot to see who is higher in occurrencies (if higher or lower)
+final_test_basket$High_Low = lapply(final_test_basket$Pred_Diff, function(x) if (x>0) {x = "Higher"} else {x = "Lower"})
+final_test_basket$High_Low = unlist(final_test_basket[,"High_Low"])
+
+ggplot(final_test_basket, aes(x=High_Low, fill=pos_eval)) +
+  geom_bar(stat="count", width=0.6, position=position_dodge())+
+  geom_text(aes(label = ..count..), stat = "count", vjust = 1.5, position = position_dodge(0.6), color="white")+
+  theme(axis.text.x = element_text(angle = 45, vjust = 0.95, hjust=1))
+
+#Barplot to analyze differences across Nationality
+ggplot(final_test_basket, aes(x=US_Player, fill=High_Low)) +
+  geom_bar(stat="count", width=0.6, position=position_dodge())+
+  geom_text(aes(label = ..count..), stat = "count", vjust = 1.5, position = position_dodge(0.6), color="white")+
+  theme(axis.text.x = element_text(angle = 45))
+#Increase of 3.34% in underpayment if you're from US!
+
+#Barplot to analyze Age
+ggplot(final_test_basket, aes(x=age, fill=High_Low)) +
+  geom_bar(stat="count", width=0.6, position=position_dodge())+
+  theme(axis.text.x = element_text(angle = 45))
+#Trend of underpayment tends to decrease as players become older! Great finding
+
+#Now we see which are the players with highest/lowest difference
+plotbest_worst <- function(dataset){
+  dat = data.frame()
+  for (i in 1:10) {
+    name = dataset[i, "Player"]
+    sal_perc = dataset[i, "Salary_Cap_Perc"]
+    pr = dataset[i, "Prediction"]
+    to_app = data.frame(Name = name,Salary_Cap_Perc = "True", Amount = sal_perc)
+    to_app = rbind(to_app, data.frame(Name = name,Salary_Cap_Perc = "Predicted", Amount = pr))
+    dat = rbind(dat, to_app)
+  }
+  ggplot(data=dat, aes(x=Name, y=Amount, fill=Salary_Cap_Perc)) +
+    geom_bar(stat="identity", position=position_dodge())+
+    scale_fill_brewer(palette="Paired")+
+    theme(axis.text.x = element_text(angle = 45, vjust = 0.95, hjust=1))
+}
+
+plotbest_worst(final_test_basket[order(-final_test_basket$Pred_Diff),])
+plotbest_worst(final_test_basket[order(final_test_basket$Pred_Diff),])
+
+
+#save models so we don't have to retrain every time
 saveRDS(model_1, file = "knn_1.Rds")
 saveRDS(model_2, file = "knn_2.Rds")
 saveRDS(model_3, file = "knn_3.Rds")
