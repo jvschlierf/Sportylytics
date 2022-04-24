@@ -40,38 +40,13 @@ pre_treat <- function(dataset){
   dataset
 }
 
-pre_treat_7 <- function(dataset){
-  
-  #Create dummies for position
-  dataset$pos = lapply(dataset$pos, function(x) if (nchar(x)>2) {x=unlist(str_split(x, ",", simplify = TRUE)[1,1])} else {x})
-  dataset$pos = unlist(dataset[,"pos"])
-  dataset <- dummy_cols(dataset, select_columns = 'pos')
-  
-  #Selecting Seasons
-  dataset <- dataset %>% filter(season == "2014-15"| season == "2015-16" | season == "2016-17" | season == "2017-18" | season == "2018-19" | season == "2019-20"| season == "2020-21") 
-  
-  #Let's drop columns we won't use
-  drops <- c("season","Player",'tm','lg','Salary_Cap','Salary', 'pos', 'Image_Link')
-  dataset = dataset[ , !(names(dataset) %in% drops)]
-  
-  #We replace NA with 0
-  dataset[is.na(dataset)] = 0
-  
-  dataset
-}
-
 train_basket_tr = pre_treat(train_basket)
 test_basket_tr = pre_treat(test_basket)
 
-train_basket_7 = pre_treat_7(train_basket)
-test_basket_7 = pre_treat_7(test_basket)
 
 #Splitting off independent variables
 test_basket_x = subset(test_basket_tr, select = -Salary_Cap_Perc) # feature and target array
 test_basket_y = test_basket_tr[, "Salary_Cap_Perc"]
-
-test_basket7_x = subset(test_basket_7, select = -Salary_Cap_Perc)
-test_basket7_y = test_basket_7[, "Salary_Cap_Perc"]
 
 ################################
 # Training of Models           #
@@ -109,21 +84,6 @@ model_4 <- train(
   method = 'kknn',
   tuneLength = 20)
 
-
-
-
-#run best model on just the last 7 years of data
-model_5 <- train(
-  Salary_Cap_Perc ~.,
-  data = train_basket_7,
-  trControl = ctrl,
-  preProcess = c("center", "scale"),
-  method = 'kknn',
-  tuneLength = 20)
-
-
-
-
 ####################
 # End of Training  #
 ####################
@@ -135,31 +95,25 @@ model_3
 plot(model_3)
 model_4
 plot(model_4)
-model_5
-plot(model_5)
 
 #predict using different models
 predictions_1 <- predict(model_1, newdata=test_basket_x)
 predictions_2 <- predict(model_2, newdata=test_basket_x)
 predictions_3 <- predict(model_3, newdata=test_basket_x)
 predictions_4 <- predict(model_4, newdata=test_basket_x)
-predictions_5 <- predict(model_5, newdata=test_basket7_x)
 
 # Root Mean Standard Error on Test Set
 RMSE_01 <- sqrt(mean((test_basket_y - predictions_1)^2)) # 0.04957655
 RMSE_02 <- sqrt(mean((test_basket_y - predictions_2)^2)) # 0.04813333
 RMSE_03 <- sqrt(mean((test_basket_y - predictions_3)^2)) # 0.03634415
 RMSE_04 <- sqrt(mean((test_basket_y - predictions_4)^2)) # 0.03469860
-RMSE_05 <- sqrt(mean((test_basket7_y - predictions_5)^2)) # 0.03316408
 
-RMSE_05
-print(c(RMSE_01, RMSE_02, RMSE_03, RMSE_04, RMSE_05))
+print(c(RMSE_01, RMSE_02, RMSE_03, RMSE_04))
 
-cor(test_basket_y, predictions_1) ^ 2
-cor(test_basket_y, predictions_2) ^ 2
-cor(test_basket_y, predictions_3) ^ 2
-cor(test_basket_y, predictions_4) ^ 2
-cor(test_basket7_y, predictions_5) ^ 2
+cor(test_basket_y, predictions_1) ^ 2 #0.5106181
+cor(test_basket_y, predictions_2) ^ 2 #0.5367857
+cor(test_basket_y, predictions_3) ^ 2 #0.736463
+cor(test_basket_y, predictions_4) ^ 2 #0.7593972
 
 #plot best model against truth
 x_ax = 1:length(predictions_4)
@@ -167,15 +121,57 @@ plot(x_ax, test_basket_y, col="blue", pch=20, cex=.9)
 lines(x_ax, predictions_4, col="red", pch=20, cex=.9) 
 
 
-#append best model to test data
-plot_basket['pred'] <- predictions_4
+## RUN THE BEST MODEL ON THE LAST 7 SEASONS ##
+#Preprocessing
+pre_treat_7 <- function(dataset){
+  
+  #Create dummies for position
+  dataset$pos = lapply(dataset$pos, function(x) if (nchar(x)>2) {x=unlist(str_split(x, ",", simplify = TRUE)[1,1])} else {x})
+  dataset$pos = unlist(dataset[,"pos"])
+  dataset <- dummy_cols(dataset, select_columns = 'pos')
+  
+  #Selecting Seasons
+  dataset <- dataset %>% filter(season == "2014-15"| season == "2015-16" | season == "2016-17" | season == "2017-18" | season == "2018-19" | season == "2019-20"| season == "2020-21") 
+  
+  #Let's drop columns we won't use
+  drops <- c("season","Player",'tm','lg','Salary_Cap','Salary', 'pos', 'Image_Link')
+  dataset = dataset[ , !(names(dataset) %in% drops)]
+  
+  #We replace NA with 0
+  dataset[is.na(dataset)] = 0
+  
+  dataset
+}
 
-plot_basket['performance'] <- plot_basket$Salary_Cap_Perc - plot_basket$pred
+train_basket_7 = pre_treat_7(train_basket)
+test_basket_7 = pre_treat_7(test_basket)
 
-mean(plot_basket$performance) # -0.0007918363
+#Divide test set in X and Y
+test_basket7_x = subset(test_basket_7, select = -Salary_Cap_Perc)
+test_basket7_y = test_basket_7[, "Salary_Cap_Perc"]
 
 
- #save models so we don;'t have to retrain every time
+#### TRAINING ####
+#run best model on just the last 7 years of data
+model_5 <- train(
+  Salary_Cap_Perc ~.,
+  data = train_basket_7,
+  trControl = ctrl,
+  preProcess = c("center", "scale"),
+  method = 'kknn',
+  tuneLength = 20)
+
+#### END OF TRAINING ####
+
+model_5
+plot(model_5)
+
+predictions_5 <- predict(model_5, newdata=test_basket7_x)
+RMSE_05 <- sqrt(mean((test_basket7_y - predictions_5)^2)) # 0.03316408
+cor(test_basket7_y, predictions_5) ^ 2 #0.8081245
+
+
+#save models so we don;'t have to retrain every time
 saveRDS(model_1, file = "knn_1.Rds")
 saveRDS(model_2, file = "knn_2.Rds")
 saveRDS(model_3, file = "knn_3.Rds")
