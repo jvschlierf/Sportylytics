@@ -7,7 +7,7 @@ Università Bocconi, Milan
 <br />
 <br />
 Members:<br />
-Alberto Allegri, Beatrice Guidotti, Federico Leonardi, Jakob Schlierf, Leonardo Yang <br />
+Alberto Allegri, Beatrice Guidotti, Federico Leonardi, Tiziano Paci, Jakob Schlierf & Leonardo Yang <br />
 
 
 
