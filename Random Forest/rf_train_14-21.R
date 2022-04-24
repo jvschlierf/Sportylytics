@@ -54,17 +54,25 @@ test_basket = pre_treat(test_basket)
 test_basket_x = subset(test_basket, select = -Salary_Cap_Perc) # feature and target array
 test_basket_y = test_basket[, "Salary_Cap_Perc"]
 
-
+##### TRAINING #####
 ### Random Forest ###
 set.seed(123)
 rf = randomForest(train_basket$Salary_Cap_Perc~. ,
                   data = train_basket)
-print(rf) #%Var 75.94
-rf_pred = predict(rf, test_basket_x)
-rmse = sqrt(mean((test_basket_y - rf_pred)^2))
-rmse 
-#0.03510314
-saveRDS(rf, file = "rf_simple_14-21.Rds")
+
+
+#saveRDS(rf, file = "rf_simple_14-21.Rds")
+#Load the model
+model1 <- readRDS(file = "rf_simple_14-21.Rds")
+print(model1)
+model1_pred = predict(model1, test_basket_x)
+
+rmse_model1 = sqrt(mean((test_basket_y - model1_pred)^2))
+cat('The root mean square error of the test data is ', round(rmse_model1,6),'\n')
+#rmse is 0.035103
+rsq <- (cor(model1_pred, test_basket$Salary_Cap_Perc))^2
+cat('The R-square of the test data is ', round(rsq,6), '\n')
+#R is 0.787022
 
 #Tuning the model
 
@@ -116,56 +124,54 @@ rf_final = randomForest(train_basket$Salary_Cap_Perc~. ,
                         mtry = 32,
                         importance = TRUE)
 
-print(rf_final) #%Var 76.5
-rf_final_pred = predict(rf_final, test_basket_x)
-rmse_final = sqrt(mean((test_basket_y - rf_final_pred)^2))
-print(rmse_final)  ## 0.03489092
-
-#saveRDS(rf_final, file = "rf_final_14-21.Rds")
+saveRDS(rf_final, file = "rf_final_14-21.Rds")
+##### END OF TRAINING #####
 
 # Load the model
 model <- readRDS(file = "rf_final_14-21.Rds")
 model_pred = predict(model, test_basket_x)
+
 rmse_model = sqrt(mean((test_basket_y - model_pred)^2))
-print(rmse_model)  ## 0.03489092
+cat('The root mean square error of the test data is ', round(rmse_model,6),'\n')
+#rmse is 0.034891 
+rsq <- (cor(model_pred, test_basket$Salary_Cap_Perc))^2
+cat('The R-square of the test data is ', round(rsq,6), '\n')
+#R is 0.787836
 
 ###  ANALYSIS OF RESULTS ###
-
-#Evaluate variable importance
-importance(model)
-varImpPlot(model, n.var = 15)
-
 
 # visualize the model, actual and predicted data
 x_ax = 1:length(model_pred)
 plot(x_ax, test_basket_y, col="blue", pch=20, cex=.9)
 lines(x_ax, model_pred, col="red", pch=20, cex=.9) 
 
+#Evaluate variable importance
+importance(model)
+varImpPlot(model, n.var = 10)
+
 
 #Let's analyse predictions
 final_test_basket = final_test_basket  %>% filter(season == "2014-15"| season == "2015-16" | season == "2016-17" | season == "2017-18" | season == "2018-19" | season == "2019-20" | season == "2020-21")
-final_test_basket$Prediction = model_pred
-final_test_basket$Pred_Diff = final_test_basket$Salary_Cap_Perc - final_test_basket$Prediction
+#Dummy pos
 final_test_basket$pos_eval = lapply(final_test_basket$pos, function(x) if (nchar(x)>2) {x=unlist(str_split(x, ",", simplify = TRUE)[1,1])} else {x})
 final_test_basket$pos_eval = unlist(final_test_basket[,"pos_eval"])
+
+final_test_basket$Prediction = model_pred
+final_test_basket$Pred_Diff = final_test_basket$Salary_Cap_Perc - final_test_basket$Prediction
+#High if diff >0, low o.w.
+final_test_basket$High_Low = lapply(final_test_basket$Pred_Diff, function(x) if (x>0) {x = "Higher"} else {x = "Lower"})
+final_test_basket$High_Low = unlist(final_test_basket[,"High_Low"])
+
+#Barplot to see who is higher in occurrences (if higher or lower)
+ggplot(final_test_basket, aes(x=High_Low, fill=pos_eval)) +
+  geom_bar(stat="count", width=0.6, position=position_dodge())+
+  geom_text(aes(label = ..count..), stat = "count", vjust = 1.5, position = position_dodge(0.6), color="white")+
+  theme(axis.text.x = element_text(angle = 45, vjust = 0.95, hjust=1))
 
 #Let's see which are the contract connected with the highest/lowest difference with Real %
 maxdata = aggregate(data = final_test_basket, Pred_Diff~contract_type+pos_eval, FUN = mean)
 ggplot(maxdata, aes(x=contract_type, y=Pred_Diff, fill=pos_eval)) +
   geom_bar(stat="identity")+
-  theme(axis.text.x = element_text(angle = 45, vjust = 0.95, hjust=1))
-#TEAM OPTION has the highest difference (that means they're the players that do not
-#repay the expenditure)
-#MINIMUM has the lowest difference (that means they tend to have players that play
-#well with low expenditure)
-
-#Barplot to see who is higher in occurrencies (if higher or lower)
-final_test_basket$High_Low = lapply(final_test_basket$Pred_Diff, function(x) if (x>0) {x = "Higher"} else {x = "Lower"})
-final_test_basket$High_Low = unlist(final_test_basket[,"High_Low"])
-
-ggplot(final_test_basket, aes(x=High_Low, fill=pos_eval)) +
-  geom_bar(stat="count", width=0.6, position=position_dodge())+
-  geom_text(aes(label = ..count..), stat = "count", vjust = 1.5, position = position_dodge(0.6), color="white")+
   theme(axis.text.x = element_text(angle = 45, vjust = 0.95, hjust=1))
 
 #Barplot to analyze differences across Nationality
@@ -173,7 +179,7 @@ ggplot(final_test_basket, aes(x=US_Player, fill=High_Low)) +
   geom_bar(stat="count", width=0.6, position=position_dodge())+
   geom_text(aes(label = ..count..), stat = "count", vjust = 1.5, position = position_dodge(0.6), color="white")+
   theme(axis.text.x = element_text(angle = 45))
-#Increase of 3.34% in underpayment if you're from US!
+#Increase of 8% in underpayment if you're from US!
 
 #Barplot to analyze Age
 ggplot(final_test_basket, aes(x=age, fill=High_Low)) +
@@ -188,15 +194,17 @@ plotbest_worst <- function(dataset){
     name = dataset[i, "Player"]
     sal_perc = dataset[i, "Salary_Cap_Perc"]
     pr = dataset[i, "Prediction"]
-    to_app = data.frame(Name = name,Salary_Cap_Perc = "True", Amount = sal_perc)
-    to_app = rbind(to_app, data.frame(Name = name,Salary_Cap_Perc = "Predicted", Amount = pr))
+    season = dataset[i,"season"]
+    to_app = data.frame(Name = paste(name, season, sep = " "),Salary_Cap_Perc = "True", Amount = sal_perc)
+    to_app = rbind(to_app, data.frame(Name = paste(name, season, sep = " "),Salary_Cap_Perc = "Predicted", Amount = pr))
     dat = rbind(dat, to_app)
   }
   ggplot(data=dat, aes(x=Name, y=Amount, fill=Salary_Cap_Perc)) +
     geom_bar(stat="identity", position=position_dodge())+
     scale_fill_brewer(palette="Paired")+
-    theme(axis.text.x = element_text(angle = 45, vjust = 0.95, hjust=1))
+    theme(axis.text.x = element_text(angle = 65, vjust = 0.95, hjust=1))
 }
-plotbest_worst(final_test_basket[order(final_test_basket$Pred_Diff),])
-plotbest_worst(final_test_basket[order(-final_test_basket$Pred_Diff),])
+final_test_basket = subset(final_test_basket, final_test_basket$g > 20)
+plotbest_worst(final_test_basket[order(final_test_basket$Pred_Diff),]) #Underpaid
+plotbest_worst(final_test_basket[order(-final_test_basket$Pred_Diff),]) #Overpaid
 
