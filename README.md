@@ -35,7 +35,7 @@ The below tables details the RMSE & R&#x00B2; score for each of the models that 
 | KNN               | 0.033 | 0.808 |
 | Random Forest     | 0.035 | 0.765 |
 | Gradient Boosting | 0.036 | 0.777 |
-| SVM               | 0.033 | 0.821|
+| SVM               | 0.032 | 0.821|
 
 
 ## FAQs
