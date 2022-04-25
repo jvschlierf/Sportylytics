@@ -13,7 +13,7 @@ Alberto Allegri, Beatrice Guidotti, Federico Leonardi, Tiziano Paci, Jakob Schli
 **Tech Stack:**<br />
 ![R](https://img.shields.io/badge/r-%23276DC3.svg?style=for-the-badge&logo=r&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
+ [<img src='https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white'>](https://sportylytics-predictions.herokuapp.com/)
 
 ## Table of Contents
 1. [General Info](#general-info)
@@ -27,7 +27,8 @@ This repository serves as the central storage for the files (both code as well a
 ## File Structure
 
 The repository contains folders for every model, as well as one for the dataset. <br /> Each folder contains both the code, as well as the relevant data files (either the saved models which can be imported instead of retrained to save time, or the scraped and cleaned data). The only exception to this is the Random Forest folder, where the trained models were too big to be stored on Github, so instead they are stored under this [link](https://drive.google.com/drive/folders/1GTHWWY3naEVQNf64pUhkcUv5Qbj_VSdC).<br />
-The code files all have relative paths for the import of data, therefore can be used directly without having to change paths once the entire repository is cloned to a local machine. 
+The code files all have relative paths for the import of data, therefore can be used directly without having to change paths once the entire repository is cloned to a local machine.
+Lastly, the deployed heroku app can be reached under this [link](https://sportylytics-predictions.herokuapp.com/).
 
 
 ## Models
