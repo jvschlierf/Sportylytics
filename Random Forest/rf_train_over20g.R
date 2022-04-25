@@ -1,6 +1,6 @@
 # 20630 - Introduction to Sports Analytics
 # Group 2 Project 3 - Supervised Machine Learning Model
-# Model X: Random Forest
+# Model : Random Forest
 
 # clear environment & set working directory
 rm(list=ls()) 
@@ -132,6 +132,10 @@ model <- readRDS(file = "rf_final_o20.Rds")
 model_pred = predict(model, test_basket_x)
 rmse_model = sqrt(mean((test_basket_y - model_pred)^2))
 print(rmse_model)  ## 0.03642129
+
+rsq <- (cor(model_pred, test_basket$Salary_Cap_Perc))^2
+cat('The R-square of the test data is ', round(rsq,6), '\n')
+#R is 0.781757
 
 ###  ANALYSIS OF RESULTS ###
 

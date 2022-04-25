@@ -1,6 +1,6 @@
 # 20630 - Introduction to Sports Analytics
 # Group 2 Project 3 - Supervised Machine Learning Model
-# Model X: Random Forest
+# Model : Random Forest
 
 # clear environment & set working directory
 rm(list=ls()) 
@@ -59,10 +59,14 @@ rf = randomForest(train_basket$Salary_Cap_Perc~. ,
                   data = train_basket)
 print(rf) #%Var 72.36
 rf_pred = predict(rf, test_basket_x)
-rmse = sqrt(mean((test_basket_y - rf_pred)^2))
-rmse 
-#0.03612642
 saveRDS(rf, file = "rf_simple.Rds")
+
+rmse = sqrt(mean((test_basket_y - rf_pred)^2))
+cat('The root mean square error of the test data is ', round(rmse,6),'\n')
+#rmse is 0.03612642 
+rsq <- (cor(rf_pred, test_basket$Salary_Cap_Perc))^2
+cat('The R-square of the test data is ', round(rsq,6), '\n')
+#R is 0.742586
 
 #Tuning the model
 
@@ -115,24 +119,25 @@ rf_final = randomForest(train_basket$Salary_Cap_Perc~. ,
                   mtry = 32,
                   importance = TRUE)
 
-print(rf_final) #%Var 72.52
-rf_final_pred = predict(rf_final, test_basket_x)
-rmse_final = sqrt(mean((test_basket_y - rf_final_pred)^2))
-print(rmse_final)  ## 0.03588078
-
-#saveRDS(rf_final, file = "rf_final.Rds")
+saveRDS(rf_final, file = "rf_final.Rds")
 
 # Load the model
 model <- readRDS(file = "rf_final.Rds")
+print(model)
 model_pred = predict(model, test_basket_x)
+
 rmse_model = sqrt(mean((test_basket_y - model_pred)^2))
-print(rmse_model)  ## 0.03588078
+cat('The root mean square error of the test data is ', round(rmse_model,6),'\n')
+#rmse is 0.035881 
+rsq <- (cor(model_pred, test_basket$Salary_Cap_Perc))^2
+cat('The R-square of the test data is ', round(rsq,6), '\n')
+#R is 0.745283
 
 ###  ANALYSIS OF RESULTS ###
   
 #Evaluate variable importance
 importance(model)
-varImpPlot(model, n.var = 15)
+varImpPlot(model, n.var = 10)
 
 
 # visualize the model, actual and predicted data
