@@ -1,5 +1,6 @@
 # Sportylytics
 ## Is the World linear?
+
 ### An inquiry into supervised machine learning to determine NBA players salary
 Project 3 Group 2 <br />
 20630 - Introduction to Sports Analytics <br />
@@ -9,7 +10,9 @@ Università Bocconi, Milan
 Members:<br />
 Alberto Allegri, Beatrice Guidotti, Federico Leonardi, Tiziano Paci, Jakob Schlierf & Leonardo Yang <br />
 
-
+![R](https://img.shields.io/badge/r-%23276DC3.svg?style=for-the-badge&logo=r&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
 
 ## Table of Contents
 1. [General Info](#general-info)
