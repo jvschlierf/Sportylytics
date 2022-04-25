@@ -66,6 +66,11 @@ Gradient Boosting is an iterative functional gradient algorithm, i.e an algorith
 <br />
 
 ### Support Vector Machines (SVM)
+To understand how a SVM works, let's start from a two classes classification problem in a n-dimensional space. SVM tries to find a hyperplane (n-1 dimensions plane) that separates these two classes. Then it classifies the new point depending on whether it lies on the positive or negative side of the hyperplane depending on the classes to predict. In the regression case, we have to find a function that approximates mapping from an input domain to real numbers on the basis of a training sample. We ran three different versions of this model (all with tuned hyperparameters):
+* SVM trained on full dataset (all observations, no filters)
+* SVM trained using only players who played more than 20 games in a single season (so discarding players whose statistics where not fully reliable)
+* Lastly, SVM trained using only the last 7 seasons (from 2014-2015 to 2020-2021), which gave us the best results
+<br />
 
 ## Results
 The below tables details the RMSE & R&#x00B2; score for each of the models that we ran. The score presented is the that of the respective best version of that model.
