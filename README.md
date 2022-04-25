@@ -27,12 +27,33 @@ This repository serves as the central storage for the files (both code as well a
 
 ## Models
 
-We ran 4 different models:
+We ran 5 different models:
 1. **Ordinary Least Squares Regression (OLS)**
 2. **K-Nearest Neighbors (KNN)**
 3. **Random Forest**
 4. **Gradient Boosting**
 5. **Support Vector Machines (SVM)**
+<br />
+In the following, we will give a short introduction to each of the models.
+
+### Ordinary Least Squares Regression (OLS)
+
+### K-Nearest Neighbors (KNN)
+In the KNN model we estimate the value of a specific data point by looking at the values of data points surrounding it. K in this context is the number of neighbors that we look at to estimate our data point of interest. Since we estimate our data point of interest by majority vote of the surrounding data points, we would want our K to be odd, such that we cannot have a stalemate vote. We ran 5 different versions of this model:
+* Simple KNN model with K = 5
+* More complex model with 25 resampled bootstrap repetitions with a cross validated K (K = 9)
+* Similiarly resampled model where we additionally centered and scaled our features (K = 9)
+* A model where we (in addition to the previous preprocessing steps) gave the model a broader range of K to try (K = 11)
+* Lastly, we ran the previous model on only the last 7 seasons, which gave us the best results
+<br />
+
+### Random Forest
+
+### Gradient Boosting
+
+### Support Vector Machines (SVM)
+  
+ 
 
 ## Results
 The below tables details the RMSE & R&#x00B2; score for each of the models that we ran. The score presented is the that of the respective best version of that model.
