@@ -18,8 +18,6 @@ Alberto Allegri, Beatrice Guidotti, Federico Leonardi, Tiziano Paci, Jakob Schli
 4. [Results](#results)
 
 
-
-
 ## General Info
 This repository serves as the central storage for the files (both code as well as data) for the final project of class 20630 - Introduction to Sports Analytics Spring 2022 at Università Bocconi. In the following, we will explain what files we have provided here, the structure that orders them, which models we included, as well as the results we achieved.  
 ## File Structure
@@ -49,10 +47,13 @@ In the KNN model we estimate the value of a specific data point by looking at th
 ### Random Forest
 
 ### Gradient Boosting
+Gradient Boosting is an iterative functional gradient algorithm, i.e an algorithm which minimizes a loss function by iteratively choosing a function that points towards the negative gradient. It is key to underline the fact that, as opposed to Random Forest, trains many models in a gradual, additive and **sequential** manner. This means that Gradient boosting is based on the errors made by the previous decision tree, and sequentially tries to improve performances and reduce errors of the previous tree. We ran three different versions of this model (all with tuned hyperparameters):
+* Gradient Boosting trained on full dataset (all observations, no filters)
+* Gradient Boosting trained using only players who played more than 20 games in a single season (so discarding players whose statistics where not fully reliable)
+* Lastly, Gradient Boosting trained using only the last 7 seasons (from 2014-2015 to 2020-2021), which gave us the best results
+<br />
 
 ### Support Vector Machines (SVM)
-  
- 
 
 ## Results
 The below tables details the RMSE & R&#x00B2; score for each of the models that we ran. The score presented is the that of the respective best version of that model.
@@ -63,5 +64,4 @@ The below tables details the RMSE & R&#x00B2; score for each of the models that 
 | **Random Forest**   | 0.035 | 0.765 |
 | **Gradient Boosting** | 0.036 | 0.777 |
 | **SVM**           | 0.032 | 0.821|
-
 
