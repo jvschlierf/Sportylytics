@@ -16,7 +16,6 @@ Alberto Allegri, Beatrice Guidotti, Federico Leonardi, Tiziano Paci, Jakob Schli
 2. [File Structure](#file-structure)
 3. [Models](#models)
 4. [Results](#results)
-5. [FAQs](#faqs)
 
 
 
@@ -66,4 +65,3 @@ The below tables details the RMSE & R&#x00B2; score for each of the models that 
 | **SVM**           | 0.032 | 0.821|
 
 
-## FAQs
