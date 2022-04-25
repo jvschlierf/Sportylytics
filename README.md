@@ -7,9 +7,10 @@ Project 3 Group 2 <br />
 Università Bocconi, Milan
 <br />
 <br />
-Members:<br />
+**Members:**<br />
 Alberto Allegri, Beatrice Guidotti, Federico Leonardi, Tiziano Paci, Jakob Schlierf & Leonardo Yang <br />
 
+**Tech Stack:**<br />
 ![R](https://img.shields.io/badge/r-%23276DC3.svg?style=for-the-badge&logo=r&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
@@ -24,6 +25,10 @@ Alberto Allegri, Beatrice Guidotti, Federico Leonardi, Tiziano Paci, Jakob Schli
 ## General Info
 This repository serves as the central storage for the files (both code as well as data) for the final project of class 20630 - Introduction to Sports Analytics Spring 2022 at Università Bocconi. In the following, we will explain what files we have provided here, the structure that orders them, which models we included, as well as the results we achieved.  
 ## File Structure
+
+The repository contains folders for every model, as well as one for the dataset. <br /> Each folder contains both the code, as well as the relevant data files (either the saved models which can be imported instead of retrained to save time, or the scraped and cleaned data). The only exception to this is the Random Forest folder, where the trained models were too big to be stored on Github, so instead they are stored under this [link](https://drive.google.com/drive/folders/1GTHWWY3naEVQNf64pUhkcUv5Qbj_VSdC).<br />
+The code files all have relative paths for the import of data, therefore can be used directly without having to change paths once the entire repository is cloned to a local machine. 
+
 
 ## Models
 
@@ -48,7 +53,8 @@ So, we tried to apply 4 types of variable selection techniques:
 <br />
 The Forward stepwise selection (based on AIC) turned out working the best among the others and therefore we re-ran the OLS only with the subset of variables selected by the above-mentioned technique. Improvements achieved both in terms of R-Squared and RMSE.
 Finally, we decided to apply the best model up to now (the OLS based on the forward stepwise variable selection) but only to the subset of our dataset represented by the last 7 NBA seasons (2013-14 up to 2020-21). This option turned out working particularly well and as expected the model, in this context, managed to understand which variables are becoming the most important in the last years.
-
+<br />
+<br />
 
 ### 2. K-Nearest Neighbors (KNN)
 In the KNN model we estimate the value of a specific data point by looking at the values of data points surrounding it. K in this context is the number of neighbors that we look at to estimate our data point of interest. Since we estimate our data point of interest by majority vote of the surrounding data points, we would want our K to be odd, such that we cannot have a stalemate vote. We ran 5 different versions of this model:
@@ -90,4 +96,13 @@ The below tables details the RMSE & R&#x00B2; score for each of the models that 
 | **Random Forest**   | 0.035 | 0.765 |
 | **Gradient Boosting** | 0.036 | 0.777 |
 | **SVM**           | 0.032 | 0.821|
+
+<br />
+<br />
+
+A short interpretation of the results shows that: <br />
+* If we fit well-performing model to only the last 7 seasons (in line with the experts opinion on when the increased focus for 3pt shots happened), we see an increase in model performance
+* The most important variables proved to be minutes played, points scored, age as well as our contract variables
+* Advanced Metrics do not perform as well as expected,  instead, we see a market reliance on standard metrics
+* If we compare variable importance for the whole dataset and only the last 7 seasons, we see that the biggest increase in importance is 3pt% (11x), Box Plus-Minus (8x), and Defensive Win Shares (7.9x)
 
