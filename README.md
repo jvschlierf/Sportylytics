@@ -33,7 +33,7 @@ We ran 5 different models:
 <br />
 In the following, we will give a short introduction to each of the models.
 
-### Ordinary Least Squares Regression (OLS)
+### 1. Ordinary Least Squares Regression (OLS)
 The Linear Regression Model has been proposed as our initial benchmark for its ability to achieve quite good and very interpretable results with little effort in terms of training time. Moreover, the possibility to have a linear benchmark also helped us in understanding the improvements achieved when addressing non-linear models. Indeed, we started by running a simple OLS on the whole dataset and then trying to fine-tune it in order to have the best possible initial benchmark. After the first outcome, we noticed issues of multicollinearity across variables which result in making our model unreliable. Therefore, we decided to address the issue in various ways:
 Firstly, we manually excluded the variables which provided the highest source of collinearity. However, this approach didn’t help in improving the performance.
 Subsequently, we became a bit more formal by applying PCA as a variable reduction technique to understand which components could provide the most relevant information for our purpose. As expected, we eliminated the issue of multicollinearity but performance didn’t improve as we hoped.
@@ -47,7 +47,7 @@ The Forward stepwise selection (based on AIC) turned out working the best among 
 Finally, we decided to apply the best model up to now (the OLS based on the forward stepwise variable selection) but only to the subset of our dataset represented by the last 7 NBA seasons (2013-14 up to 2020-21). This option turned out working particularly well and as expected the model, in this context, managed to understand which variables are becoming the most important in the last years.
 
 
-### K-Nearest Neighbors (KNN)
+### 2. K-Nearest Neighbors (KNN)
 In the KNN model we estimate the value of a specific data point by looking at the values of data points surrounding it. K in this context is the number of neighbors that we look at to estimate our data point of interest. Since we estimate our data point of interest by majority vote of the surrounding data points, we would want our K to be odd, such that we cannot have a stalemate vote. We ran 5 different versions of this model:
 * Simple KNN model with K = 5
 * More complex model with 25 resampled bootstrap repetitions with a cross validated K (K = 9)
@@ -56,16 +56,16 @@ In the KNN model we estimate the value of a specific data point by looking at th
 * Lastly, we ran the previous model on only the last 7 seasons, which gave us the best results
 <br />
 
-### Random Forest
+### 3. Random Forest
 
-### Gradient Boosting
+### 4. Gradient Boosting
 Gradient Boosting is an iterative functional gradient algorithm, i.e an algorithm which minimizes a loss function by iteratively choosing a function that points towards the negative gradient. It is key to underline the fact that, as opposed to Random Forest, it trains many models in a gradual, additive and **sequential** manner. This means that Gradient Boosting is based on the **errors** made by the previous decision tree, and sequentially tries to improve performances and reduce errors. We ran three different versions of this model (all with tuned hyperparameters):
 * Gradient Boosting trained on full dataset (all observations, no filters)
 * Gradient Boosting trained using only players who played more than 20 games in a single season (so discarding players whose statistics where not fully reliable)
 * Lastly, Gradient Boosting trained using only the last 7 seasons (from 2014-2015 to 2020-2021), which gave us the best results
 <br />
 
-### Support Vector Machines (SVM)
+### 5. Support Vector Machines (SVM)
 To understand how a SVM works, let's start from a two classes classification problem in a n-dimensional space. SVM tries to find a hyperplane (n-1 dimensions plane) that separates these two classes. Then it classifies the new point depending on whether it lies on the positive or negative side of the hyperplane depending on the classes to predict. In the regression case, we have to find a function that approximates mapping from an input domain to real numbers on the basis of a training sample. We ran three different versions of this model (all with tuned hyperparameters):
 * SVM trained on full dataset (all observations, no filters)
 * SVM trained using only players who played more than 20 games in a single season (so discarding players whose statistics where not fully reliable)
