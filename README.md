@@ -47,7 +47,7 @@ In the KNN model we estimate the value of a specific data point by looking at th
 ### Random Forest
 
 ### Gradient Boosting
-Gradient Boosting is an iterative functional gradient algorithm, i.e an algorithm which minimizes a loss function by iteratively choosing a function that points towards the negative gradient. It is key to underline the fact that, as opposed to Random Forest, trains many models in a gradual, additive and **sequential** manner. This means that Gradient boosting is based on the errors made by the previous decision tree, and sequentially tries to improve performances and reduce errors of the previous tree. We ran three different versions of this model (all with tuned hyperparameters):
+Gradient Boosting is an iterative functional gradient algorithm, i.e an algorithm which minimizes a loss function by iteratively choosing a function that points towards the negative gradient. It is key to underline the fact that, as opposed to Random Forest, it trains many models in a gradual, additive and **sequential** manner. This means that Gradient Boosting is based on the **errors** made by the previous decision tree, and sequentially tries to improve performances and reduce errors. We ran three different versions of this model (all with tuned hyperparameters):
 * Gradient Boosting trained on full dataset (all observations, no filters)
 * Gradient Boosting trained using only players who played more than 20 games in a single season (so discarding players whose statistics where not fully reliable)
 * Lastly, Gradient Boosting trained using only the last 7 seasons (from 2014-2015 to 2020-2021), which gave us the best results
