@@ -27,7 +27,7 @@ This repository serves as the central storage for the files (both code as well a
 ## File Structure
 
 The repository contains folders for every model, as well as one for the dataset. <br /> Each folder contains both the code, as well as the relevant data files (either the saved models which can be imported instead of retrained to save time, or the scraped and cleaned data). The only exception to this is the Random Forest folder, where the trained models were too big to be stored on Github, so instead they are stored under this [link](https://drive.google.com/drive/folders/1GTHWWY3naEVQNf64pUhkcUv5Qbj_VSdC).<br />
-The code files all have relative paths for the import of data, therefore can be used directly without having to change paths once the entire repository is cloned to a local machine.
+The code files all have relative paths for the import of data, therefore can be used directly without having to change paths once the entire repository is cloned to a local machine. Further, we have included pdf versions of both our intermediate as well as our final presentations, for the sake of completeness. 
 Lastly, the deployed heroku app can be reached under this [link](https://sportylytics-predictions.herokuapp.com/).
 
 
