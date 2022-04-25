@@ -34,6 +34,17 @@ We ran 5 different models:
 In the following, we will give a short introduction to each of the models.
 
 ### Ordinary Least Squares Regression (OLS)
+The Linear Regression Model has been proposed as our initial benchmark for its ability to achieve quite good and very interpretable results with little effort in terms of training time. Moreover, the possibility to have a linear benchmark also helped us in understanding the improvements achieved when addressing non-linear models. Indeed, we started by running a simple OLS on the whole dataset and then trying to fine-tune it in order to have the best possible initial benchmark. After the first outcome, we noticed issues of multicollinearity across variables which result in making our model unreliable. Therefore, we decided to address the issue in various ways:
+Firstly, we manually excluded the variables which provided the highest source of collinearity. However, this approach didn’t help in improving the performance.
+Subsequently, we became a bit more formal by applying PCA as a variable reduction technique to understand which components could provide the most relevant information for our purpose. As expected, we eliminated the issue of multicollinearity but performance didn’t improve as we hoped.
+So, we tried to apply 4 types of variable selection techniques:
+*	Forward stepwise selection
+*	Backward stepwise selection
+*	Bi-directional stepwise selection
+*	Forward stepwise selection (based on the AIC)
+The **Forward stepwise selection (based on AIC)** turned out working the best among the others and therefore we re-ran the OLS only with the subset of variables selected by the above-mentioned technique. Improvements achieved both in terms of R-Squared and RMSE.
+Finally, we decided to apply the best model up to now (the OLS based on the forward stepwise variable selection) but only to the subset of our dataset represented by the last 7 NBA seasons (2013-14 up to 2020-21). This option turned out working particularly well and as expected the model, in this context, managed to understand which variables are becoming the most important in the last years.
+
 
 ### K-Nearest Neighbors (KNN)
 In the KNN model we estimate the value of a specific data point by looking at the values of data points surrounding it. K in this context is the number of neighbors that we look at to estimate our data point of interest. Since we estimate our data point of interest by majority vote of the surrounding data points, we would want our K to be odd, such that we cannot have a stalemate vote. We ran 5 different versions of this model:
