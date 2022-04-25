@@ -42,6 +42,7 @@ So, we tried to apply 4 types of variable selection techniques:
 *	Backward stepwise selection
 *	Bi-directional stepwise selection
 *	Forward stepwise selection (based on the AIC)
+<br />
 The **Forward stepwise selection (based on AIC)** turned out working the best among the others and therefore we re-ran the OLS only with the subset of variables selected by the above-mentioned technique. Improvements achieved both in terms of R-Squared and RMSE.
 Finally, we decided to apply the best model up to now (the OLS based on the forward stepwise variable selection) but only to the subset of our dataset represented by the last 7 NBA seasons (2013-14 up to 2020-21). This option turned out working particularly well and as expected the model, in this context, managed to understand which variables are becoming the most important in the last years.
 
