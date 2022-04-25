@@ -57,6 +57,12 @@ In the KNN model we estimate the value of a specific data point by looking at th
 <br />
 
 ### 3. Random Forest
+Random Forest is a tree ensembling method, where each tree depends on a random variable. By averaging many trees we can improve predictions performance, however if there are important predictors, trees will be really similar. Thus leading to correlated predictions. Random Forest solves this  problem by decorellating the trees. This is obtained by considering for each split, not all the predictor but just a random subset m ~ sqrt(p).
+We ran three different versions of this model (all with tuned hyperparameters):
+* Random Forest trained on full dataset (all observations, no filters)
+* Random Forest trained using only players who played more than 20 games in a single season (so discarding players whose statistics where not fully reliable)
+* Lastly, Random Forest trained using only the last 7 seasons (from 2014-2015 to 2020-2021), which gave us the best results
+<br />
 
 ### 4. Gradient Boosting
 Gradient Boosting is an iterative functional gradient algorithm, i.e an algorithm which minimizes a loss function by iteratively choosing a function that points towards the negative gradient. It is key to underline the fact that, as opposed to Random Forest, it trains many models in a gradual, additive and **sequential** manner. This means that Gradient Boosting is based on the **errors** made by the previous decision tree, and sequentially tries to improve performances and reduce errors. We ran three different versions of this model (all with tuned hyperparameters):
