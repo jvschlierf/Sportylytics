@@ -27,15 +27,22 @@ This repository serves as the central storage for the files (both code as well a
 
 ## Models
 
+We ran 4 different models:
+1. **Ordinary Least Squares Regression (OLS)**
+2. **K-Nearest Neighbors (KNN)**
+3. **Random Forest**
+4. **Gradient Boosting**
+5. **Support Vector Machines (SVM)**
+
 ## Results
 The below tables details the RMSE & R&#x00B2; score for each of the models that we ran. The score presented is the that of the respective best version of that model.
 | Model             | RMSE  | R&#x00B2;  |
 | :---------------: | :----:| :--------: |
-| OLS               | 0.040 | 0.715 |
-| KNN               | 0.033 | 0.808 |
-| Random Forest     | 0.035 | 0.765 |
-| Gradient Boosting | 0.036 | 0.777 |
-| SVM               | 0.032 | 0.821|
+| **OLS**           | 0.040 | 0.715 |
+| **KNN**           | 0.033 | 0.808 |
+| **Random Forest**   | 0.035 | 0.765 |
+| **Gradient Boosting** | 0.036 | 0.777 |
+| **SVM**           | 0.032 | 0.821|
 
 
 ## FAQs
