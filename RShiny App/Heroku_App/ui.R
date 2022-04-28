@@ -17,7 +17,7 @@ for (j in listofpackages){
 }
 
 #Load Data (both train and test)
-urlfile_test<-'https://raw.githubusercontent.com/Alberto199810/RShiny-App/main/With_predictions.csv'
+urlfile_test<-'https://raw.githubusercontent.com/jvschlierf/Sportylytics/main/Dataset/Final%20Datasets/Final_data_Bplayers_2000_TEST.csv'
 test_basket <- read.csv(urlfile_test, encoding = "latin1", stringsAsFactors = FALSE)
 
 ui <- fluidPage(
